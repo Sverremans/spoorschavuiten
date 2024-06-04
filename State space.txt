@@ -1,0 +1,106 @@
+State space
+1.
+	De volgorde in niet belangrijk, herhalingen zijn niet toegestaan.
+	Gebruik de formule: (N!)/(r! * (N - r)!)
+
+	N = 20
+	r = 12
+
+	(20!)/(12! * (20 - 12)!) = 60.339.831.552.000 verschillende roosters mogelijk.
+
+2.
+	De volgorde is belangrijk, herhaling is wel toegestaan.
+	Gebruik de formule: N^r
+
+	N = 3
+	r = 20
+
+	3^20 = 3.486.784.401 verschillende routes.
+
+3.
+	De volgorde is niet belangrijk, herhaling is wel toegestaan.
+	Gebruik de formule: (r + N - 1)!/(r! * (N - 1)!)
+
+	N = 3
+	r = 25
+
+	(25 + 3 - 1)!/(25! * (3 - 1)!) = 351 verschillende ladingen in het eerste ritje. 
+
+4.
+	De volgorde in niet belangrijk, herhalingen zijn niet toegestaan.
+	Gebruik de formule: (N!)/(r! * (N - r)!)
+
+	N = 110
+	r = 30 of 31 of 32
+
+	(110!)/(30! * (110 - 30)!) + (110!)/(31! * (110 - 31)!) + (110!)/(32! * (110 - 32)!) =
+	8,3775 *10^27 manieren om af te studeren.
+
+5.
+	De volgorde is belangrijk, herhaling is wel toegestaan.
+	Gebruik de formule: (N!)/((N - r)!)
+
+	N = 26
+	r = 7
+
+	(26!)/((26 - 7)!) = 3.315.312.000 mogelijkheden.
+	Winkans: 1 / 3.315.312.000 * 100% = 3.0 *10^-10 %
+
+6.
+	De volgorde is niet belangrijk, herhaling is wel toegestaan.
+	Belangrijk: De bozen met broodjes kunnen nu opraken voor dat het eerste ritje vertrokken is.
+	Gebruik de formule: (r + N - 1)!/(r! * (N - 1)!)
+
+	N = 
+	r = 
+
+	(45 + 3 - 1)!/(45! * (3 - 1)!) = 1081 opties, maar die bevat ook alle opties waar er eigenlijk geen dozen met broodjes mogelijk zijn. Deze opties moeten er dus vanaf worden gehaald.
+	(14 + 3 - 1)!/(14! * (3 - 1)!) = 120 opties
+	1081 - 120 = 961 verschillende ladingen in het eerste ritje. 
+
+7.
+	RailNL
+
+	Aantal verbindingen tussen de stations: 28 verbindingen
+	Aantal mogelijke trajecten: 7 trajecten
+	Aantal maximale minuten: 120 minuten
+	Tijd van de verbindingen: verschillend per verbinding
+	Maximaal aantal verbindingen op een station: 4 verbindingen
+	Kortste afstand tussen twee stations: 5 minuten
+
+	Trein afstanden zijn groter dan 5, er kunnen in het echt dus een stuk minden verbindingen worden afgelegd.
+	Dit zorgt er voor dat de daadwerkelijke bovengrens lager ligt dan de waarde die wij hieronder berekenen. 
+
+	# Aannames
+	Alle afstanden tussen de stations zijn gelijk aan de minimale afstand, deze is dus gelijk aan 5 minuten.
+	Alle stations hebben het maximale aantal verbindingen met andere stations, deze is dus gelijk aan 4 verbindingen per station.
+	(Het doel is niet meer om alle verbindingen af te gaan.)
+
+	# Formule 
+	De volgorde van de stations is belangrijk, ook zijn herhalingen toegestaan.
+	We maken dus gebruik van de volgende formule: N^r
+
+	# Voorbeeld dat de formule klopt (schets)
+	Moet nog gedaan worden.
+
+	# Bereken de groote van de state-space
+	Er zijn 22 stations.
+	Er zijn 28 verbindingen in twee richtingen, in totaal dus 56 verbindingen.
+
+	In 120 minuten kan op een traject 120/5 = 24 verbindingen worden gereden.
+
+	Stel trein1 is in stationX, trein1 kan 4 kanten op, waar vervolgend weer 4 kanten op kan worden gegaan.
+	Deze keuze moet voor een trein dus 24 keer gemaakt worden.
+	Per beginstation zijn er dus 4^24 verbindingen die gereden kunnen worden.
+	
+	Er zijn 22 beginstations, dus 22 * 4^24 verbindingen mogelijk per trein.
+	Er zijn 7 treinen, dus een bovengrens voor het aantal mogelijke trajecten is (22 * 4^24)^7 = 3.5 *10^110.
+
+
+	(Heel nederland:
+	61 stations
+	89 * 2 = 178 verbindingen
+	maximaal 7 verbindingen per station
+	(61 * 7^24)^7 = 3.0 *10^154)
+
+	
