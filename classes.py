@@ -1,10 +1,11 @@
 class Station:
-    # FIXME: type hints
     def __init__(self, name: str, x: float, y: float) -> None:
         self._name = name
-        self._connections = {}
         self._x = x
         self._y = y
 
-    def add_connection(self, station: str, dist: int) -> None:
-        self._connections[station] = dist
+class Connection:
+    def __init__(self, stationA: str, stationB: str, dist: int) -> None:
+        self._stationA = stationA
+        self._stationB = stationB
+        self._dist = dist
