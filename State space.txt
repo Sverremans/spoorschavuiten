@@ -78,7 +78,8 @@ State space
 	We maken dus gebruik van de volgende formule: N^r
 
 	# Voorbeeld dat de formule klopt (schets)
-	Moet nog gedaan worden.
+	https://github.com/Sverremans/spoorschavuiten/blob/main/voorbeeld_bij_state_space.jpg
+	Een station heeft (per aanname) vier verbindingen. Stel dat een trein in het omcirkelde station begint. De pijlen geven de mogelijke keuzes op dat moment aan. Stel nu dat de trein de dikgedrukte pijl kiest en aankomt in het volgende station. Vanaf daar zijn er wederom vier keuzes, dus het volstaat om te zeggen dat elke keuze er zo uitziet als dit plaatje. Dit kan binnen het tijdsbestek 24 keer, dus 4^24. Vervolgens is het plaatje hetzelfde (maar de dienstregeling anders!) als de trein begint in een van de andere stations, dus we vermenigvuldigen dit getal met het aantal stations. Dit nog tot de macht het aantal treinen en we hebben een harde bovengrens.
 
 	# Bereken de groote van de state-space
 	Er zijn 22 stations.
