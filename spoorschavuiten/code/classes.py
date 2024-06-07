@@ -81,14 +81,14 @@ class Region:
             # choose randomly from possible connections
             connection = random.choice(possible_connections)
             route.add_station(connection)
-            current_station = connection.
-            for connection in self._connections:
-                if connection._stationA == current_station:
-                    route.add_station(connection)
-                    current_station = connection._stationB
-                    time += connection.get_dist()
-                elif connection._stationB == current_station:
-                    route.add_station(connection)
+            #current_station = connection
+            #for connection in self._connections:
+            #    if connection._stationA == current_station:
+            #        route.add_station(connection)
+            #        current_station = connection._stationB
+            #        time += connection.get_dist()
+            #    elif connection._stationB == current_station:
+            #        route.add_station(connection)
         self._routes.append(route)
         return current_station
 
@@ -117,3 +117,19 @@ class Region:
             minutes += route.get_dist()
 
         return fraction_used * 10000 - (trajectories * 100 + minutes)
+    
+    def generate_output(self) -> None:
+        route = [holland._connections[1], holland._connections[0], holland._connections[-1]]
+        #1 maak empty list van stations
+        station_list = []
+        #2 check welk station erin moet en voeg toe
+
+        #3 doe dit voor elke trein
+
+        #4 bereken score
+
+        #5 print header
+
+        #6 print treinen
+
+        #7 print score
