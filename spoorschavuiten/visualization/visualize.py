@@ -2,13 +2,17 @@ import matplotlib
 matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 import numpy as np
-
+import spoorschavuiten.code.main_script as ms
 plt.style.use('_mpl-gallery')
 
 # # make the data
+
+for station in ms.holland._stations:
+    x = station._x
+    y = station._y
 # np.random.seed(3)
-x = 1
-y = 4
+# x = 1
+# y = 4
 # size and color:
 sizes = 10 # np.random.uniform(15, 80)
 colors = "black" # np.random.uniform(15, 80)
