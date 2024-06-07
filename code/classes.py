@@ -69,6 +69,32 @@ class Region:
 
         return connections
 
+    def add_route(self, current_station):
+        time = 0
+        current_station = current_station
+        route = Route()
+        while time <= 120:
+            possible_connections = []
+            for connection in self._connections:
+                if connection._stationA == current_station or connection._stationB == current_station:
+                    possible_connections.append(connection)
+            # choose randomly from possible connections
+            connection = random.choice(possible_connections)
+            route.add_station(connection)
+            current_station = connection.
+            for connection in self._connections:
+                if connection._stationA == current_station:
+                    route.add_station(connection)
+                    current_station = connection._stationB
+                    time += connection.get_dist()
+                elif connection._stationB == current_station:
+                    route.add_station(connection)
+        self._routes.append(route)
+        return current_station
+
+        
+
+
     def is_solution(self) -> bool:
         """Returns True if each connection is used, False otherwise."""
         for connection in self._connections:
