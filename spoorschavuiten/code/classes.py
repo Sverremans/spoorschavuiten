@@ -81,6 +81,7 @@ class Region:
             # choose randomly from possible connections
             connection = random.choice(possible_connections)
             route.add_station(connection)
+<<<<<<< HEAD
             #current_station = connection
             #for connection in self._connections:
             #    if connection._stationA == current_station:
@@ -89,6 +90,16 @@ class Region:
             #        time += connection.get_dist()
             #    elif connection._stationB == current_station:
             #        route.add_station(connection)
+=======
+            current_station = connection
+            for connection in self._connections:
+                if connection._stationA == current_station:
+                    route.add_station(connection)
+                    current_station = connection._stationB
+                    time += connection.get_dist()
+                elif connection._stationB == current_station:
+                    route.add_station(connection)
+>>>>>>> b631c8243d16eff6c4b047273f340432ece561eb
         self._routes.append(route)
         return current_station
 
