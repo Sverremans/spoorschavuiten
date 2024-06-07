@@ -16,7 +16,6 @@ for station in ms.holland._stations:
 # size and color:
 sizes = 10 # np.random.uniform(15, 80)
 colors = "black" # np.random.uniform(15, 80)
-
 # plot
 fig, ax = plt.subplots()
 
