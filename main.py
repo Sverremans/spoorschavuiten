@@ -1,4 +1,4 @@
-from classes import Region
+from code.classes import Region
 
 
 if __name__ == "__main__":
