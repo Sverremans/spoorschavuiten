@@ -18,16 +18,25 @@ class Connection:
         self._stationA = stationA
         self._stationB = stationB
         self._dist = dist
-        self._used = False
+        self._used: bool = False
+
+    def get_dist(self) -> int:
+        return self._dist
 
 
 class Route:
-    """Traject van stations waar een trein langs komt."""
+    """Traject van connecties waar een trein langs komt."""
     def __init__(self) -> None:
-        self._route: list[Station] = []
+        self._route: list[Connection] = []
     
-    def add_station(self, station):
-        self._route.append(station)
+    def add_station(self, connection) -> None:
+        self._route.append(connection)
+
+    def get_dist(self) -> int:
+        dist = 0
+        for connection in self._route:
+            dist += connection.get_dist()
+        return dist
 
 
 class Region:
@@ -69,5 +78,16 @@ class Region:
     
     def calculate_value(self):
         """Calculates value of configuration of total routes."""
-        # TO-DO
-        pass
+        nr_of_connections_used = 0
+        for connection in self._connections:
+            if connection._used == True:
+                nr_of_connections_used += 1
+        fraction_used = nr_of_connections_used / len(self._connections)
+
+        trajectories = len(self._routes)
+
+        minutes = 0
+        for route in self._routes:
+            minutes += route.get_dist()
+
+        return fraction_used * 10000 - (trajectories * 100 + minutes)
