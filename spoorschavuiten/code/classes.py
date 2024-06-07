@@ -81,7 +81,7 @@ class Region:
             # choose randomly from possible connections
             connection = random.choice(possible_connections)
             route.add_station(connection)
-            current_station = connection.
+            current_station = connection
             for connection in self._connections:
                 if connection._stationA == current_station:
                     route.add_station(connection)

@@ -7,10 +7,10 @@ holland = Region("spoorschavuiten/csv_files/StationsHolland.csv", "spoorschavuit
 
 max_trains = 7
 
-for i in range(max_trains):
-    holland.add_route(current_station)
-    if holland.is_solution:
-        break
+# for i in range(max_trains):
+#     holland.add_route(current_station)
+#     if holland.is_solution:
+#         break
 
 minimum_x = holland._stations[0]._x
 minimum_y = holland._stations[0]._y
