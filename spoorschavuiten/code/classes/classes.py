@@ -87,13 +87,24 @@ class Region:
         route._stations.append(current_station)
         while time <= 120:
             possible_connections = []
+            unused_connections = []
+            
             for connection in self._connections:
                 if connection._stationA == current_station:
                     possible_connections.append((connection, "f"))
+                    if not connection._used:
+                        unused_connections.append((connection, "f"))
                 if connection._stationB == current_station:
                     possible_connections.append((connection, "b"))
-            # choose randomly from possible connections
-            connection, direction = random.choice(possible_connections)
+                    if not connection._used:
+                        unused_connections.append((connection, "b"))
+            
+            # choose randomly from (unused) possible connections
+            if len(unused_connections) > 0:
+                connection, direction = random.choice(unused_connections)
+            else:    
+                connection, direction = random.choice(possible_connections)
+
             time += connection.get_dist()
             # check if max time exceeded
             if time > 120:
