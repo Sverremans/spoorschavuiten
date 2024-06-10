@@ -83,7 +83,7 @@ class Region:
     def add_route(self) -> None:
         time = 0
         route = Route()
-        current_station = self._current_station
+        current_station = random.choice(list(self._stations.values()))
         route._stations.append(current_station)
         while time <= 120:
             possible_connections = []
@@ -109,7 +109,6 @@ class Region:
             route.add_connection(connection)
             route._stations.append(current_station)
 
-        self._current_station = current_station
         self._routes.append(route)
         self._time_used += time
 
