@@ -95,8 +95,12 @@ class Region:
             # choose randomly from possible connections
             connection, direction = random.choice(possible_connections)
             time += connection.get_dist()
+            # check if max time exceeded
+            if time > 120:
+                time -= connection.get_dist()
+                break
             connection.is_used()
-            # check to move forewards or backwards
+            # check to move forwards or backwards
             if direction == "f":
                 current_station = connection._stationB
             else:
@@ -123,9 +127,9 @@ class Region:
             if connection._used == True:
                 nr_of_connections_used += 1
         fraction_used = nr_of_connections_used / len(self._connections)
-
+        
         trajectories = len(self._routes)
-
+        
         minutes = self._time_used
 
         return fraction_used * 10000 - (trajectories * 100 + minutes)
