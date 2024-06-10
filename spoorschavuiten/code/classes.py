@@ -131,17 +131,7 @@ class Region:
         return fraction_used * 10000 - (trajectories * 100 + minutes)
     
     def generate_output(self) -> None:
-        route = [holland._connections[1], holland._connections[0], holland._connections[-1]]
-        #1 maak empty list van stations
-        station_list = []
-        #2 check welk station erin moet en voeg toe
-
-        #3 doe dit voor elke trein
-
-        #4 bereken score
-
-        #5 print header
-
-        #6 print treinen
-
-        #7 print score
+        print("train,stations")
+        for i, route in enumerate(self._routes, 1):
+            print(f"train{i},{route._stations}")
+        print(f"score,{self.calculate_value()}")

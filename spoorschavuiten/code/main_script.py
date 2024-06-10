@@ -11,9 +11,5 @@ if __name__ == "__main__":
         holland.add_route()
         if holland.is_solution():
             break
-
-    # Print output
-    print("train,stations")
-    for i, route in enumerate(holland._routes, 1):
-        print(f"train{i},{route._stations}")
-        print(f"score,{holland.calculate_value()}")
+    
+    holland.generate_output()
