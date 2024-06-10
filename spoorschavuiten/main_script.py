@@ -9,8 +9,10 @@ if __name__ == "__main__":
     max_trains = 7
 
     for i in range(max_trains):
-        randomise.random_route(holland)
+        randomise.random_route_2(holland)
         if holland.is_solution():
             break
 
     holland.generate_output()
+
+    # FIXME objective function werkt soms wel, soms niet. 
