@@ -1,4 +1,5 @@
 from code.classes.classes import Region
+from code.algorithms import randomise
 
 
 if __name__ == "__main__":
@@ -8,13 +9,8 @@ if __name__ == "__main__":
     max_trains = 7
 
     for i in range(max_trains):
-        holland.add_route()
+        randomise.random_route(holland)
         if holland.is_solution():
             break
-    holland.generate_output()
 
-    # Print output
-    #print("train,stations")
-    #for i, route in enumerate(holland._routes, 1):
-    #    print(f"train{i},{route._stations}")
-    #    print(f"score,{holland.calculate_value()}")
+    holland.generate_output()
