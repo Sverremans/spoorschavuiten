@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # type: ignore
 import random
 
 
@@ -54,7 +54,6 @@ class Region:
         self._connections: list[Connection] = self.load_connections(connections_file)
         self._routes: list[Route] = []
         self._time_used: int = 0
-        self._current_station = random.choice(list(self._stations.values()))
     
     def load_stations(self, stations_file: str) -> list:
         stations = {}
@@ -83,17 +82,28 @@ class Region:
     def add_route(self) -> None:
         time = 0
         route = Route()
-        current_station = self._current_station
+        current_station = random.choice(list(self._stations.values()))
         route._stations.append(current_station)
         while time <= 120:
             possible_connections = []
+            unused_connections = []
+            
             for connection in self._connections:
                 if connection._stationA == current_station:
                     possible_connections.append((connection, "f"))
+                    if not connection._used:
+                        unused_connections.append((connection, "f"))
                 if connection._stationB == current_station:
                     possible_connections.append((connection, "b"))
-            # choose randomly from possible connections
-            connection, direction = random.choice(possible_connections)
+                    if not connection._used:
+                        unused_connections.append((connection, "b"))
+            
+            # choose randomly from (unused) possible connections
+            if len(unused_connections) > 0:
+                connection, direction = random.choice(unused_connections)
+            else:    
+                connection, direction = random.choice(possible_connections)
+
             time += connection.get_dist()
             # check if max time exceeded
             if time > 120:
@@ -109,7 +119,6 @@ class Region:
             route.add_connection(connection)
             route._stations.append(current_station)
 
-        self._current_station = current_station
         self._routes.append(route)
         self._time_used += time
 
@@ -125,6 +134,7 @@ class Region:
         nr_of_connections_used = 0
         for connection in self._connections:
             if connection._used == True:
+                print(connection)
                 nr_of_connections_used += 1
         fraction_used = nr_of_connections_used / len(self._connections)
         
@@ -135,8 +145,6 @@ class Region:
         return fraction_used * 10000 - (trajectories * 100 + minutes)
     
     def generate_output(self) -> None:
-        #route = [self._connections[1], self._connections[0], self._connections[-1]]
-        #station_list = []
         print("train,stations")
         for i, route in enumerate(self._routes, 1):
             print(f'train_{i},"{route._stations}"')
