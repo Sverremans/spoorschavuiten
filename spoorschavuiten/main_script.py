@@ -1,9 +1,9 @@
-from classes import Region
+from code.classes.classes import Region
 
 
 if __name__ == "__main__":
 
-    holland = Region("csv_files/StationsHolland.csv", "csv_files/ConnectiesHolland.csv")
+    holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
 
     max_trains = 7
 
