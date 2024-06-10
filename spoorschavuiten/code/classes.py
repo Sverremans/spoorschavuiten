@@ -1,4 +1,5 @@
 import pandas as pd
+import random
 
 
 class Station:
@@ -14,7 +15,7 @@ class Station:
 
 class Connection:
     """Verbinding tussen twee stations met bijbehorende duur in minuten."""
-    def __init__(self, stationA: str, stationB: str, dist: int) -> None:
+    def __init__(self, stationA: Station, stationB: Station, dist: int) -> None:
         self._stationA = stationA
         self._stationB = stationB
         self._dist = dist
@@ -23,13 +24,20 @@ class Connection:
     def get_dist(self) -> int:
         return self._dist
 
+    def is_used(self):
+        self._used = True
+    
+    def __repr__(self) -> str:
+        return f"{self._stationA} naar {self._stationB}"
+
 
 class Route:
     """Traject van connecties waar een trein langs komt."""
     def __init__(self) -> None:
         self._route: list[Connection] = []
+        self._stations: list[Station] = []
     
-    def add_station(self, connection) -> None:
+    def add_connection(self, connection) -> None:
         self._route.append(connection)
 
     def get_dist(self) -> int:
@@ -42,19 +50,20 @@ class Route:
 class Region:
     """Regio van stations en verbindingen waarin routes lopen."""
     def __init__(self, stations_file: str, connections_file: str) -> None:
-        self._stations: list[Station] = self.load_stations(stations_file)
+        self._stations: dict[str, Station] = self.load_stations(stations_file)
         self._connections: list[Connection] = self.load_connections(connections_file)
         self._routes: list[Route] = []
         self._time_used: int = 0
+        self._current_station = random.choice(list(self._stations.values()))
     
     def load_stations(self, stations_file: str) -> list:
-        stations = []
+        stations = {}
 
         # add stations with coordinates
         df_stations = pd.read_csv(stations_file)
         for l in range(len(df_stations)):
             new_station = Station(df_stations.loc[l, 'station'], df_stations.loc[l, 'x'], df_stations.loc[l, 'y'])
-            stations.append(new_station)
+            stations[new_station._name] = new_station
 
         return stations
 
@@ -64,41 +73,46 @@ class Region:
         # add connections and distances
         df_connections = pd.read_csv(connections_file)
         for l in range(len(df_connections)):
-            new_connection = Connection(df_connections.loc[l, 'station1'], df_connections.loc[l, 'station2'], df_connections.loc[l, 'distance'])
+            stationA = self._stations[df_connections.loc[l, 'station1']]
+            stationB = self._stations[df_connections.loc[l, 'station2']]
+            new_connection = Connection(stationA, stationB, df_connections.loc[l, 'distance'])
             connections.append(new_connection)
 
         return connections
 
-    def add_route(self, current_station):
+    def add_route(self) -> None:
         time = 0
-        current_station = current_station
         route = Route()
+        current_station = self._current_station
+        route._stations.append(current_station)
         while time <= 120:
             possible_connections = []
             for connection in self._connections:
-                if connection._stationA == current_station or connection._stationB == current_station:
-                    possible_connections.append(connection)
-            # choose randomly from possible connections
-            connection = random.choice(possible_connections)
-            route.add_station(connection)
-            current_station = connection.
-            for connection in self._connections:
                 if connection._stationA == current_station:
-                    route.add_station(connection)
-                    current_station = connection._stationB
-                    time += connection.get_dist()
-                elif connection._stationB == current_station:
-                    route.add_station(connection)
+                    possible_connections.append((connection, "f"))
+                if connection._stationB == current_station:
+                    possible_connections.append((connection, "b"))
+            # choose randomly from possible connections
+            connection, direction = random.choice(possible_connections)
+            time += connection.get_dist()
+            connection.is_used()
+            # check to move forewards or backwards
+            if direction == "f":
+                current_station = connection._stationB
+            else:
+                current_station = connection._stationA
+
+            route.add_connection(connection)
+            route._stations.append(current_station)
+
+        self._current_station = current_station
         self._routes.append(route)
-        return current_station
-
-        
-
+        self._time_used += time
 
     def is_solution(self) -> bool:
         """Returns True if each connection is used, False otherwise."""
         for connection in self._connections:
-            if not connection._used():
+            if not connection.is_used():
                 return False
         return True
     
@@ -112,8 +126,6 @@ class Region:
 
         trajectories = len(self._routes)
 
-        minutes = 0
-        for route in self._routes:
-            minutes += route.get_dist()
+        minutes = self._time_used
 
         return fraction_used * 10000 - (trajectories * 100 + minutes)
