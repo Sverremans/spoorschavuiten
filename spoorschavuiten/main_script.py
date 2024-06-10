@@ -1,4 +1,5 @@
 from code.classes.classes import Region
+from code.algorithms import randomise
 
 
 if __name__ == "__main__":
@@ -8,7 +9,7 @@ if __name__ == "__main__":
     max_trains = 7
 
     for i in range(max_trains):
-        holland.add_route()
+        randomise.random_route(holland)
         if holland.is_solution():
             break
 
