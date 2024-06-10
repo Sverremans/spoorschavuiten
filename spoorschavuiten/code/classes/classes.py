@@ -134,6 +134,7 @@ class Region:
         nr_of_connections_used = 0
         for connection in self._connections:
             if connection._used == True:
+                print(connection)
                 nr_of_connections_used += 1
         fraction_used = nr_of_connections_used / len(self._connections)
         

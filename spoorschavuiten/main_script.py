@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
 
-    max_trains = 7
+    max_trains = 1
 
     for i in range(max_trains):
         randomise.random_route_2(holland)

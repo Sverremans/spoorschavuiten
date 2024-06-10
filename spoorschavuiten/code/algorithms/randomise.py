@@ -55,7 +55,7 @@ def random_route_2(regio) -> None:
                 possible_connections.append((connection, "b"))
                 if not connection._used:
                     unused_connections.append((connection, "b"))
-        
+
         # choose randomly from (unused) possible connections
         if len(unused_connections) > 0:
             connection, direction = random.choice(unused_connections)
@@ -63,6 +63,13 @@ def random_route_2(regio) -> None:
             connection, direction = random.choice(possible_connections)
 
         time += connection.get_dist()
+
+        # Ik heb geen flauw idee waarom, maar het volgende blokje code dwingt routes via Almaar:
+
+        #for connection in regio._connections:
+        #    if connection._used:
+        #        print(connection)
+        
         # check if max time exceeded
         if time > 120:
             time -= connection.get_dist()
