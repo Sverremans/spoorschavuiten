@@ -6,7 +6,7 @@ import spoorschavuiten.code.main_script as ms
 plt.style.use('_mpl-gallery')
 
 # # make the data
-sizes = 10 # np.random.uniform(15, 80)
+sizes = 10
 colors = "black"
 
 print(ms.holland._stations)
@@ -25,7 +25,8 @@ ax.set(xlim=(4.2, 5.2), xticks=np.arange(4, 6),
        ylim=(51, 53), yticks=np.arange(50, 55))
 
 # plt.savefig('scatterplot.png')
+print(ms.holland._connections)
 
-plt.show()
+# plt.show()
 # print(x)
 # print(y)
