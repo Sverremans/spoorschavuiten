@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # type: ignore
 import random
 
 
@@ -54,7 +54,6 @@ class Region:
         self._connections: list[Connection] = self.load_connections(connections_file)
         self._routes: list[Route] = []
         self._time_used: int = 0
-        self._current_station = random.choice(list(self._stations.values()))
     
     def load_stations(self, stations_file: str) -> list:
         stations = {}
@@ -83,7 +82,7 @@ class Region:
     def add_route(self) -> None:
         time = 0
         route = Route()
-        current_station = self._current_station
+        current_station = random.choice(list(self._stations.values()))
         route._stations.append(current_station)
         while time <= 120:
             possible_connections = []
@@ -109,7 +108,6 @@ class Region:
             route.add_connection(connection)
             route._stations.append(current_station)
 
-        self._current_station = current_station
         self._routes.append(route)
         self._time_used += time
 
@@ -135,8 +133,6 @@ class Region:
         return fraction_used * 10000 - (trajectories * 100 + minutes)
     
     def generate_output(self) -> None:
-        #route = [self._connections[1], self._connections[0], self._connections[-1]]
-        #station_list = []
         print("train,stations")
         for i, route in enumerate(self._routes, 1):
             print(f'train_{i},"{route._stations}"')
