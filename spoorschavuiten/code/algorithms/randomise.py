@@ -6,7 +6,7 @@ def random_route(regio) -> None:
     time = 0
     route = Route()
     current_station = random.choice(list(regio._stations.values()))
-    route._stations.append(current_station)
+    route.add_station(current_station)
     while time <= 120:
         possible_connections = []
         for connection in regio._connections:
@@ -29,10 +29,10 @@ def random_route(regio) -> None:
             current_station = connection._stationA
 
         route.add_connection(connection)
-        route._stations.append(current_station)
+        route.add_station(current_station)
 
-    regio._routes.append(route)
-    regio._time_used += time
+    regio.add_route(route)
+    regio.update_time(time)
 
 # ########################################################### #
 # This function takes used vs unused connections into account #
@@ -41,7 +41,7 @@ def random_route_2(regio) -> None:
     time = 0
     route = Route()
     current_station = random.choice(list(regio._stations.values()))
-    route._stations.append(current_station)
+    route.add_station(current_station)
     while time <= 120:
         possible_connections = []
         unused_connections = []
@@ -76,7 +76,7 @@ def random_route_2(regio) -> None:
             current_station = connection._stationA
 
         route.add_connection(connection)
-        route._stations.append(current_station)
+        route.add_station(current_station)
     
-    regio._routes.append(route)
-    regio._time_used += time
+    regio.add_route(route)
+    regio.update_time(time)

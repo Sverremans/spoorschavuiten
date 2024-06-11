@@ -1,10 +1,10 @@
 from code.classes.classes import Region
 from code.algorithms import randomise
-
+from code.visualization.visualize import visualizeMap
 
 if __name__ == "__main__":
 
-    holland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
+    holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
 
     max_trains = 7
 
@@ -13,3 +13,4 @@ if __name__ == "__main__":
         if holland.is_solution():
             break
     holland.generate_output()
+    #visualizeMap()
