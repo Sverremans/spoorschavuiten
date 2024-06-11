@@ -39,6 +39,9 @@ class Route:
     def add_connection(self, connection) -> None:
         self._route.append(connection)
 
+    def add_station(self, station) -> None:
+        self._stations.append(station)
+
     def get_dist(self) -> int:
         dist = 0
         for connection in self._route:
@@ -77,6 +80,12 @@ class Region:
             connections.append(new_connection)
 
         return connections
+
+    def add_route(self, route) -> None:
+        self._routes.append(route)
+
+    def update_time(self, time) -> None:
+        self._time_used += time
 
     def is_solution(self) -> bool:
         """Returns True if each connection is used, False otherwise."""

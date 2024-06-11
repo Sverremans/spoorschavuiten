@@ -1,6 +1,6 @@
 from code.classes.classes import Region
 from code.algorithms import randomise
-
+from code.visualization.visualize import visualizeMap
 
 if __name__ == "__main__":
 
@@ -13,3 +13,4 @@ if __name__ == "__main__":
         if holland.is_solution():
             break
     holland.generate_output()
+    #visualizeMap()
