@@ -125,16 +125,16 @@ class Region:
     def is_solution(self) -> bool:
         """Returns True if each connection is used, False otherwise."""
         for connection in self._connections:
-            if not connection.is_used():
+            if not connection._used:
                 return False
         return True
     
     def calculate_value(self) -> int:
-        """Calculates value of configuration of total routes."""
+        """Calculates value of configuration of total routes."""      
         nr_of_connections_used = 0
+
         for connection in self._connections:
             if connection._used == True:
-                print(connection)
                 nr_of_connections_used += 1
         fraction_used = nr_of_connections_used / len(self._connections)
         
