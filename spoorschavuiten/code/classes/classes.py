@@ -40,6 +40,9 @@ class Route:
     def add_connection(self, connection) -> None:
         self._route.append(connection)
 
+    def add_station(self, station) -> None:
+        self._stations.append(station)
+
     def get_dist(self) -> int:
         dist = 0
         for connection in self._route:
@@ -79,47 +82,10 @@ class Region:
 
         return connections
 
-    def add_route(self) -> None:
-        time = 0
-        route = Route()
-        current_station = random.choice(list(self._stations.values()))
-        route._stations.append(current_station)
-        while time <= 120:
-            possible_connections = []
-            unused_connections = []
-            
-            for connection in self._connections:
-                if connection._stationA == current_station:
-                    possible_connections.append((connection, "f"))
-                    if not connection._used:
-                        unused_connections.append((connection, "f"))
-                if connection._stationB == current_station:
-                    possible_connections.append((connection, "b"))
-                    if not connection._used:
-                        unused_connections.append((connection, "b"))
-            
-            # choose randomly from (unused) possible connections
-            if len(unused_connections) > 0:
-                connection, direction = random.choice(unused_connections)
-            else:    
-                connection, direction = random.choice(possible_connections)
-
-            time += connection.get_dist()
-            # check if max time exceeded
-            if time > 120:
-                time -= connection.get_dist()
-                break
-            connection.is_used()
-            # check to move forwards or backwards
-            if direction == "f":
-                current_station = connection._stationB
-            else:
-                current_station = connection._stationA
-
-            route.add_connection(connection)
-            route._stations.append(current_station)
-
+    def add_route(self, route) -> None:
         self._routes.append(route)
+
+    def update_time(self, time) -> None:
         self._time_used += time
 
     def is_solution(self) -> bool:
