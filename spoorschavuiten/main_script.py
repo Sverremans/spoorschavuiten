@@ -4,7 +4,7 @@ from code.algorithms import randomise
 
 if __name__ == "__main__":
 
-    holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
+    holland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
 
     max_trains = 7
 
