@@ -2,31 +2,53 @@ import matplotlib
 matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 import numpy as np
-import spoorschavuiten.code.main_script as ms
-plt.style.use('_mpl-gallery')
+from code.classes.classes import Region
 
-# # make the data
-sizes = 10
-colors = "black"
+def visualizeMap():
+    holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
+    netherlands = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
 
-print(ms.holland._stations)
-x = []
-y = []
+    plt.style.use('_mpl-gallery')
+    sizes = 30
+    color1 = "black"
+    color2 = "gray"
+# Coordinates Holland
+    x = []
+    y = []
+# Coordinates Netherlands
+    xn = []
+    yn = []
 
-for station in ms.holland._stations:
-    x.append(station._x)
-    y.append(station._y)
+    for station in holland._stations:
+        x.append(holland._stations[station]._x)
+        y.append(holland._stations[station]._y)
 
-fig, ax = plt.subplots()
-ax.scatter(x, y, s=sizes, c=colors)
+    for station in netherlands._stations:
+        xn.append(netherlands._stations[station]._x)
+        yn.append(netherlands._stations[station]._y)
 
+    plt.scatter(xn, yn, c= color2, s= sizes)
+    plt.scatter(x, y, c= color1, s=sizes)
+    
+    xConnection = []
+    yConnection = []
+    print(len(netherlands._connections))
+    for connection in netherlands._connections:
+        xA = connection._stationA._x
+        yA = connection._stationA._y
+        xB = connection._stationB._x
+        yB = connection._stationB._y
 
-ax.set(xlim=(4.2, 5.2), xticks=np.arange(4, 6),
-       ylim=(51, 53), yticks=np.arange(50, 55))
+        xConnection.append(xA)
+        yConnection.append(yA)
+        xConnection.append(xB)
+        yConnection.append(yB)
+        plt.plot(xConnection, yConnection, c = color2)
 
-# plt.savefig('scatterplot.png')
-print(ms.holland._connections)
+        xConnection.clear()
+        yConnection.clear()
+    plt.show()
 
-# plt.show()
-# print(x)
-# print(y)
+    plt.savefig('verbindingenInNederland.png')
+    print(len(xConnection))
+    print(len(yConnection))
