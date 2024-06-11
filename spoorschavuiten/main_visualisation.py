@@ -1,8 +1,8 @@
-from code.visualization.visualize import makeMap, visualizeMap, drawUsedConnections
+from code.visualization.visualize import makeMap, visualizeMap, drawUsedConnections, outputGraph
 from code.classes.classes import Region
 from code.algorithms import randomise
 
-holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
+holland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
 
 max_trains = 7
 makeMap(holland)
@@ -21,4 +21,3 @@ for i in range(max_trains):
 
 visualizeMap(holland)
 holland.generate_output()
-

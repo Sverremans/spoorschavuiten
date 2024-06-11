@@ -2,6 +2,8 @@ import matplotlib
 matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 from code.classes.classes import Region
+from adjustText import adjust_text
+
 
 def makeMap(region: Region) -> None:
     '''
@@ -43,10 +45,17 @@ def drawDots(region: Region, x: list, y: list) -> None:
     '''
     Draw all stations as dots on the map.
     '''
+    z = []
     for station in region._stations:
         x.append(region._stations[station]._x)
         y.append(region._stations[station]._y)
+        z.append(region._stations[station]._name)
     plt.scatter(x, y, c= "black", s=30)
+
+    # for i, txt in enumerate(z):
+    #     plt.annotate(txt, (x[i], y[i]))
+    label = [plt.annotate(txt, (x[i], y[i])) for i, txt in enumerate(z)]
+    adjust_text(label)
 
 
 def drawLines(region: Region, xList: list, yList: list) -> None:
@@ -68,6 +77,7 @@ def drawLines(region: Region, xList: list, yList: list) -> None:
         xList.clear()
         yList.clear()
 
+
 def drawUsedConnections(region: Region, xList: list, yList: list, color: str) -> None:
 # def drawUsedConnections(region: Region) -> None:
     xList = []
@@ -87,3 +97,11 @@ def drawUsedConnections(region: Region, xList: list, yList: list, color: str) ->
             # print(color)
             xList.clear()
             yList.clear()
+
+
+def outputGraph(outputs, time):
+    y = outputs
+    x = time
+    plt.bar(x, y)
+    plt.savefig('aantalPuntenMetRandom.png')
+    plt.show()
