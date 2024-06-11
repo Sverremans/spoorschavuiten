@@ -1,7 +1,7 @@
 import random
 from code.classes.classes import Route
 
-
+# BASELINE
 def random_route(regio) -> None:
     time = 0
     route = Route()
@@ -63,12 +63,6 @@ def random_route_2(regio) -> None:
             connection, direction = random.choice(possible_connections)
 
         time += connection.get_dist()
-
-        # Ik heb geen flauw idee waarom, maar het volgende blokje code dwingt routes via Almaar:
-
-        #for connection in regio._connections:
-        #    if connection._used:
-        #        print(connection)
         
         # check if max time exceeded
         if time > 120:
@@ -83,6 +77,6 @@ def random_route_2(regio) -> None:
 
         route.add_connection(connection)
         route._stations.append(current_station)
-
+    
     regio._routes.append(route)
     regio._time_used += time
