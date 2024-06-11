@@ -35,7 +35,7 @@ def visualizeMap(region: Region) -> None:
     '''
     # makeMap(region)
     # drawUsedConnections(region)
-    plt.savefig('verbindingenInNederland.png')
+    # plt.savefig('verbindingenInNederland.png')
     plt.show()
 
 
