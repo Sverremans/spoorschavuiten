@@ -1,5 +1,6 @@
 import pandas as pd # type: ignore
 
+
 class Station:
     """Station met bijbehorende coordinaten."""
     def __init__(self, name: str, x: float, y: float) -> None:
