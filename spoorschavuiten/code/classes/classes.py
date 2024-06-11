@@ -1,6 +1,4 @@
 import pandas as pd # type: ignore
-import random
-
 
 class Station:
     """Station met bijbehorende coordinaten."""
