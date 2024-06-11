@@ -34,7 +34,8 @@ def visualizeMap():
         xn.append(netherlands._stations[station]._x)
         yn.append(netherlands._stations[station]._y)
 
-
+    print(x)
+    print(y)
 
 
 
