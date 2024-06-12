@@ -1,6 +1,6 @@
 from code.classes.classes import Region
 from code.algorithms import randomise, randomise2
-from code.visualization.visualize import outputGraph
+from code.visualization.visualize import outputGraph, outputGraphHist
 import time
 
 
@@ -19,15 +19,15 @@ if __name__ == "__main__":
         max_trains = 7
 
         for i in range(max_trains):
-            randomise2.random_route_2(holland)
+            randomise.random_route(holland)
             if holland.is_solution():
                 break
         output = holland.calculate_value()
         all_outputs.append(output)
 
     end = time.time()
-    outputGraph(all_outputs, timeList)
+    # outputGraph(all_outputs, timeList)
+    outputGraphHist(all_outputs, timeList)
 
     
     print(end - start)
-    # outputGraph(times, test)

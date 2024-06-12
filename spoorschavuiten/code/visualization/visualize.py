@@ -4,10 +4,6 @@ import matplotlib.pyplot as plt
 from code.classes.classes import Region
 from adjustText import adjust_text
 
-def moreMaps():
-    fig, maps = plt.subplots(2)
-    return maps
-
 
 def makeMap(region: Region) -> None:
     '''
@@ -129,7 +125,17 @@ def drawUsedConnections(region: Region, color: list) -> None:
 
 def outputGraph(outputs: list, time: list) -> None:
     y = outputs
+    y.sort()
     x = time
     plt.bar(x, y)
     plt.savefig('aantalPuntenMetRandom.png')
+    plt.show()
+
+
+def outputGraphHist(outputs: list, time: list) -> None:
+    y = outputs
+    y.sort()
+    x = time
+    plt.hist(y, bins=10)
+    # plt.savefig('aantalPuntenMetRandom.png')
     plt.show()
