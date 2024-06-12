@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from code.classes.classes import Region
 from adjustText import adjust_text
 
-
+#test
 def makeMap(region: Region) -> None:
     '''
     All stations and connections are imported, stations are made to a dot on the plot.
