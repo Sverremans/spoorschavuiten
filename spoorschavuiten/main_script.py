@@ -1,5 +1,5 @@
 from code.classes.classes import Region
-from code.algorithms import randomise
+from code.algorithms import randomise, randomise2
 from code.visualization.visualize import visualizeMap
 
 if __name__ == "__main__":
@@ -9,7 +9,7 @@ if __name__ == "__main__":
     max_trains = 7
 
     for i in range(max_trains):
-        randomise.random_route_2(holland)
+        randomise2.random_route_2(holland)
         if holland.is_solution():
             break
     holland.generate_output()
