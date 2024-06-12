@@ -28,5 +28,5 @@ visualizeMap(holland, "figures/connectionsInTheNetherlands.png")
 
 onlyLines(holland)
 drawUsedConnections(holland, colors)
-visualizeMap(holland, "figures/onlyLine.png")
+visualizeMap(holland, "figures/onlyLines.png")
 print(len(colors))

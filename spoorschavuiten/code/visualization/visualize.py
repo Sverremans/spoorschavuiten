@@ -147,5 +147,5 @@ def outputGraphHist(outputs: list, time: list) -> None:
     y.sort()
     x = time
     plt.hist(y, bins=10)
-    # plt.savefig('aantalPuntenMetRandom.png')
+    plt.savefig('figures/scoreVerdeling.png')
     plt.show()
