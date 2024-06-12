@@ -1,18 +1,33 @@
 from code.classes.classes import Region
-from code.algorithms import randomise
+from code.algorithms import randomise, randomise2
+from code.visualization.visualize import outputGraph, outputGraphHist
+import time
 
 
 if __name__ == "__main__":
 
+    start = time.time()
     all_outputs = []
-    for i in range(100):
+    times = 10000
+    timeList = []
+
+    for i in range(times):
+        timeList.append(i + 1)
+
+    for i in range(times):
         holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
         max_trains = 7
 
         for i in range(max_trains):
-            randomise.random_route_2(holland)
+            randomise.random_route(holland)
             if holland.is_solution():
                 break
         output = holland.calculate_value()
         all_outputs.append(output)
-    print(all_outputs)
+
+    end = time.time()
+    # outputGraph(all_outputs, timeList)
+    outputGraphHist(all_outputs, timeList)
+
+    
+    print(end - start)
