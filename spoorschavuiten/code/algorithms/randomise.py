@@ -2,14 +2,17 @@ import random
 from code.classes.classes import Route
 
 # BASELINE
-def random_route(regio) -> None:
+def random_route(region) -> None:
+    ''''
+    This function selects a random route for 1 train.
+    '''
     time = 0
     route = Route()
-    current_station = random.choice(list(regio._stations.values()))
+    current_station = random.choice(list(region._stations.values()))
     route.add_station(current_station)
     while time <= 120:
         possible_connections = []
-        for connection in regio._connections:
+        for connection in region._connections:
             if connection._stationA == current_station:
                 possible_connections.append((connection, "f"))
             if connection._stationB == current_station:
@@ -31,5 +34,5 @@ def random_route(regio) -> None:
         route.add_connection(connection)
         route.add_station(current_station)
 
-    regio.add_route(route)
-    regio.update_time(time)
+    region.add_route(route)
+    region.update_time(time)

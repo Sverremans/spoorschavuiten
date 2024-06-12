@@ -4,16 +4,16 @@ from code.classes.classes import Route
 # ########################################################### #
 # This function takes used vs unused connections into account #
 # ########################################################### #
-def random_route_2(regio) -> None:
+def random_route_2(region) -> None:
     time = 0
     route = Route()
-    current_station = random.choice(list(regio._stations.values()))
+    current_station = random.choice(list(region._stations.values()))
     route.add_station(current_station)
     while time <= 120:
         possible_connections = []
         unused_connections = []
         
-        for connection in regio._connections:
+        for connection in region._connections:
             if connection._stationA == current_station:
                 possible_connections.append((connection, "f"))
                 if not connection._used:
@@ -45,5 +45,5 @@ def random_route_2(regio) -> None:
         route.add_connection(connection)
         route.add_station(current_station)
     
-    regio.add_route(route)
-    regio.update_time(time)
+    region.add_route(route)
+    region.update_time(time)
