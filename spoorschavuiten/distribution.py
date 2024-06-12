@@ -5,7 +5,7 @@ from code.algorithms import randomise
 if __name__ == "__main__":
 
     all_outputs = []
-    for i in range(10):
+    for i in range(100):
         holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
         max_trains = 7
 
