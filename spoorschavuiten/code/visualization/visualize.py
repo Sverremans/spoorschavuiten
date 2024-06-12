@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 from code.classes.classes import Region
 from adjustText import adjust_text
 
+def moreMaps():
+    fig, maps = plt.subplots(2)
+    return maps
+
 
 def makeMap(region: Region) -> None:
     '''
@@ -16,32 +20,54 @@ def makeMap(region: Region) -> None:
     xConnection = []
     yConnection = []
 
-# Coordinates Holland
     x = []
     y = []
     drawDots(region, x, y)
     drawLines(region, xConnection, yConnection)
 
-# Coordinates Netherlands
-    # xn = []
-    # yn = []
-    # drawDots(region, xn, yn)
-    # drawLines(region, xConnection, yConnection)
+    plt.grid(False)
+
+
+def makeMapWithNames(region: Region) -> None:
+    '''
+    All stations and connections are imported, stations are made to a dot on the plot.
+    Connections are made to be a line between dots on the plot.  
+    '''
+    plt.style.use('_mpl-gallery')
+    plt.figure(figsize=(6,7.5))
+    xConnection = []
+    yConnection = []
+    x = []
+    y = []
+    drawDotsWithNames(region, x, y)
+    drawLines(region, xConnection, yConnection)
 
     plt.grid(False)
 
 
-def visualizeMap(region: Region) -> None:
+def visualizeMap(region: Region, name: str) -> None:
     '''
     Draws a map of the train network of the Netherlands.
     '''
     # makeMap(region)
     # drawUsedConnections(region)
-    # plt.savefig('verbindingenInNederland.png')
+    plt.savefig(name)
     plt.show()
 
-
 def drawDots(region: Region, x: list, y: list) -> None:
+    '''
+    Draw all stations as dots on the map.
+    '''
+    z = []
+    for station in region._stations:
+        x.append(region._stations[station]._x)
+        y.append(region._stations[station]._y)
+        # z.append(region._stations[station]._name)
+    plt.scatter(x, y, c= "black", s=30)
+    plt.axis("off")
+
+
+def drawDotsWithNames(region: Region, x: list, y: list) -> None:
     '''
     Draw all stations as dots on the map.
     '''
@@ -54,8 +80,10 @@ def drawDots(region: Region, x: list, y: list) -> None:
 
     # for i, txt in enumerate(z):
     #     plt.annotate(txt, (x[i], y[i]))
+
     label = [plt.annotate(txt, (x[i], y[i])) for i, txt in enumerate(z)]
     adjust_text(label)
+    plt.axis("off")
 
 
 def drawLines(region: Region, xList: list, yList: list) -> None:
@@ -78,11 +106,11 @@ def drawLines(region: Region, xList: list, yList: list) -> None:
         yList.clear()
 
 
-def drawUsedConnections(region: Region, xList: list, yList: list, color: str) -> None:
+def drawUsedConnections(region: Region, color: list) -> None:
 # def drawUsedConnections(region: Region) -> None:
     xList = []
     yList = []
-    for route in region._routes:
+    for i, route in enumerate(region._routes):
         for connection in route._route:
             xA = connection._stationA._x
             yA = connection._stationA._y
@@ -93,13 +121,13 @@ def drawUsedConnections(region: Region, xList: list, yList: list, color: str) ->
             yList.append(yA)
             xList.append(xB)
             yList.append(yB)
-            plt.plot(xList, yList, c = color)
+            plt.plot(xList, yList, c = color[i])
             # print(color)
             xList.clear()
             yList.clear()
 
 
-def outputGraph(outputs, time):
+def outputGraph(outputs: list, time: list) -> None:
     y = outputs
     x = time
     plt.bar(x, y)
