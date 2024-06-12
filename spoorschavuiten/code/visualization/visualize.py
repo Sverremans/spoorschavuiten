@@ -24,6 +24,15 @@ def makeMap(region: Region) -> None:
     plt.grid(False)
 
 
+def onlyLines(region):
+    plt.style.use('_mpl-gallery')
+    plt.figure(figsize=(6,7.5))
+    xConnection = []
+    yConnection = []
+
+    drawLines(region, xConnection, yConnection)
+    plt.grid(False)
+
 def makeMapWithNames(region: Region) -> None:
     '''
     All stations and connections are imported, stations are made to a dot on the plot.
@@ -49,6 +58,7 @@ def visualizeMap(region: Region, name: str) -> None:
     # drawUsedConnections(region)
     plt.savefig(name)
     plt.show()
+
 
 def drawDots(region: Region, x: list, y: list) -> None:
     '''
