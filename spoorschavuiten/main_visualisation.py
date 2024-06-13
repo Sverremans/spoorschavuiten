@@ -2,11 +2,11 @@ from code.visualization.visualize import makeMap, visualizeMap, drawUsedConnecti
 from code.classes.classes import Region
 from code.algorithms import randomise, randomise2
 
-holland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
+holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
 
-max_trains = 20
-xConnections = []
-yConnections = []
+max_trains = 7
+# xConnections = []
+# yConnections = []
 colors = ["red", "blue", "pink", "black", "yellow",
         "hotpink", "orange", "violet", "cyan", "purple",
         "maroon", "indigo", "teal", "magenta", "crimson", "palevioletred", 

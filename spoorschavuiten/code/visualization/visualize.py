@@ -1,8 +1,8 @@
-import matplotlib
+import matplotlib # type: ignore
 matplotlib.use("TkAgg")
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 from code.classes.classes import Region
-from adjustText import adjust_text
+from adjustText import adjust_text # type: ignore
 
 #test
 def makeMap(region: Region) -> None:
@@ -106,7 +106,7 @@ def drawLines(region: Region, xList: list, yList: list) -> None:
         yList.append(yA)
         xList.append(xB)
         yList.append(yB)
-        plt.plot(xList, yList, "-", c = "gray")
+        plt.plot(xList, yList, ":", c = "gray")
 
         xList.clear()
         yList.clear()
