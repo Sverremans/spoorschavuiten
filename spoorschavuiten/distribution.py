@@ -1,5 +1,5 @@
 from code.classes.classes import Region
-from code.algorithms import randomise, randomise2
+from code.algorithms import randomise, randomise2, randomWithConstraints
 from code.visualization.visualize import outputGraph, outputGraphHist
 import time
 
