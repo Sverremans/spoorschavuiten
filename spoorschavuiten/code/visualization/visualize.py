@@ -1,8 +1,8 @@
-import matplotlib
+import matplotlib # type: ignore
 matplotlib.use("TkAgg")
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 from code.classes.classes import Region
-from adjustText import adjust_text
+from adjustText import adjust_text # type: ignore
 
 
 def makeMap(region: Region) -> None:
