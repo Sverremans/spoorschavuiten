@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     start = time.time()
     all_outputs = []
-    times = 10000
+    times = 100000
     timeList = []
 
     for i in range(times):
@@ -25,6 +25,7 @@ if __name__ == "__main__":
         output = holland.calculate_value()
         all_outputs.append(output)
 
+    print("Average = " + str(sum(all_outputs) / 100000))
     end = time.time()
     # outputGraph(all_outputs, timeList)
     outputGraphHist(all_outputs, timeList)
