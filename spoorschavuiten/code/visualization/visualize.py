@@ -1,11 +1,11 @@
 import matplotlib # type: ignore
 matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt # type: ignore
-from code.classes.classes import Region
+from code.classes.classes import Schedule
 from adjustText import adjust_text # type: ignore
 
 #test
-def makeMap(region: Region) -> None:
+def makeMap(region: Schedule) -> None:
     '''
     All stations and connections are imported, stations are made to a dot on the plot.
     Connections are made to be a line between dots on the plot.  
@@ -33,7 +33,7 @@ def onlyLines(region):
     drawLines(region, xConnection, yConnection)
     plt.grid(False)
 
-def makeMapWithNames(region: Region) -> None:
+def makeMapWithNames(region: Schedule) -> None:
     '''
     All stations and connections are imported, stations are made to a dot on the plot.
     Connections are made to be a line between dots on the plot.  
@@ -50,7 +50,7 @@ def makeMapWithNames(region: Region) -> None:
     plt.grid(False)
 
 
-def visualizeMap(region: Region, name: str) -> None:
+def visualizeMap(region: Schedule, name: str) -> None:
     '''
     Draws a map of the train network of the Netherlands.
     '''
@@ -60,7 +60,7 @@ def visualizeMap(region: Region, name: str) -> None:
     plt.show()
 
 
-def drawDots(region: Region, x: list, y: list) -> None:
+def drawDots(region: Schedule, x: list, y: list) -> None:
     '''
     Draw all stations as dots on the map.
     '''
@@ -73,7 +73,7 @@ def drawDots(region: Region, x: list, y: list) -> None:
     plt.axis("off")
 
 
-def drawDotsWithNames(region: Region, x: list, y: list) -> None:
+def drawDotsWithNames(region: Schedule, x: list, y: list) -> None:
     '''
     Draw all stations as dots on the map.
     '''
@@ -92,7 +92,7 @@ def drawDotsWithNames(region: Region, x: list, y: list) -> None:
     plt.axis("off")
 
 
-def drawLines(region: Region, xList: list, yList: list) -> None:
+def drawLines(region: Schedule, xList: list, yList: list) -> None:
     '''
     Draw all connections as lines on the map.
     '''
@@ -112,7 +112,7 @@ def drawLines(region: Region, xList: list, yList: list) -> None:
         yList.clear()
 
 
-def drawUsedConnections(region: Region, color: list) -> None:
+def drawUsedConnections(region: Schedule, color: list) -> None:
 # def drawUsedConnections(region: Region) -> None:
     xList = []
     yList = []

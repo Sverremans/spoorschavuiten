@@ -23,9 +23,9 @@ random = Random(schedule, 120, 7)
 random.run()
 
 schedule.generate_output()
-# makeMapWithNames(holland)
-# drawUsedConnections(holland, colors)
-# visualizeMap(holland, "figures/connectionsWithStationNames.png")
+makeMapWithNames(random)
+drawUsedConnections(random, colors)
+visualizeMap(random, "figures/connectionsWithStationNames.png")
 
 # makeMap(holland)
 # drawUsedConnections(holland, colors)
