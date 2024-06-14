@@ -3,8 +3,12 @@ matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt # type: ignore
 from code.classes.classes import Schedule
 from adjustText import adjust_text # type: ignore
+import geopandas as gpd # type: ignore
 
-#test
+# TODO
+# Schrijf een paar functies om zadat deze logische gebruikt kunnen woprden
+
+
 def makeMap(schedule: Schedule) -> None:
     '''
     All stations and connections are imported, stations are made to a dot on the plot.
@@ -18,6 +22,8 @@ def makeMap(schedule: Schedule) -> None:
 
     x = []
     y = []
+
+    drawMapHolland()
     drawDots(schedule, x, y)
     drawLines(schedule, xConnection, yConnection)
 
@@ -25,11 +31,13 @@ def makeMap(schedule: Schedule) -> None:
 
 
 def onlyLines(schedule):
-    plt.style.use('_mpl-gallery')
-    plt.figure(figsize=(6,7.5))
+    # plt.style.use('_mpl-gallery')
+    # plt.figure(figsize=(6,7.5))
     xConnection = []
     yConnection = []
 
+    # drawMapHolland()
+    drawMapNetherlands()
     drawLines(schedule, xConnection, yConnection)
     plt.grid(False)
 
@@ -38,12 +46,14 @@ def makeMapWithNames(schedule: Schedule) -> None:
     All stations and connections are imported, stations are made to a dot on the plot.
     Connections are made to be a line between dots on the plot.  
     '''
-    plt.style.use('_mpl-gallery')
-    plt.figure(figsize=(6,7.5))
+    # plt.style.use('_mpl-gallery')
+    # plt.figure(figsize=(6,7.5))
     xConnection = []
     yConnection = []
     x = []
     y = []
+    # drawMapHolland()
+    drawMapNetherlands()
     drawDotsWithNames(schedule, x, y)
     drawLines(schedule, xConnection, yConnection)
 
@@ -106,7 +116,7 @@ def drawLines(schedule: Schedule, xList: list, yList: list) -> None:
         yList.append(yA)
         xList.append(xB)
         yList.append(yB)
-        plt.plot(xList, yList, ":", c = "gray")
+        plt.plot(xList, yList, ":", c = "black")
 
         xList.clear()
         yList.clear()
@@ -149,3 +159,13 @@ def outputGraphHist(outputs: list, time: list) -> None:
     plt.hist(y, bins=10)
     plt.savefig('figures/scoreVerdeling.png')
     plt.show()
+
+
+def drawMapHolland():
+    mapPlaces = gpd.read_file("data/holland_.geojson")
+    mapPlaces.plot(color = "white", edgecolor = "grey")
+
+
+def drawMapNetherlands():
+    mapPlaces = gpd.read_file("data/netherlands_.geojson") 
+    mapPlaces.plot(color = "white", edgecolor = "grey")
