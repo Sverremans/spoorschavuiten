@@ -1,6 +1,6 @@
 from code.classes.classes import Region, Schedule
 # from code.algorithms import randomise, randomise2, randomWithConstraints
-from code.algorithms import randomWithConstraints as rd
+from spoorschavuiten.code.algorithms import random as rd
 from code.visualization.visualize import *
 import time
 
