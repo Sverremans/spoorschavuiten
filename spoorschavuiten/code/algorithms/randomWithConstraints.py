@@ -5,65 +5,22 @@ from code.classes.classes import Route
 # This function takes used vs unused connections into account #
 # ########################################################### #
 class Random:
-    def __init__(self, region, maxTime: int, maxTrains: int):
-        self.region = region
+    def __init__(self, schedule, maxTime: int, maxTrains: int):
+        # self.region = region
+        self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains
         self.time = 0
 
 
-    def createRandomSolution(self):
-        for _ in range(self.maxTrains):
-            self.createRandomTrajectory()
-            if self.region.is_solution():
-                break
-
-    def createRandomTrajectory(self) -> None:
-        '''
-        This function selects a random route for 1 train.
-        '''
-        time = 0
-        route = Route()
-        current_station = random.choice(list(self.region._stations.values()))
-        route.add_station(current_station)
-        while time <= self.maxTime:
-            possible_connections = []
-            for connection in self.region._connections:
-                if connection._stationA == current_station:
-                    possible_connections.append((connection, "f"))
-                if connection._stationB == current_station:
-                    possible_connections.append((connection, "b"))
-            # choose randomly from possible connections
-            connection, direction = random.choice(possible_connections)
-            time += connection.get_dist()
-            # check if max time exceeded
-            if time > self.maxTime:
-                time -= connection.get_dist()
-                break
-            connection.is_used()
-            # check to move forwards or backwards
-            if direction == "f":
-                current_station = connection._stationB
-            else:
-                current_station = connection._stationA
-
-            route.add_connection(connection)
-            route.add_station(current_station)
-
-        self.region.add_route(route)
-        self.region.update_time(time)
-
-
-
-
     def choose_station(self):
-        return random.choice(list(self.region._stations.values()))
+        return random.choice(list(self.schedule._stations.values()))
 
 
     def get_connections(self, currentStation) -> list:
         connections = []
         # print(self.region._connections)
-        for connection in self.region._connections:
+        for connection in self.schedule._connections:
             # print(connection._stationA)
             # print(connection._stationB)
 
@@ -98,18 +55,18 @@ class Random:
             station = connection._stationA
         return station
     
-    def reset(self):
-        self.region._routes.clear()
-        self.region._time_used = 0
+    # def reset(self):
+    #     self.region._routes.clear()
+    #     self.region._time_used = 0
 
-        for connection in self.region._connections:
-            connection._used = False
+    #     for connection in self.region._connections:
+    #         connection._used = False
 
         # raise NotImplementedError
 
 
     def run(self):
-        self.reset()
+        # self.reset()
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
@@ -131,10 +88,10 @@ class Random:
                 route.add_connection(chosenConnection)
                 route.add_station(currentStation)
 
-            self.region.add_route(route)
-            self.region.update_time(self.time)
+            self.schedule.add_route(route)
+            self.schedule.update_time(self.time)
         # Stop met trajecten leggen als alle verbindingen zijn gemaakt.
-            if self.region.is_solution():
+            if self.schedule.is_solution():
                 break
         # self.reset()
 
