@@ -1,6 +1,6 @@
-from code.classes.classes import Region
+from code.classes.classes import Region, Schedule
 # from code.algorithms import randomise, randomise2, randomWithConstraints
-from code.algorithms import randomWithConstraints as rd
+from spoorschavuiten.code.algorithms import random as rd
 from code.visualization.visualize import *
 import time
 
@@ -21,8 +21,6 @@ if __name__ == "__main__":
     for i in range(times):
         timeList.append(i + 1)
 
-    
-
     for _ in range(times):
         # holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
         # max_trains = 7
@@ -31,17 +29,18 @@ if __name__ == "__main__":
         #     randomise.random_route(holland)
         #     if holland.is_solution():
         #         break
-        randomSolution = rd.Random(holland, 120, 7)
+        schedule = Schedule(holland)
+        randomSolution = rd.Random(schedule, 120, 7)
         randomSolution.run()
-        onlyLines(holland)
-        drawUsedConnections(holland, colors)
-        visualizeMap(holland, "test.png")
+        # onlyLines(holland)
+        # drawUsedConnections(holland, colors)
+        # visualizeMap(holland, "test.png")
 
-        output = randomSolution.region.calculate_value()
-        print(holland.calculate_value())
+        output = randomSolution.schedule.calculate_value()
+        print(schedule.calculate_value())
         all_outputs.append(output)
 
-    print("Average = " + str(sum(all_outputs) / 100000))
+    # print("Average = " + str(sum(all_outputs) / 100000))
     end = time.time()
     # outputGraph(all_outputs, timeList)
     print(all_outputs)

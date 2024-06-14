@@ -1,37 +1,35 @@
 from code.visualization.visualize import makeMap, visualizeMap, drawUsedConnections, outputGraph, makeMapWithNames, onlyLines
-from code.classes.classes import Region
-from code.algorithms import randomise, randomise2, randomWithConstraints
-from code.algorithms.randomWithConstraints import Random
+from code.classes.classes import Region, Schedule
+from code.algorithms import randomise, randomise2
+from code.algorithms.random import Random
+# from spoorschavuiten.code.algorithms import random
 
 holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
-
-max_trains = 7
-# xConnections = []
-# yConnections = []
+netherlands = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
+schedule = Schedule(holland)
+schedule2 = Schedule(netherlands)
 colors = ["red", "blue", "pink", "black", "yellow",
         "hotpink", "orange", "violet", "cyan", "purple",
         "maroon", "indigo", "teal", "magenta", "crimson", "palevioletred", 
-        "salmon", "deepskyblue", "deeppink", "darkviolet", "goldenrod"]
+        "salmon", "deepskyblue", "deeppink", "darkviolet", "goldenrod", "red"]
 
-# for i in range(max_trains):
-#     randomise2.random_route_2(holland)
-#     if holland.is_solution():
-#         break
-
-# randomWithConstraints.createRandomSolution(holland, 120, 7)
-random = Random(holland, 120, 7)
+random = Random(schedule, 120, 7)
 random.run()
 
-holland.generate_output()
-makeMapWithNames(holland)
-drawUsedConnections(holland, colors)
-visualizeMap(holland, "figures/connectionsWithStationNames.png")
+random2 = Random(schedule2, 180, 22)
+random2.run()
 
-# makeMap(holland)
-# drawUsedConnections(holland, colors)
-# visualizeMap(holland, "figures/connectionsInTheNetherlands.png")
+schedule.generate_output()
+schedule2.generate_output()
 
-# onlyLines(holland)
-# drawUsedConnections(holland, colors)
-# visualizeMap(holland, "figures/onlyLines.png")
-# print(len(colors))
+makeMapWithNames(schedule2)
+drawUsedConnections(schedule2, colors)
+visualizeMap(schedule2, "figures/connectionsWithStationNames.png")
+
+makeMap(schedule2)
+drawUsedConnections(schedule2, colors)
+visualizeMap(schedule2, "figures/connectionsInTheNetherlands.png")
+
+onlyLines(schedule2)
+drawUsedConnections(schedule2, colors)
+visualizeMap(schedule2, "figures/onlyLines.png")
