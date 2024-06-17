@@ -1,6 +1,6 @@
 from code.classes.classes import Region, Schedule
 # from code.algorithms import randomise, randomise2, randomWithConstraints
-from spoorschavuiten.code.algorithms import random as rd
+from code.algorithms import random as rd
 from code.visualization.visualize import *
 import time
 
@@ -43,7 +43,7 @@ if __name__ == "__main__":
     # print("Average = " + str(sum(all_outputs) / 100000))
     end = time.time()
     # outputGraph(all_outputs, timeList)
-    print(all_outputs)
+    # print(all_outputs)
     # outputGraphHist(all_outputs, timeList)
 
     

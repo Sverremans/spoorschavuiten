@@ -1,6 +1,8 @@
-from code.classes.classes import Region
-from code.algorithms import randomise, randomise2
+from code.classes.classes import Region, Schedule
+from code.algorithms.random import Random
+from code.algorithms.greedy import Greedy
 from code.visualization.visualize import *
+
 
 if __name__ == "__main__":
 
@@ -12,7 +14,9 @@ if __name__ == "__main__":
     holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
     nederland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
 
+    new_schedule = Schedule(holland)
     max_trains = 7
+    max_time = 120
 
     ### Hier volgt code om hillclimber te testen ###
 
@@ -21,6 +25,9 @@ if __name__ == "__main__":
     ### Hier eindigt code om hillclimber te testen ###
 
 
+    greedy_schedule = Greedy(new_schedule, max_time, max_trains)
+    greedy_schedule.run()
+    greedy_schedule.generate_output()
 
     # for i in range(max_trains):
     #     randomise2.random_route(holland)
