@@ -27,11 +27,20 @@ greedy.run()
 
 # random2 = Random(schedule2, 180, 22)
 # random2.run()
-
-schedule2.generate_output()
 # schedule2.generate_output()
 
-draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
+for i, route in enumerate(schedule2._routes, 1):
+        test = str(f'train_{i},"{route._stations}"')
+        outputToFile(test)
+        outputToFile("\n")
+test = str(f"score,{schedule2.calculate_value()}")
+outputToFile(test)
+outputToFile("\n")
+
+
+# schedule2.generate_output()
+
+# draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
 # draw_figure_without_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
 # draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
 

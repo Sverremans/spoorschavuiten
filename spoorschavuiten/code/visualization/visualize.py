@@ -194,3 +194,14 @@ def outputGraphHist(outputs: list, time: list) -> None:
     plt.hist(y, bins=10)
     plt.savefig('figures/scoreVerdeling.png')
     plt.show()
+
+
+def outputToFile(output):
+    file = open("data/output_file.txt", "a")
+    file.write(output)
+    file.close()
+
+
+    file = open("data/output_file.txt", 'r')
+    print(file.read())
+    file.close()
