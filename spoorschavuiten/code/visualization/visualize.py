@@ -14,7 +14,7 @@ def draw_figure_with_names(schedule: Schedule, colors: list, geojson: str, file_
     '''
     make_map_with_names(schedule, geojson)
     draw_used_connections(schedule, colors)
-    visualize_map(schedule, file_name)
+    visualize_map(file_name)
 
 
 def draw_figure_without_names(schedule: Schedule, colors: list, geojson: str, file_name: str):
@@ -127,11 +127,11 @@ def draw_dots_with_names(schedule: Schedule, x: list, y: list) -> None:
         z.append(schedule._stations[station]._name)
     plt.scatter(x, y, c= "black", s=30)
 
-    # for i, txt in enumerate(z):
-    #     plt.annotate(txt, (x[i], y[i]))
+    for i, txt in enumerate(z):
+        plt.annotate(txt, (x[i], y[i]))
 
-    label = [plt.annotate(txt, (x[i], y[i])) for i, txt in enumerate(z)]
-    adjust_text(label)
+    # label = [plt.annotate(txt, (x[i], y[i])) for i, txt in enumerate(z)]
+    # adjust_text(label)
     plt.axis("off")
 
 

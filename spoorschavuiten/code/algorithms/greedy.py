@@ -56,3 +56,12 @@ class Greedy(Random):
             # Stop met trajecten leggen als alle verbindingen zijn gemaakt.
             if self.schedule.is_solution():
                 break
+
+
+class FixedGreedy(Greedy):
+    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int):
+        self.schedule = schedule
+        self.maxTime = maxTime
+        self.maxTrains = maxTrains
+        self.time = 0
+        random.seed(fixedSeed)
