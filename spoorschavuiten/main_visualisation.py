@@ -1,4 +1,4 @@
-from code.visualization.visualize import makeMap, visualizeMap, drawUsedConnections, outputGraph, makeMapWithNames, onlyLines, drawMapHolland
+from code.visualization.visualize import * # makeMap, visualizeMap, drawUsedConnections, outputGraph, makeMapWithNames, onlyLines, drawMapHolland
 from code.classes.classes import Region, Schedule
 from code.algorithms import randomise, randomise2
 from code.algorithms.random import Random
@@ -24,15 +24,9 @@ random2.run()
 schedule.generate_output()
 schedule2.generate_output()
 
-# makeMapWithNames(schedule)
-# drawUsedConnections(schedule, colors)
-
-
-# visualizeMap(schedule, "figures/connectionsWithStationNames.png")
-
-# makeMap(schedule)
-# drawUsedConnections(schedule, colors)
-# visualizeMap(schedule, "figures/connectionsInTheNetherlands.png")
+# draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
+# draw_figure_without_names(schedule2, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
+draw_figure_no_stations(schedule2, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
 
 # onlyLines(schedule2)
 # drawUsedConnections(schedule2, colors)

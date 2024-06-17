@@ -5,87 +5,120 @@ from code.classes.classes import Schedule
 from adjustText import adjust_text # type: ignore
 import geopandas as gpd # type: ignore
 
-# TODO
-# Schrijf een paar functies om zadat deze logische gebruikt kunnen woprden
 
-
-def makeMap(schedule: Schedule) -> None:
+def draw_figure_with_names(schedule: Schedule, colors: list, geojson: str, file_name: str):
     '''
-    All stations and connections are imported, stations are made to a dot on the plot.
-    Connections are made to be a line between dots on the plot.  
+    This function starts with drawing the desired region, the geojson file, with station names.
+    It uses the schedule that is made to draw the used connections of the routes.
+    The last step it takes in plotting the drawing and saving it as a picture.
     '''
+    make_map_with_names(schedule, geojson)
+    draw_used_connections(schedule, colors)
+    visualize_map(schedule, file_name)
 
-    plt.style.use('_mpl-gallery')
-    plt.figure(figsize=(6,7.5))
+
+def draw_figure_without_names(schedule: Schedule, colors: list, geojson: str, file_name: str):
+    '''
+    This function starts with drawing the desired region, the geojson file, without station names.
+    It uses the schedule that is made to draw the used connections of the routes.
+    The last step it takes in plotting the drawing and saving it as a picture.
+    '''
+    make_map(schedule, geojson)
+    draw_used_connections(schedule, colors)
+    visualize_map(file_name)
+
+
+def draw_figure_no_stations(schedule: Schedule, colors: list, geojson: str, file_name: str):
+    '''
+    This function starts with drawing the desired region, the geojson file, without station, only connections.
+    It uses the schedule that is made to draw the used connections of the routes.
+    The last step it takes in plotting the drawing and saving it as a picture.
+    '''
+    only_lines(schedule, geojson)
+    draw_used_connections(schedule, colors)
+    visualize_map(file_name)
+
+
+def draw_map_background(file_name: str):
+    '''
+    Imports a geojason file, and uses geopandas to read and plot the file.
+    '''
+    mapPlaces = gpd.read_file(file_name)
+    mapPlaces.plot(color = "white", edgecolor = "grey")
+
+
+def make_map(schedule: Schedule, geojson: str) -> None:
+    '''
+    All stations and connections are imported, stations are made to be a dot on the plot.
+    Connections are made to be a dotted line between dots on the plot.  
+    '''
     xConnection = []
     yConnection = []
-
     x = []
     y = []
 
-    drawMapHolland()
-    drawDots(schedule, x, y)
-    drawLines(schedule, xConnection, yConnection)
+    draw_map_background(geojson)
+
+    draw_dots(schedule, x, y)
+    draw_lines(schedule, xConnection, yConnection)
 
     plt.grid(False)
 
 
-def onlyLines(schedule):
-    # plt.style.use('_mpl-gallery')
-    # plt.figure(figsize=(6,7.5))
-    xConnection = []
-    yConnection = []
-
-    # drawMapHolland()
-    drawMapNetherlands()
-    drawLines(schedule, xConnection, yConnection)
-    plt.grid(False)
-
-def makeMapWithNames(schedule: Schedule) -> None:
+def make_map_with_names(schedule: Schedule, geojson: str) -> None:
     '''
     All stations and connections are imported, stations are made to a dot on the plot.
-    Connections are made to be a line between dots on the plot.  
+    Connections are made to be a line between dots on the plot.
+    Names of the different stations are added in the plot.  
     '''
-    # plt.style.use('_mpl-gallery')
-    # plt.figure(figsize=(6,7.5))
     xConnection = []
     yConnection = []
     x = []
     y = []
-    # drawMapHolland()
-    drawMapNetherlands()
-    drawDotsWithNames(schedule, x, y)
-    drawLines(schedule, xConnection, yConnection)
+    draw_map_background(geojson)
+
+    draw_dots_with_names(schedule, x, y)
+    draw_lines(schedule, xConnection, yConnection)
 
     plt.grid(False)
 
 
-def visualizeMap(schedule: Schedule, name: str) -> None:
+def only_lines(schedule: Schedule, geojson: str) -> None:
     '''
-    Draws a map of the train network of the Netherlands.
+    All connections are imported, connections are made to be a dotted line between stations on the plot.
+    The stations themselves are not shown in this plot.  
     '''
-    # makeMap(schedule)
-    # drawUsedConnections(schedule)
+    xConnection = []
+    yConnection = []
+
+    draw_map_background(geojson)
+
+    draw_lines(schedule, xConnection, yConnection)
+    plt.grid(False)
+
+
+def visualize_map(name: str) -> None:
+    '''
+    Draws a map of the train network of the desired region, it saves this picture in a file.
+    '''
     plt.savefig(name)
     plt.show()
 
 
-def drawDots(schedule: Schedule, x: list, y: list) -> None:
+def draw_dots(schedule: Schedule, x: list, y: list) -> None:
     '''
-    Draw all stations as dots on the map.
+    Draws all stations as dots on the map.
     '''
-    z = []
     for station in schedule._stations:
         x.append(schedule._stations[station]._x)
         y.append(schedule._stations[station]._y)
-        # z.append(schedule._stations[station]._name)
     plt.scatter(x, y, c= "black", s=30)
     plt.axis("off")
 
 
-def drawDotsWithNames(schedule: Schedule, x: list, y: list) -> None:
+def draw_dots_with_names(schedule: Schedule, x: list, y: list) -> None:
     '''
-    Draw all stations as dots on the map.
+    Draws all stations as dots on the map, also adds the name of the station to the plot.
     '''
     z = []
     for station in schedule._stations:
@@ -102,9 +135,9 @@ def drawDotsWithNames(schedule: Schedule, x: list, y: list) -> None:
     plt.axis("off")
 
 
-def drawLines(schedule: Schedule, xList: list, yList: list) -> None:
+def draw_lines(schedule: Schedule, xList: list, yList: list) -> None:
     '''
-    Draw all connections as lines on the map.
+    Draws all connections as lines on the map.
     '''
     for connection in schedule._connections:
         xA = connection._stationA._x
@@ -122,8 +155,10 @@ def drawLines(schedule: Schedule, xList: list, yList: list) -> None:
         yList.clear()
 
 
-def drawUsedConnections(schedule: Schedule, color: list) -> None:
-# def drawUsedConnections(schedule: schedule) -> None:
+def draw_used_connections(schedule: Schedule, color: list) -> None:
+    '''
+    Draws all connections used in a route, all routes in the schedule get a different color. 
+    '''
     xList = []
     yList = []
     for i, route in enumerate(schedule._routes):
@@ -159,13 +194,3 @@ def outputGraphHist(outputs: list, time: list) -> None:
     plt.hist(y, bins=10)
     plt.savefig('figures/scoreVerdeling.png')
     plt.show()
-
-
-def drawMapHolland():
-    mapPlaces = gpd.read_file("data/holland_.geojson")
-    mapPlaces.plot(color = "white", edgecolor = "grey")
-
-
-def drawMapNetherlands():
-    mapPlaces = gpd.read_file("data/netherlands_.geojson") 
-    mapPlaces.plot(color = "white", edgecolor = "grey")
