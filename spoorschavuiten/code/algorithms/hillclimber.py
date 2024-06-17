@@ -1,6 +1,9 @@
 import copy, random
 from code.algorithms.greedy import Greedy
 
+# NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219. Dit komt zeer in de buurt (9190).
+# TODO kijk eens naar deze manual: https://realpython.com/python-property/
+
 class HillClimber:
     def __init__(self, schedule, region, maxTrains, maxTime):
         # Maak een kopie van Schedule-object
@@ -63,7 +66,9 @@ class HillClimber:
     def check_solution(self):
         # Vergelijk waarden doelfuncties
         calc_value = self._newSchedule.calculate_value()
-        if calc_value > self._value:
+        
+        # Note that we allow equality to increase our chances of finding a better schedule later
+        if calc_value >= self._value:
             # Sla nieuw Schedule op indien het beter is
             self._value = calc_value
             self._oldSchedule = self._newSchedule
