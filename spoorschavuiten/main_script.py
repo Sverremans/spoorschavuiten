@@ -2,6 +2,7 @@ from code.classes.classes import Region, Schedule
 from code.algorithms.random import Random
 from code.algorithms.greedy import Greedy
 from code.visualization.visualize import *
+from code.algorithms.hillclimber import HillClimber as hc
 
 
 if __name__ == "__main__":
@@ -14,20 +15,32 @@ if __name__ == "__main__":
     holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
     nederland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
 
-    new_schedule = Schedule(holland)
-    max_trains = 7
-    max_time = 120
+    # new_schedule = Schedule(holland)
+    # max_trains = 7
+    # max_time = 120
+
+    # greedy_schedule = Greedy(new_schedule, max_time, max_trains)
+    # greedy_schedule.run()
+    # greedy_schedule.generate_output()
 
     ### Hier volgt code om hillclimber te testen ###
 
-    schedule = Schedule(holland)
-
-    ### Hier eindigt code om hillclimber te testen ###
-
-
+    new_schedule = Schedule(holland)
+    max_trains = 7
+    max_time = 120
     greedy_schedule = Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
-    greedy_schedule.generate_output()
+
+    hillClimber = hc(new_schedule, holland, max_time, max_trains)
+    hillClimber.mutate_schedule(7)
+    hillClimber.update_used_connections()
+    used = 0
+    for connection in hillClimber._schedule._connections:
+        if connection._used:
+            used += 1
+    print(used)
+
+    ### Hier eindigt code om hillclimber te testen ###
 
     # for i in range(max_trains):
     #     randomise2.random_route(holland)

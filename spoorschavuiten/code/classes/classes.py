@@ -25,6 +25,9 @@ class Connection:
 
     def is_used(self):
         self._used = True
+
+    def not_used(self):
+        self._used = False
     
     def __repr__(self) -> str:
         return f"{self._stationA} naar {self._stationB}"
