@@ -32,13 +32,9 @@ if __name__ == "__main__":
     greedy_schedule.run()
 
     hillClimber = hc(new_schedule, holland, max_time, max_trains)
-    hillClimber.mutate_schedule(7)
-    hillClimber.update_used_connections()
-    used = 0
-    for connection in hillClimber._schedule._connections:
-        if connection._used:
-            used += 1
-    print(used)
+    hillClimber.run(1000, 4)
+    hillClimber.generate_output()
+
 
     ### Hier eindigt code om hillclimber te testen ###
 
