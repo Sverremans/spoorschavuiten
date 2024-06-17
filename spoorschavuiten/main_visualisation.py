@@ -3,6 +3,7 @@ from code.classes.classes import Region, Schedule
 from code.algorithms import randomise, randomise2
 from code.algorithms.random import Random, FixedRandom
 from code.algorithms.greedy import FixedGreedy
+from code.algorithms.hillclimber import HillClimber
 
 # import geopandas as gpd # type: ignore
 # from spoorschavuiten.code.algorithms import random
@@ -22,26 +23,38 @@ colors = ["red", "blue", "pink", "grey", "yellow",
 # random = FixedRandom(schedule, 120, 7, 5)
 # random.run()
 
-greedy = FixedGreedy(schedule2, 120, 7, 5)
-greedy.run()
+# greedy = FixedGreedy(schedule2, 120, 7, 5)
+# greedy.run()
 
 # random2 = Random(schedule2, 180, 22)
 # random2.run()
 # schedule2.generate_output()
 
-for i, route in enumerate(schedule2._routes, 1):
-        test = str(f'train_{i},"{route._stations}"')
-        outputToFile(test)
-        outputToFile("\n")
-test = str(f"score,{schedule2.calculate_value()}")
-outputToFile(test)
-outputToFile("\n")
 
+
+
+# new_schedule = Schedule(holland)
+max_trains = 7
+max_time = 120
+greedy_schedule = FixedGreedy(schedule, 120, 7, 5)
+greedy_schedule.run()
+
+hillClimber = HillClimber(schedule, holland, 120, 7)
+hillClimber.run(100000, 4)
+test = str(hillClimber.generate_output())
+print(test)
+# for i, route in enumerate(schedule._routes, 1):
+#         test = str(f'train_{i},"{route._stations}"')
+#         outputToFile(test)
+#         outputToFile("\n")
+# test = str(f"score,{schedule.calculate_value()}")
+# outputToFile(test)
+# outputToFile("\n")
 
 # schedule2.generate_output()
 
 # draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
-# draw_figure_without_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
+draw_figure_without_names(hillClimber._newSchedule, colors, "data/holland_.geojson", "figures/test.jpg")
 # draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
 
 # onlyLines(schedule2)
