@@ -14,11 +14,19 @@ if __name__ == "__main__":
 
     max_trains = 7
 
-    for i in range(max_trains):
-        randomise2.random_route(holland)
-        if holland.is_solution():
-            break
-    holland.generate_output()
+    ### Hier volgt code om hillclimber te testen ###
+
+    schedule = Schedule(holland)
+
+    ### Hier eindigt code om hillclimber te testen ###
+
+
+
+    # for i in range(max_trains):
+    #     randomise2.random_route(holland)
+    #     if holland.is_solution():
+    #         break
+    # holland.generate_output()
 
     #makeMapWithNames(holland)
     #drawUsedConnections(holland, colors)
