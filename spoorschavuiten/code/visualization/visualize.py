@@ -201,11 +201,6 @@ def writeInFile(text: str):
     file.write(text)
     file.close()
 
-
-    # file = open("data/output_file.txt", 'r')
-    # print(file.read())
-    # file.close()
-
 def outputToFile(schedule: Schedule, title: str):
     '''
     Writes the generated output in a desired textfile.
@@ -223,3 +218,12 @@ def outputToFile(schedule: Schedule, title: str):
     writeInFile("\n")
     writeInFile("\n")
     writeInFile("\n")
+
+
+def makeScatterGraph(x: list, y: list):
+    plt.scatter(x, y, c= "black", s=30)
+    plt.plot(x, y)
+    plt.title("Hill Climber Algortime")
+    plt.xlabel("Iteraties")
+    plt.ylabel("Score")
+    plt.show()

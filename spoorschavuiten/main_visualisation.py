@@ -16,8 +16,8 @@ colors = ["red", "blue", "pink", "grey", "yellow",
         "maroon", "indigo", "teal", "magenta", "crimson", "palevioletred", 
         "salmon", "deepskyblue", "deeppink", "darkviolet", "goldenrod", "red"]
 
-# random = Random(schedule, 120, 7)
-# random.run()
+random = Random(schedule, 120, 7)
+random.run()
 
 # random = FixedRandom(schedule, 120, 7, 5)
 # random.run()
@@ -30,20 +30,22 @@ colors = ["red", "blue", "pink", "grey", "yellow",
 # schedule2.generate_output()
 
 # new_schedule = Schedule(holland)
-max_trains = 7
-max_time = 120
-greedy_schedule = Greedy(schedule2, 8, 20)
-greedy_schedule.run()
+# greedy_schedule = Greedy(schedule2, 180, 20)
+# greedy_schedule.run()
 
-hillClimber = HillClimber(schedule2, holland, 180, 20)
-hillClimber.run(100000, 15)
+hillClimber = HillClimber(schedule, holland, 120, 7)
+hillClimber.run(10000, 4)
 
 # hillClimber.generate_output_to_file()
 # hillClimber.generate_output()
-outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 1000 iterations.")
+outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 10000 iterations.")
+# print(hillClimber.scores)
+# print(hillClimber.iterations)
+
+makeScatterGraph(hillClimber.iterations, hillClimber.scores)
 
 # schedule2.generate_output()
 
 # draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
-draw_figure_without_names(hillClimber._newSchedule, colors, "data/netherlands_.geojson", "figures/test.jpg")
+draw_figure_without_names(hillClimber._newSchedule, colors, "data/holland_.geojson", "figures/test.jpg")
 # draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
