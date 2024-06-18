@@ -220,9 +220,11 @@ def outputToFile(schedule: Schedule, title: str):
     writeInFile("\n")
 
 
-def makeScatterGraph(x: list, y: list):
+def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list ):
     plt.scatter(x, y, c= "black", s=30)
-    plt.plot(x, y)
+    
+    plt.plot(xpoints, ypoints)
+
     plt.title("Hill Climber Algortime")
     plt.xlabel("Iteraties")
     plt.ylabel("Score")

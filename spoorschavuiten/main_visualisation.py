@@ -42,7 +42,7 @@ outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algori
 # print(hillClimber.scores)
 # print(hillClimber.iterations)
 
-makeScatterGraph(hillClimber.iterations, hillClimber.scores)
+makeHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores)
 
 # schedule2.generate_output()
 
