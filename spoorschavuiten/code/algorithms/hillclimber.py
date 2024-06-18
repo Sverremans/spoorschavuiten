@@ -5,7 +5,7 @@ from code.algorithms.greedy import Greedy
 # TODO kijk eens naar deze manual: https://realpython.com/python-property/
 
 class HillClimber:
-    def __init__(self, schedule, region, maxTrains, maxTime):
+    def __init__(self, schedule, region, maxTrains, maxTime) -> None:
         # Maak een kopie van Schedule-object
         self._oldSchedule = schedule
         self._newSchedule = copy.deepcopy(schedule)
@@ -14,8 +14,10 @@ class HillClimber:
         self._region = region
         self._maxTrains = maxTrains
         self._maxTime = maxTime
+        self.scores = []
+        self.iterations = []
 
-    def mutate_train(self):
+    def mutate_train(self) -> None:
         # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
         unused_connections = []
         for connection in self._newSchedule._connections:
@@ -27,7 +29,7 @@ class HillClimber:
             new_greedy.run()
 
 
-    def mutate_schedule(self, nr_of_trains=1):
+    def mutate_schedule(self, nr_of_trains=1) -> None:
         # Verwijder n treinen
         if nr_of_trains > len(self._newSchedule._routes):
             nr_of_trains = len(self._newSchedule._routes)
@@ -50,7 +52,7 @@ class HillClimber:
         for _ in range(nr_of_trains):
             self.mutate_train()
 
-    def update_used_connections(self):
+    def update_used_connections(self) -> None:
         """Updates the 'used' boolean of connection"""
         used_connections = set()
         for route in self._newSchedule._routes:
@@ -63,7 +65,7 @@ class HillClimber:
                 connection.not_used()
             
 
-    def check_solution(self):
+    def check_solution(self) -> bool:
         # Vergelijk waarden doelfuncties
         calc_value = self._newSchedule.calculate_value()
         
@@ -74,21 +76,25 @@ class HillClimber:
             self._oldSchedule = self._newSchedule
             self._newSchedule = copy.deepcopy(self._oldSchedule)
             # print("Verbetering gevonden")
+            return True
+        return False
 
-    def generate_output(self):
-        self._oldSchedule.generate_output()
+    def generate_output(self) -> None:
+        self._newSchedule.generate_output()
 
-    def run(self, iterations, nr_of_trains=1):
+    def run(self, iterations, nr_of_trains=1) -> None:
         # Sla iterations op
         self._iterations = iterations
 
         # Loop over de iterations
-        for _ in range(self._iterations):
+        for i in range(self._iterations):
             # Doe mutate_schedule(nr_of_trains)
             self.mutate_schedule(nr_of_trains)
 
             # Doe check_solution()
-            self.check_solution()
+            if self.check_solution():
+                self.scores.append(self._value)
+                self.iterations.append(i + 1)
 
         # Set newSchedule to be the last improving solution
         self._newSchedule = self._oldSchedule
