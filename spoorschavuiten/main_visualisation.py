@@ -33,7 +33,7 @@ random.run()
 # greedy_schedule = Greedy(schedule2, 180, 20)
 # greedy_schedule.run()
 
-hillClimber = HillClimber(schedule, holland, 120, 7)
+hillClimber = HillClimber(schedule, 120, 7)
 hillClimber.run(10000, 4)
 
 # hillClimber.generate_output_to_file()

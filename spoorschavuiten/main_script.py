@@ -31,7 +31,7 @@ if __name__ == "__main__":
     greedy_schedule = Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
 
-    hillClimber = hc(new_schedule, holland, max_time, max_trains)
+    hillClimber = hc(new_schedule, max_time, max_trains)
     hillClimber.run(10000, 4)
     hillClimber.generate_output()
 

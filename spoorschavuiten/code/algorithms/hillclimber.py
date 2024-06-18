@@ -5,13 +5,12 @@ from code.algorithms.greedy import Greedy
 # TODO kijk eens naar deze manual: https://realpython.com/python-property/
 
 class HillClimber:
-    def __init__(self, schedule, region, maxTrains, maxTime) -> None:
+    def __init__(self, schedule, maxTrains, maxTime) -> None:
         # Maak een kopie van Schedule-object
         self._oldSchedule = schedule
         self._newSchedule = copy.deepcopy(schedule)
         # Bereken de doelfuntie
         self._value = schedule.calculate_value()
-        self._region = region
         self._maxTrains = maxTrains
         self._maxTime = maxTime
         
