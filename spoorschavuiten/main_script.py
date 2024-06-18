@@ -35,11 +35,6 @@ if __name__ == "__main__":
     hillClimber.run(10000, 4)
     hillClimber.generate_output()
 
-    print(hillClimber.scores)
-    print(hillClimber.iterations_list)
-    print(len(hillClimber.scores))
-    print(len(hillClimber.iterations_list))
-
     ### Hier eindigt code om hillclimber te testen ###
 
     # for i in range(max_trains):

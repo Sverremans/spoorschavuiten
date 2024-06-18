@@ -14,8 +14,11 @@ class HillClimber:
         self._region = region
         self._maxTrains = maxTrains
         self._maxTime = maxTime
-        self.scores = [0]
+        
+        self.scores = [schedule.calculate_value()]
         self.iterations_list = []
+        self.scoresPoints = []
+        self.iterations_listPoints = []
 
     def mutate_train(self) -> None:
         # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
@@ -99,6 +102,10 @@ class HillClimber:
                 self.scores.append(self._value)
                 self.iterations_list.append(i + 1)
                 self.iterations_list.append(i + 1)
+
+                self.scoresPoints.append(self._value)
+                self.iterations_listPoints.append(i + 1)
+
         self.iterations_list.append(self._iterations)
 
         # Set newSchedule to be the last improving solution
