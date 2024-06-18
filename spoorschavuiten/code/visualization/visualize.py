@@ -196,12 +196,30 @@ def outputGraphHist(outputs: list, time: list) -> None:
     plt.show()
 
 
-def outputToFile(output):
+def writeInFile(text: str):
     file = open("data/output_file.txt", "a")
-    file.write(output)
+    file.write(text)
     file.close()
 
 
-    file = open("data/output_file.txt", 'r')
-    print(file.read())
-    file.close()
+    # file = open("data/output_file.txt", 'r')
+    # print(file.read())
+    # file.close()
+
+def outputToFile(schedule: Schedule, title: str):
+    '''
+    Writes the generated output in a desired textfile.
+    title: The name of the used algorithm.
+    '''
+    writeInFile(title)
+    writeInFile("\n")
+    writeInFile("\n")
+    writeInFile("train,stations")
+    writeInFile("\n")
+    for i, route in enumerate(schedule._routes, 1):
+        writeInFile(f'train_{i},"{route._stations}')
+        writeInFile("\n")
+    writeInFile(f"score,{schedule.calculate_value()}")
+    writeInFile("\n")
+    writeInFile("\n")
+    writeInFile("\n")

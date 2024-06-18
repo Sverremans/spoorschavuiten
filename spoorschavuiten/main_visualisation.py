@@ -1,8 +1,7 @@
 from code.visualization.visualize import * # makeMap, visualizeMap, drawUsedConnections, outputGraph, makeMapWithNames, onlyLines, drawMapHolland
 from code.classes.classes import Region, Schedule
-from code.algorithms import randomise, randomise2
 from code.algorithms.random import Random, FixedRandom
-from code.algorithms.greedy import FixedGreedy
+from code.algorithms.greedy import FixedGreedy, Greedy
 from code.algorithms.hillclimber import HillClimber
 
 # import geopandas as gpd # type: ignore
@@ -30,33 +29,21 @@ colors = ["red", "blue", "pink", "grey", "yellow",
 # random2.run()
 # schedule2.generate_output()
 
-
-
-
 # new_schedule = Schedule(holland)
 max_trains = 7
 max_time = 120
-greedy_schedule = FixedGreedy(schedule, 120, 7, 5)
+greedy_schedule = Greedy(schedule2, 8, 20)
 greedy_schedule.run()
 
-hillClimber = HillClimber(schedule, holland, 120, 7)
-hillClimber.run(10000, 4)
-test = str(hillClimber.generate_output())
-print(test)
-# for i, route in enumerate(schedule._routes, 1):
-#         test = str(f'train_{i},"{route._stations}"')
-#         outputToFile(test)
-#         outputToFile("\n")
-# test = str(f"score,{schedule.calculate_value()}")
-# outputToFile(test)
-# outputToFile("\n")
+hillClimber = HillClimber(schedule2, holland, 180, 20)
+hillClimber.run(100000, 15)
+
+# hillClimber.generate_output_to_file()
+# hillClimber.generate_output()
+outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 1000 iterations.")
 
 # schedule2.generate_output()
 
 # draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
-draw_figure_without_names(hillClimber._newSchedule, colors, "data/holland_.geojson", "figures/test.jpg")
+draw_figure_without_names(hillClimber._newSchedule, colors, "data/netherlands_.geojson", "figures/test.jpg")
 # draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
-
-# onlyLines(schedule2)
-# drawUsedConnections(schedule2, colors)
-# visualizeMap(schedule2, "figures/onlyLines.png")
