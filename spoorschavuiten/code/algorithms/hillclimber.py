@@ -89,3 +89,6 @@ class HillClimber:
 
             # Doe check_solution()
             self.check_solution()
+
+        # Set newSchedule to be the last improving solution
+        self._newSchedule = self._oldSchedule

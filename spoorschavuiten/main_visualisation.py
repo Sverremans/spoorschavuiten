@@ -40,7 +40,7 @@ greedy_schedule = FixedGreedy(schedule, 120, 7, 5)
 greedy_schedule.run()
 
 hillClimber = HillClimber(schedule, holland, 120, 7)
-hillClimber.run(100000, 4)
+hillClimber.run(10000, 4)
 test = str(hillClimber.generate_output())
 print(test)
 # for i, route in enumerate(schedule._routes, 1):
