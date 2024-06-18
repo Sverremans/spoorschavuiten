@@ -14,8 +14,8 @@ class HillClimber:
         self._region = region
         self._maxTrains = maxTrains
         self._maxTime = maxTime
-        self.scores = []
-        self.iterations = []
+        self.scores = [0]
+        self.iterations_list = []
 
     def mutate_train(self) -> None:
         # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
@@ -91,10 +91,15 @@ class HillClimber:
             # Doe mutate_schedule(nr_of_trains)
             self.mutate_schedule(nr_of_trains)
 
+
+            # TODO: lees over generators https://realpython.com/introduction-to-python-generators/
             # Doe check_solution()
             if self.check_solution():
                 self.scores.append(self._value)
-                self.iterations.append(i + 1)
+                self.scores.append(self._value)
+                self.iterations_list.append(i + 1)
+                self.iterations_list.append(i + 1)
+        self.iterations_list.append(self._iterations)
 
         # Set newSchedule to be the last improving solution
         self._newSchedule = self._oldSchedule
