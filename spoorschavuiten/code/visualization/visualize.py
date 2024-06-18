@@ -61,7 +61,6 @@ def make_map(schedule: Schedule, geojson: str) -> None:
 
     draw_dots(schedule, x, y)
     draw_lines(schedule, xConnection, yConnection)
-
     plt.grid(False)
 
 
@@ -101,6 +100,7 @@ def visualize_map(name: str) -> None:
     '''
     Draws a map of the train network of the desired region, it saves this picture in a file.
     '''
+    plt.axis('off')
     plt.savefig(name)
     plt.show()
 
@@ -225,7 +225,8 @@ def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list ):
     
     plt.plot(xpoints, ypoints)
 
-    plt.title("Hill Climber Algortime")
+    plt.title("Hill Climber-Algoritme")
     plt.xlabel("Iteraties")
     plt.ylabel("Score")
+    plt.savefig("data/hillClimber.jpg")
     plt.show()
