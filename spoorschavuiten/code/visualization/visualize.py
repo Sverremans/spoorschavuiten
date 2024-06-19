@@ -196,31 +196,32 @@ def outputGraphHist(outputs: list, time: list) -> None:
     plt.show()
 
 
-def writeInFile(text: str):
-    file = open("data/output_file.csv", "a")
+def writeInFile(text: str, file: str):
+    file = open(file, "a")
     file.write(text)
     file.close()
 
-def outputToFile(schedule: Schedule, title: str):
+
+def outputToFile(schedule: Schedule, title: str, file: str):
     '''
     Writes the generated output in a desired textfile.
     title: The name of the used algorithm.
     '''
-    writeInFile(title)
-    writeInFile("\n")
-    writeInFile("\n")
-    writeInFile("train,stations")
-    writeInFile("\n")
+    writeInFile(title, file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
+    writeInFile("train,stations", file)
+    writeInFile("\n", file)
     for i, route in enumerate(schedule._routes, 1):
-        writeInFile(f'train_{i},"{route._stations}"')
-        writeInFile("\n")
-    writeInFile(f"score,{schedule.calculate_value()}")
-    writeInFile("\n")
-    writeInFile("\n")
-    writeInFile("\n")
+        writeInFile(f'train_{i},"{route._stations}"', file)
+        writeInFile("\n", file)
+    writeInFile(f"score,{schedule.calculate_value()}", file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
 
 
-def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list ):
+def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list):
     plt.scatter(x, y, c= "black", s=30)
     
     plt.plot(xpoints, ypoints)
@@ -232,3 +233,29 @@ def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list ):
     plt.xscale("log")
     plt.savefig("data/hillClimber.jpg")
     plt.show()
+
+
+def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title: str, file: str):
+    writeInFile(title, file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
+    writeInFile(f'"x, punten voor lijn tekenen", "{x}"', file)
+    writeInFile("\n", file)
+    writeInFile(f'"y, punten voor lijn tekenen", "{y}"', file)
+    writeInFile("\n", file)
+    writeInFile(f'"x, punten van verbetering", "{xpoints}"', file)
+    writeInFile("\n", file)
+    writeInFile(f'"y, punten van verbetering", "{ypoints}"', file)
+    writeInFile("\n", file)
+
+
+def routesToFile(schedule: Schedule, title, file):
+    writeInFile(title, file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
+    for i, route in enumerate(schedule._routes, 1):
+        writeInFile(f'train_{i},"{route._route}"', file)
+        writeInFile("\n", file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
