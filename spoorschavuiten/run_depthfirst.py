@@ -10,4 +10,4 @@ max_time = 120
 depth_first = DepthFirst(new_schedule, max_time, max_trains)
 depth_first.run()
 
-outputToFile(depth_first.schedule, "Depht First algorithm output, 19/6/2024", "data/depthfirst_schedule.csv")
+routesToFile(depth_first.schedule, "Depht First algorithm output, 19/6/2024", "data/depthfirst_route.csv")
