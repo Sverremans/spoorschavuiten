@@ -16,36 +16,39 @@ colors = ["red", "blue", "pink", "grey", "yellow",
         "maroon", "indigo", "teal", "magenta", "crimson", "palevioletred", 
         "salmon", "deepskyblue", "deeppink", "darkviolet", "goldenrod", "red"]
 
-random = Random(schedule, 120, 7)
-random.run()
+# make_map_with_names(schedule, "data/holland_2.geojson")
+# visualize_map("figures/test2.jpg")
 
-# random = FixedRandom(schedule, 120, 7, 5)
+# random = Random(schedule, 120, 7)
 # random.run()
 
-# greedy = FixedGreedy(schedule2, 120, 7, 5)
-# greedy.run()
+# # random = FixedRandom(schedule, 120, 7, 5)
+# # random.run()
 
-# random2 = Random(schedule2, 180, 22)
-# random2.run()
-# schedule2.generate_output()
+# # greedy = FixedGreedy(schedule2, 120, 7, 5)
+# # greedy.run()
+
+# # random2 = Random(schedule2, 180, 22)
+# # random2.run()
+# # schedule2.generate_output()
 
 # new_schedule = Schedule(holland)
-# greedy_schedule = Greedy(schedule2, 180, 20)
-# greedy_schedule.run()
+greedy_schedule = Greedy(schedule, 180, 20)
+greedy_schedule.run()
 
-hillClimber = HillClimber(schedule, 120, 7)
-hillClimber.run(10000, 4)
+hillClimber = HillClimber(schedule, holland, 120, 7)
+hillClimber.run(500000, 4)
 
-# hillClimber.generate_output_to_file()
-# hillClimber.generate_output()
-outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 10000 iterations.")
-# print(hillClimber.scores)
-# print(hillClimber.iterations)
+# # hillClimber.generate_output_to_file()
+# # hillClimber.generate_output()
+outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 100000 iterations. 18-06-24 16:11")
+# # print(hillClimber.scores)
+# # print(hillClimber.iterations)
 
 makeHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores)
 
-# schedule2.generate_output()
+# # schedule2.generate_output()
 
-# draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
+# # draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
 draw_figure_without_names(hillClimber._newSchedule, colors, "data/holland_.geojson", "figures/test.jpg")
-# draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
+# # draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
