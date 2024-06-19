@@ -109,3 +109,40 @@ class HillClimber:
 
         # Set newSchedule to be the last improving solution
         self._newSchedule = self._oldSchedule
+
+class HcStopCondition(HillClimber):
+    """Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden"""
+    def run(self, iterations, nr_of_trains=1) -> None:
+        # Sla iterations op
+        self._iterations = iterations
+        no_improvement_counter = 0
+
+        # Loop over de iterations
+        for i in range(self._iterations):
+            # Stop als er geen verbetering is na 100000 iteraties
+            if no_improvement_counter >= 100000:
+                break
+            
+            # Doe mutate_schedule(nr_of_trains)
+            self.mutate_schedule(nr_of_trains)
+
+
+            # TODO: lees over generators https://realpython.com/introduction-to-python-generators/
+            # Doe check_solution()
+            if self.check_solution():
+                self.scores.append(self._value)
+                self.scores.append(self._value)
+                self.iterations_list.append(i + 1)
+                self.iterations_list.append(i + 1)
+
+                self.scoresPoints.append(self._value)
+                self.iterations_listPoints.append(i + 1)
+
+                no_improvement_counter = 0
+            else:
+                no_improvement_counter += 1
+
+        self.iterations_list.append(self._iterations)
+
+        # Set newSchedule to be the last improving solution
+        self._newSchedule = self._oldSchedule

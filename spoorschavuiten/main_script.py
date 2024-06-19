@@ -3,6 +3,7 @@ from code.algorithms.random import Random
 from code.algorithms.greedy import Greedy
 from code.visualization.visualize import *
 from code.algorithms.hillclimber import HillClimber as hc
+from code.algorithms.hillclimber import HcStopCondition as hcStop
 
 
 if __name__ == "__main__":
@@ -31,8 +32,8 @@ if __name__ == "__main__":
     greedy_schedule = Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
 
-    hillClimber = hc(new_schedule, max_time, max_trains)
-    hillClimber.run(10000, 4)
+    hillClimber = hcStop(new_schedule, max_time, max_trains)
+    hillClimber.run(1000000, 4)
     hillClimber.generate_output()
 
     ### Hier eindigt code om hillclimber te testen ###
