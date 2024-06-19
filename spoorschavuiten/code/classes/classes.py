@@ -28,6 +28,13 @@ class Connection:
     
     def __repr__(self) -> str:
         return f"{self._stationA} naar {self._stationB}"
+    
+    # added to fix depth_first score getting method
+    def __eq__(self, other):
+        if isinstance(other, Connection):
+            return self._stationA._name == other._stationA._name and self._stationB._name == other._stationB._name
+        else:
+            return False
 
 
 class Route:
@@ -35,6 +42,14 @@ class Route:
     def __init__(self) -> None:
         self._route: list[Connection] = []
         self._stations: list[Station] = []
+        self.time = 0
+        self.current_station = None
+    
+    def add_time(self, extraTime):
+        self.time += extraTime
+
+    def subtract_time(self, extraTime):
+        self.time -= extraTime
     
     def add_connection(self, connection) -> None:
         self._route.append(connection)
