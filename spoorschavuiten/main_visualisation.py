@@ -2,7 +2,7 @@ from code.visualization.visualize import * # makeMap, visualizeMap, drawUsedConn
 from code.classes.classes import Region, Schedule
 from code.algorithms.random import Random, FixedRandom
 from code.algorithms.greedy import FixedGreedy, Greedy
-from code.algorithms.hillclimber import HillClimber
+from code.algorithms.hillclimber import HillClimber, HcStopCondition
 
 # import geopandas as gpd # type: ignore
 # from spoorschavuiten.code.algorithms import random
@@ -37,18 +37,25 @@ greedy_schedule = Greedy(schedule, 180, 20)
 greedy_schedule.run()
 
 hillClimber = HillClimber(schedule, 120, 7)
-hillClimber.run(50000, 4)
+hillClimber.run(5000, 4)
+# hillClimber = HcStopCondition(schedule, 120, 7)
+# hillClimber.run(10000000, 4)
+
+
 
 # # hillClimber.generate_output_to_file()
 # # hillClimber.generate_output()
-outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 100000 iterations. 18-06-24 16:11")
+# outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 100000 iterations. 19-06-24")
 # # print(hillClimber.scores)
 # # print(hillClimber.iterations)
+routesToFile(hillClimber._newSchedule, "test", "data/test.csv")
 
-makeHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores)
+# outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, "Test, x", "data/test.csv")
 
-# # schedule2.generate_output()
+# makeHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores)
+
+
 
 # # draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
-draw_figure_without_names(hillClimber._newSchedule, colors, "data/holland_.geojson", "figures/test.jpg")
+# draw_figure_without_names(hillClimber._newSchedule, colors, "data/holland_2.geojson", "figures/test.jpg")
 # # draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")
