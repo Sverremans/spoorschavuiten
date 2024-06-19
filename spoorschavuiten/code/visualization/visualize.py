@@ -197,7 +197,7 @@ def outputGraphHist(outputs: list, time: list) -> None:
 
 
 def writeInFile(text: str):
-    file = open("data/output_file.txt", "a")
+    file = open("data/output_file.csv", "a")
     file.write(text)
     file.close()
 
@@ -212,7 +212,7 @@ def outputToFile(schedule: Schedule, title: str):
     writeInFile("train,stations")
     writeInFile("\n")
     for i, route in enumerate(schedule._routes, 1):
-        writeInFile(f'train_{i},"{route._stations}')
+        writeInFile(f'train_{i},"{route._stations}"')
         writeInFile("\n")
     writeInFile(f"score,{schedule.calculate_value()}")
     writeInFile("\n")
@@ -228,5 +228,7 @@ def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list ):
     plt.title("Hill Climber-Algoritme")
     plt.xlabel("Iteraties")
     plt.ylabel("Score")
+    # plt.yscale("log")
+    plt.xscale("log")
     plt.savefig("data/hillClimber.jpg")
     plt.show()

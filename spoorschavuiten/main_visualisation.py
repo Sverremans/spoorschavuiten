@@ -36,8 +36,8 @@ colors = ["red", "blue", "pink", "grey", "yellow",
 greedy_schedule = Greedy(schedule, 180, 20)
 greedy_schedule.run()
 
-hillClimber = HillClimber(schedule, holland, 120, 7)
-hillClimber.run(500000, 4)
+hillClimber = HillClimber(schedule, 120, 7)
+hillClimber.run(50000, 4)
 
 # # hillClimber.generate_output_to_file()
 # # hillClimber.generate_output()

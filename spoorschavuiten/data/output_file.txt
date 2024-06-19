@@ -485,3 +485,43 @@ train_4,"[Haarlem, Beverwijk, Castricum, Zaandam, Beverwijk, Castricum, Alkmaar]
 score,9188.0
 
 
+Generated output of a hillclimber algorithm, 100000 iterations. 18-06-24 16:11
+
+train,stations
+train_1,"[Gouda, Rotterdam Alexander, Rotterdam Centraal, Dordrecht, Rotterdam Centraal, Schiedam Centrum, Delft, Den Haag Centraal, Leiden Centraal, Heemstede-Aerdenhout, Haarlem]
+train_2,"[Amsterdam Zuid, Amsterdam Sloterdijk, Haarlem, Beverwijk, Castricum, Alkmaar, Den Helder]
+train_3,"[Zaandam, Beverwijk, Castricum, Zaandam, Hoorn, Alkmaar]
+train_4,"[Den Haag Centraal, Gouda, Alphen a/d Rijn, Leiden Centraal, Schiphol Airport, Amsterdam Zuid, Amsterdam Amstel, Amsterdam Centraal, Amsterdam Sloterdijk, Zaandam]
+score,9189.0
+
+
+Generated output of a hillclimber algorithm, 100000 iterations. 18-06-24 16:11
+
+train,stations
+train_1,"[Den Haag Centraal, Gouda, Alphen a/d Rijn, Leiden Centraal, Schiphol Airport, Amsterdam Zuid, Amsterdam Amstel, Amsterdam Centraal, Amsterdam Sloterdijk, Zaandam, Castricum]
+train_2,"[Gouda, Rotterdam Alexander, Rotterdam Centraal, Dordrecht, Rotterdam Centraal, Schiedam Centrum, Delft, Den Haag Centraal, Leiden Centraal, Heemstede-Aerdenhout, Haarlem]
+train_3,"[Amsterdam Zuid, Amsterdam Sloterdijk, Haarlem, Beverwijk, Castricum, Alkmaar, Den Helder]
+train_4,"[Zaandam, Beverwijk, Castricum, Alkmaar, Hoorn, Zaandam]
+score,9180.0
+
+
+Generated output of a hillclimber algorithm, 100000 iterations. 18-06-24 16:11
+
+train,stations
+train_1,"[Rotterdam Centraal, Rotterdam Alexander, Gouda, Alphen a/d Rijn, Leiden Centraal, Schiphol Airport, Amsterdam Zuid, Amsterdam Amstel, Amsterdam Centraal, Amsterdam Sloterdijk, Zaandam]
+train_2,"[Zaandam, Hoorn, Alkmaar, Den Helder]
+train_3,"[Amsterdam Zuid, Amsterdam Sloterdijk, Haarlem, Beverwijk, Zaandam, Castricum, Beverwijk, Castricum, Alkmaar]
+train_4,"[Haarlem, Heemstede-Aerdenhout, Leiden Centraal, Den Haag Centraal, Gouda, Den Haag Centraal, Delft, Schiedam Centrum, Rotterdam Centraal, Dordrecht]
+score,9188.0
+
+
+Generated output of a hillclimber algorithm, 100000 iterations. 18-06-24 16:11
+
+train,stations
+train_1,"[Haarlem, Beverwijk, Zaandam, Hoorn, Alkmaar]
+train_2,"[Den Helder, Alkmaar, Castricum, Beverwijk, Castricum, Zaandam, Amsterdam Sloterdijk, Amsterdam Centraal, Amsterdam Amstel, Amsterdam Zuid]
+train_3,"[Rotterdam Alexander, Gouda, Alphen a/d Rijn, Leiden Centraal, Heemstede-Aerdenhout, Haarlem, Amsterdam Sloterdijk, Amsterdam Zuid, Schiphol Airport, Leiden Centraal]
+train_4,"[Leiden Centraal, Den Haag Centraal, Gouda, Rotterdam Alexander, Rotterdam Centraal, Dordrecht, Rotterdam Centraal, Schiedam Centrum, Delft, Den Haag Centraal]
+score,9179.0
+
+
