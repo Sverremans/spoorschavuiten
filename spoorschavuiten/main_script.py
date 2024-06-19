@@ -27,12 +27,12 @@ if __name__ == "__main__":
     ### Hier volgt code om hillclimber te testen ###
 
     new_schedule = Schedule(holland)
-    max_trains = 7
+    max_trains = 4
     max_time = 120
     greedy_schedule = Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
 
-    hillClimber = hcStop(new_schedule, max_time, max_trains)
+    hillClimber = hc(new_schedule, max_time, max_trains)
     hillClimber.run(1000000, 4)
     hillClimber.generate_output()
 
