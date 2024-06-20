@@ -1,6 +1,7 @@
 from code.classes.classes import Region, Schedule
 from code.algorithms.random import Random
 from code.algorithms.greedy import Greedy
+from code.algorithms.greedy import Kopstations_Greedy
 from code.algorithms.depth_first import DepthFirst
 from code.visualization.visualize import *
 from code.algorithms.hillclimber import HillClimber as hc
@@ -30,12 +31,13 @@ if __name__ == "__main__":
     new_schedule = Schedule(holland)
     max_trains = 7
     max_time = 120
-    greedy_schedule = Greedy(new_schedule, max_time, max_trains)
+    greedy_schedule = Kopstations_Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
+    greedy_schedule.generate_output()
 
-    hillClimber = hc(new_schedule, max_time, max_trains)
-    hillClimber.run(10000, 4)
-    hillClimber.generate_output()
+    # hillClimber = hc(new_schedule, max_time, max_trains)
+    # hillClimber.run(10000, 4)
+    # hillClimber.generate_output()
     
     # depth_first = DepthFirst(new_schedule, max_time, max_trains)
     # depth_first.run()

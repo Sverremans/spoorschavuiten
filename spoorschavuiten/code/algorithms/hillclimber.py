@@ -7,6 +7,10 @@ from code.algorithms.greedy import Greedy
 # TODO kijk eens naar deze manual: https://realpython.com/python-property/
 
 class HillClimber:
+    """
+    Neemt een ingevulde dienstregeling en plant steeds n treinen opnieuw in.
+    Slaat verbeteringen op en gooit verslechteringen weg.
+    """
     def __init__(self, schedule, maxTrains, maxTime) -> None:
         # Maak een kopie van Schedule-object
         self._oldSchedule = schedule
@@ -109,7 +113,9 @@ class HillClimber:
 
 
 class HcStopCondition(HillClimber):
-    """Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden"""
+    """
+    Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden
+    """
     def __init__(self, schedule, maxTime, maxTrains, cap = 100000) -> None:
         # Maak een kopie van Schedule-object
         self._oldSchedule = schedule
