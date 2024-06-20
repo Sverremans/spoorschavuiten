@@ -1,5 +1,6 @@
 import random
 from code.classes.classes import Route, Station
+from typing import Any
 
 
 class Random:
@@ -24,19 +25,19 @@ class Random:
                 connections.append((connection, "b"))
         return connections
     
-    def choose_connection(self, possibleConnections):
+    def choose_connection(self, possibleConnections) -> Any:
         return random.choice(possibleConnections)
 
-    def add_time(self, extraTime):
+    def add_time(self, extraTime) -> None:
         self.time += extraTime
 
-    def subtract_time(self, extraTime):
+    def subtract_time(self, extraTime) -> None:
         self.time -= extraTime
 
-    def set_connection_is_used(self, connection):
+    def set_connection_is_used(self, connection) -> None:
         connection.is_used()
 
-    def set_new_station(self, station, direction, connection):
+    def set_new_station(self, station, direction, connection) -> Station:
         if direction == "f":
             station = connection.stationB
         else:
@@ -46,7 +47,7 @@ class Random:
     def generate_output(self) -> None:
         self.schedule.generate_output()
 
-    def run(self):
+    def run(self) -> None:
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
@@ -76,7 +77,7 @@ class Random:
 
 
 class FixedRandom(Random):
-    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int):
+    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
         self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains

@@ -1,6 +1,7 @@
 from code.algorithms.random import Random
 from code.classes.classes import Route
 import random
+from typing import Any
 
 
 class Greedy(Random):
@@ -23,13 +24,13 @@ class Greedy(Random):
         
         return possible_connections, unused_connections
 
-    def choose_connection(self, possible_connections, unused_connections):
+    def choose_connection(self, possible_connections, unused_connections) -> Any:
         if len(unused_connections) > 0:
             return random.choice(unused_connections)
         else:    
             return random.choice(possible_connections)
 
-    def run(self):
+    def run(self) -> None:
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
@@ -59,7 +60,7 @@ class Greedy(Random):
 
 
 class FixedGreedy(Greedy):
-    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int):
+    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
         self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains
