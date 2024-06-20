@@ -31,3 +31,12 @@ train_4,"[Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Delft na
 
 
 
+test
+
+train_1,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_2,"[Beverwijk naar Castricum, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda]"
+train_3,"[Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Rotterdam Alexander naar Gouda]"
+train_4,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Haarlem naar Beverwijk]"
+
+
+

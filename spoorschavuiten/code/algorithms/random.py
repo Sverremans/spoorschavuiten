@@ -1,52 +1,53 @@
 import random
-from code.classes.classes import Route
+from code.classes.classes import Route, Station
+from typing import Any
 
 
 class Random:
     """
     Fully random algorithm.
     """
-    def __init__(self, schedule, maxTime: int, maxTrains: int):
+    def __init__(self, schedule, maxTime: int, maxTrains: int) -> None:
         self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains
         self.time = 0
 
-    def choose_station(self):
-        return random.choice(list(self.schedule._stations.values()))
+    def choose_station(self) -> Station:
+        return random.choice(list(self.schedule.stations.values()))
 
     def get_connections(self, currentStation) -> list:
         connections = []
-        for connection in self.schedule._connections:
-            if connection._stationA == currentStation:
+        for connection in self.schedule.connections:
+            if connection.stationA == currentStation:
                 connections.append((connection, "f"))
-            if connection._stationB == currentStation:
+            if connection.stationB == currentStation:
                 connections.append((connection, "b"))
         return connections
     
-    def choose_connection(self, possibleConnections):
+    def choose_connection(self, possibleConnections) -> Any:
         return random.choice(possibleConnections)
 
-    def add_time(self, extraTime):
+    def add_time(self, extraTime) -> None:
         self.time += extraTime
 
-    def subtract_time(self, extraTime):
+    def subtract_time(self, extraTime) -> None:
         self.time -= extraTime
 
-    def set_connection_is_used(self, connection):
+    def set_connection_is_used(self, connection) -> None:
         connection.is_used()
 
-    def set_new_station(self, station, direction, connection):
+    def set_new_station(self, station, direction, connection) -> Station:
         if direction == "f":
-            station = connection._stationB
+            station = connection.stationB
         else:
-            station = connection._stationA
+            station = connection.stationA
         return station
     
     def generate_output(self) -> None:
         self.schedule.generate_output()
 
-    def run(self):
+    def run(self) -> None:
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
@@ -76,7 +77,7 @@ class Random:
 
 
 class FixedRandom(Random):
-    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int):
+    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
         self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains

@@ -1,0 +1,230 @@
+test1
+
+train_1,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam]"
+train_2,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_3,"[Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Zaandam naar Castricum]"
+train_4,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal]"
+
+
+
+test2
+
+train_1,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_2,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_3,"[Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk]"
+train_4,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum]"
+
+
+
+test3
+
+train_1,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum]"
+train_2,"[Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal]"
+train_3,"[Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_4,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+
+
+
+test4
+
+train_1,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda]"
+train_2,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_3,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_4,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+
+
+
+test5
+
+train_1,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_2,"[Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport]"
+train_3,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_4,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+
+
+
+test6
+
+train_1,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Amsterdam Sloterdijk naar Zaandam, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem]"
+train_2,"[Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk]"
+train_3,"[Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_4,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+
+
+
+test7
+
+train_1,"[Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk]"
+train_2,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal]"
+train_3,"[Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_4,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk]"
+
+
+
+test8
+
+train_1,"[Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+train_2,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_3,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_4,"[Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk]"
+
+
+
+test9
+
+train_1,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_2,"[Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk]"
+train_3,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_4,"[Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+
+
+
+test10
+
+train_1,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal]"
+train_2,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda]"
+train_3,"[Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_4,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk]"
+
+
+
+test11
+
+train_1,"[Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn]"
+train_2,"[Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal]"
+train_3,"[Haarlem naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_4,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum]"
+
+
+
+test12
+
+train_1,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda]"
+train_2,"[Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+train_3,"[Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_4,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+
+
+
+test13
+
+train_1,"[Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem]"
+train_2,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_3,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_4,"[Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk]"
+
+
+
+test14
+
+train_1,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+train_2,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_3,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_4,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal]"
+
+
+
+test15
+
+train_1,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_2,"[Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem]"
+train_3,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_4,"[Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander]"
+
+
+
+test16
+
+train_1,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_2,"[Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_3,"[Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid]"
+train_4,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+
+
+
+test17
+
+train_1,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda]"
+train_2,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_3,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_4,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+
+
+
+test18
+
+train_1,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal]"
+train_2,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk]"
+train_3,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_4,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+
+
+
+test19
+
+train_1,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+train_2,"[Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_3,"[Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_4,"[Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk]"
+
+
+
+test20
+
+train_1,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft]"
+train_2,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda]"
+train_3,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_4,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+
+
+
+Nederland test_1
+
+train_1,"[Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Hilversum]"
+train_2,"[Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_3,"[Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Tilburg naar Breda]"
+train_4,"[Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Sittard naar Roermond, Sittard naar Roermond, Roermond naar Weert]"
+train_5,"[Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_6,"[Oss naar Nijmegen, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amersfoort]"
+train_7,"[Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amsterdam Amstel]"
+train_8,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum]"
+train_9,"[Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_10,"[Assen naar Zwolle, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen]"
+train_11,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_12,"[Alkmaar naar Den Helder, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_13,"[Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda]"
+train_14,"[Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport]"
+train_15,"[Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Breda naar Etten-Leur]"
+train_16,"[Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Alphen a/d Rijn]"
+train_17,"[Deventer naar Apeldoorn, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss]"
+train_18,"[s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_19,"[Den Haag HS naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport]"
+train_20,"[s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Sittard naar Roermond, Roermond naar Weert]"
+
+
+
+Nederland test_2
+
+train_1,"[Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo]"
+train_2,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_3,"[Haarlem naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam]"
+train_4,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport]"
+train_5,"[Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_6,"[Zutphen naar Dieren, Zutphen naar Dieren, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum]"
+train_7,"[Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak]"
+train_8,"[Assen naar Zwolle, Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen]"
+train_9,"[Deventer naar Almelo, Zwolle naar Deventer, Zwolle naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Hilversum]"
+train_10,"[Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal]"
+train_11,"[Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Deventer naar Zutphen]"
+train_12,"[Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk]"
+train_13,"[Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_14,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_15,"[s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum]"
+train_16,"[Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_17,"[Apeldoorn naar Amersfoort, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport]"
+train_18,"[Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda]"
+train_19,"[Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_20,"[Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+
+
+

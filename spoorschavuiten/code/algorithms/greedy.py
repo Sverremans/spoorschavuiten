@@ -1,6 +1,7 @@
 from code.algorithms.random import Random
 from code.classes.classes import Route
 import random
+from typing import Any
 
 
 class Greedy(Random):
@@ -11,25 +12,25 @@ class Greedy(Random):
         possible_connections = []
         unused_connections = []
         
-        for connection in self.schedule._connections:
-            if connection._stationA == current_station:
+        for connection in self.schedule.connections:
+            if connection.stationA == current_station:
                 possible_connections.append((connection, "f"))
-                if not connection._used:
+                if not connection.used:
                     unused_connections.append((connection, "f"))
-            if connection._stationB == current_station:
+            if connection.stationB == current_station:
                 possible_connections.append((connection, "b"))
-                if not connection._used:
+                if not connection.used:
                     unused_connections.append((connection, "b"))
         
         return possible_connections, unused_connections
 
-    def choose_connection(self, possible_connections, unused_connections):
+    def choose_connection(self, possible_connections, unused_connections) -> Any:
         if len(unused_connections) > 0:
             return random.choice(unused_connections)
         else:    
             return random.choice(possible_connections)
 
-    def run(self):
+    def run(self) -> None:
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
@@ -59,9 +60,56 @@ class Greedy(Random):
 
 
 class FixedGreedy(Greedy):
-    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int):
+    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
         self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains
         self.time = 0
         random.seed(fixedSeed)
+
+class Kopstations_Greedy(Greedy):
+    """
+    Kiest eerst de stations met slechts één verbinding als startpunten.
+    Deze heuristiek voorkomt het onnodig dubbel berijden van sporen.
+    """
+    def run(self) -> None:
+        # Bepaal welke stations kopstations zijn
+        self._kopstations = []
+        self._unused_kopstations = []
+        for station in self.schedule.stations.values():
+            if len(self.get_connections(station)[0]) == 1:
+                self._kopstations.append(station)
+                self._unused_kopstations.append(station)
+
+        for _ in range(self.maxTrains):
+            route = Route()
+            self.time = 0
+            
+            # Kies eerst kopstations als beginpunten, daarna random andere stations
+            if self._unused_kopstations:
+                currentStation = self._unused_kopstations.pop()
+            else:
+                currentStation = self.choose_station()
+                while currentStation in self._kopstations:
+                    currentStation = self.choose_station()
+            route.add_station(currentStation)
+
+            # Kies op het station een connectie om berijden
+            while self.time <= self.maxTime:
+                possible_connections, unused_connections = self.get_connections(currentStation)
+                chosenConnection, direction = self.choose_connection(possible_connections, unused_connections)
+                # Voeg deze connectie toe aan het traject, voeg de afstand toe
+                self.add_time(chosenConnection.get_dist())
+                if self.time > self.maxTime:
+                    self.subtract_time(chosenConnection.get_dist())
+                    break
+                self.set_connection_is_used(chosenConnection)
+                currentStation = self.set_new_station(currentStation, direction, chosenConnection)
+                route.add_connection(chosenConnection)
+                route.add_station(currentStation)
+
+            self.schedule.add_route(route)
+            self.schedule.update_time(self.time)
+            # Stop met trajecten leggen als alle verbindingen zijn gemaakt.
+            if self.schedule.is_solution():
+                break

@@ -25,7 +25,7 @@ class DepthFirst():
         for _ in range(7):
 
             # search for best route from all starting stations
-            for station in self.schedule._stations.values():
+            for station in self.schedule.stations.values():
                 new_route = Route()
                 new_route.current_station = station
                 self.possible_routes.append(new_route)
@@ -46,8 +46,8 @@ class DepthFirst():
             self.best_score = 0
 
             # check if all connections are already used (so max overall score)
-            scheduled_connections = {connection for route in self.schedule._routes for connection in route._route}
-            if set(self.schedule._connections) == scheduled_connections:
+            scheduled_connections = {connection for route in self.schedule.routes for connection in route.route}
+            if set(self.schedule.connections) == scheduled_connections:
                 break
         
         end = time.time()
@@ -70,13 +70,13 @@ class DepthFirst():
         """
         Returns score for the potential route
         """
-        if self.schedule._routes:
-            scheduled_connections = {connection for route in self.schedule._routes for connection in route._route}
+        if self.schedule.routes:
+            scheduled_connections = {connection for route in self.schedule.routes for connection in route.route}
         else:
             scheduled_connections = set()
-        connections_used = {connection for connection in new_route._route}
+        connections_used = {connection for connection in new_route.route}
         added_connections = connections_used - scheduled_connections
-        fraction = len(added_connections) / len(self.schedule._connections)
+        fraction = len(added_connections) / len(self.schedule.connections)
 
         return fraction * 10000 - (100 + new_route.time)
 
@@ -96,15 +96,15 @@ class DepthFirst():
     def get_connections(self, currentStation) -> list:
         connections = []
         for connection in self.schedule._connections:
-            if connection._stationA == currentStation:
+            if connection.stationA == currentStation:
                 connections.append((connection, "f"))
-            if connection._stationB == currentStation:
+            if connection.stationB == currentStation:
                 connections.append((connection, "b"))
         return connections
 
     def get_new_station(self, station, direction, connection):
         if direction == "f":
-            station = connection._stationB
+            station = connection.stationB
         else:
-            station = connection._stationA
+            station = connection.stationA
         return station

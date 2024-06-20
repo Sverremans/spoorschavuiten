@@ -109,9 +109,9 @@ def draw_dots(schedule: Schedule, x: list, y: list) -> None:
     '''
     Draws all stations as dots on the map.
     '''
-    for station in schedule._stations:
-        x.append(schedule._stations[station]._x)
-        y.append(schedule._stations[station]._y)
+    for station in schedule.stations:
+        x.append(schedule.stations[station]._x)
+        y.append(schedule.stations[station]._y)
     plt.scatter(x, y, c= "black", s=30)
     plt.axis("off")
 
@@ -121,10 +121,10 @@ def draw_dots_with_names(schedule: Schedule, x: list, y: list) -> None:
     Draws all stations as dots on the map, also adds the name of the station to the plot.
     '''
     z = []
-    for station in schedule._stations:
-        x.append(schedule._stations[station]._x)
-        y.append(schedule._stations[station]._y)
-        z.append(schedule._stations[station]._name)
+    for station in schedule.stations:
+        x.append(schedule.stations[station]._x)
+        y.append(schedule.stations[station]._y)
+        z.append(schedule.stations[station]._name)
     plt.scatter(x, y, c= "black", s=30)
 
     for i, txt in enumerate(z):
@@ -139,11 +139,11 @@ def draw_lines(schedule: Schedule, xList: list, yList: list) -> None:
     '''
     Draws all connections as lines on the map.
     '''
-    for connection in schedule._connections:
-        xA = connection._stationA._x
-        yA = connection._stationA._y
-        xB = connection._stationB._x
-        yB = connection._stationB._y
+    for connection in schedule.connections:
+        xA = connection.stationA._x
+        yA = connection.stationA._y
+        xB = connection.stationB._x
+        yB = connection.stationB._y
 
         xList.append(xA)
         yList.append(yA)
@@ -161,12 +161,12 @@ def draw_used_connections(schedule: Schedule, color: list) -> None:
     '''
     xList = []
     yList = []
-    for i, route in enumerate(schedule._routes):
-        for connection in route._route:
-            xA = connection._stationA._x
-            yA = connection._stationA._y
-            xB = connection._stationB._x
-            yB = connection._stationB._y
+    for i, route in enumerate(schedule.routes):
+        for connection in route.route:
+            xA = connection.stationA._x
+            yA = connection.stationA._y
+            xB = connection.stationB._x
+            yB = connection.stationB._y
 
             xList.append(xA)
             yList.append(yA)
@@ -179,6 +179,9 @@ def draw_used_connections(schedule: Schedule, color: list) -> None:
 
 
 def outputGraph(outputs: list, time: list) -> None:
+    '''
+    Creates a graph with bars for all the scores.
+    '''
     y = outputs
     y.sort()
     x = time
@@ -188,6 +191,9 @@ def outputGraph(outputs: list, time: list) -> None:
 
 
 def outputGraphHist(outputs: list, time: list) -> None:
+    '''
+    Creates a histogram of the inputed data.
+    '''
     y = outputs
     y.sort()
     x = time
@@ -196,13 +202,16 @@ def outputGraphHist(outputs: list, time: list) -> None:
     plt.show()
 
 
-def writeInFile(text: str, file: str):
+def writeInFile(text: str, file: str) -> None:
+    '''
+    Writes data to a file (File needs to be inputed).
+    '''
     file = open(file, "a")
     file.write(text)
     file.close()
 
 
-def outputToFile(schedule: Schedule, title: str, file: str):
+def outputToFile(schedule: Schedule, title: str, file: str) -> None:
     '''
     Writes the generated output in a desired textfile.
     title: The name of the used algorithm.
@@ -212,8 +221,8 @@ def outputToFile(schedule: Schedule, title: str, file: str):
     writeInFile("\n", file)
     writeInFile("train,stations", file)
     writeInFile("\n", file)
-    for i, route in enumerate(schedule._routes, 1):
-        writeInFile(f'train_{i},"{route._stations}"', file)
+    for i, route in enumerate(schedule.routes, 1):
+        writeInFile(f'train_{i},"{route.stations}"', file)
         writeInFile("\n", file)
     writeInFile(f"score,{schedule.calculate_value()}", file)
     writeInFile("\n", file)
@@ -221,7 +230,10 @@ def outputToFile(schedule: Schedule, title: str, file: str):
     writeInFile("\n", file)
 
 
-def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list):
+def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list) -> None:
+    '''
+    Makes a graph that shows the steps to get a better score using the Hill Climber-algorithm.
+    '''
     plt.scatter(x, y, c= "black", s=30)
     
     plt.plot(xpoints, ypoints)
@@ -235,7 +247,10 @@ def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list):
     plt.show()
 
 
-def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title: str, file: str):
+def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title: str, file: str) -> None:
+    '''
+    Writes te data to create a graph using "makeHillClimberGraph" in a file.
+    '''
     writeInFile(title, file)
     writeInFile("\n", file)
     writeInFile("\n", file)
@@ -247,15 +262,22 @@ def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title:
     writeInFile("\n", file)
     writeInFile(f'"y, punten van verbetering", "{ypoints}"', file)
     writeInFile("\n", file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
 
 
-def routesToFile(schedule: Schedule, title, file):
+def routesToFile(schedule: Schedule, title, file) -> None:
+    '''
+    Writes the connections used in a route to a new file.
+    '''
     writeInFile(title, file)
     writeInFile("\n", file)
     writeInFile("\n", file)
-    for i, route in enumerate(schedule._routes, 1):
-        writeInFile(f'train_{i},"{route._route}"', file)
+    for i, route in enumerate(schedule.routes, 1):
+        writeInFile(f'train_{i},"{route.route}"', file)
         writeInFile("\n", file)
     writeInFile("\n", file)
     writeInFile("\n", file)
     writeInFile("\n", file)
+
+
