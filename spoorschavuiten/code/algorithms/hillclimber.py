@@ -113,12 +113,28 @@ class HillClimber:
 
 class HcStopCondition(HillClimber):
     """Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden"""
-    def run(self, iterations, nr_of_trains=1, cap=100000) -> None:
+    def __init__(self, schedule, maxTime, maxTrains, cap = 100000) -> None:
+        # Maak een kopie van Schedule-object
+        self._oldSchedule = schedule
+        self._newSchedule = copy.deepcopy(schedule)
+        # Bereken de doelfuntie
+        self._value = schedule.calculate_value()
+        self._maxTrains = maxTrains
+        self._maxTime = maxTime
+
+        self._cap = cap
+        
+        self.scores = [schedule.calculate_value()]
+        self.iterations_list = []
+        self.scoresPoints = []
+        self.iterations_listPoints = []
+
+
+    def run(self, iterations, nr_of_trains=1) -> None:
         # Sla iterations op
         self._iterations = iterations
 
         # Initialiseer stopconditie
-        self._cap = cap
         no_improvement_counter = 0
 
         # Loop over de iterations

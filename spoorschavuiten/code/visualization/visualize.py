@@ -247,6 +247,8 @@ def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title:
     writeInFile("\n", file)
     writeInFile(f'"y, punten van verbetering", "{ypoints}"', file)
     writeInFile("\n", file)
+    writeInFile("\n", file)
+    writeInFile("\n", file)
 
 
 def routesToFile(schedule: Schedule, title, file):
