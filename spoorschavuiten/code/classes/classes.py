@@ -25,9 +25,6 @@ class Connection:
 
     def is_used(self):
         self._used = True
-
-    def not_used(self):
-        self._used = False
     
     def __repr__(self) -> str:
         return f"{self._stationA} naar {self._stationB}"
@@ -38,6 +35,9 @@ class Connection:
             return self._stationA._name == other._stationA._name and self._stationB._name == other._stationB._name
         else:
             return False
+    
+    def __hash__(self):
+        return hash(self.__repr__())
 
 
 class Route:

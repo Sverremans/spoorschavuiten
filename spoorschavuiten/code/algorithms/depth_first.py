@@ -22,7 +22,7 @@ class DepthFirst():
         start = time.time()
 
         # for each train find best route
-        for _ in range(1):
+        for _ in range(7):
 
             # search for best route from all starting stations
             for station in self.schedule._stations.values():
@@ -33,7 +33,7 @@ class DepthFirst():
                 # for each possible starting position, visit all possible routes
                 while self.possible_routes:
                     step += 1
-                    print(f'Step {step}, with {len(self.possible_routes)} states, current value: {self.best_score}')
+                    print(f'Step {step}, current value: {self.best_score}, schedule: {len(self.schedule._routes)}')
                     new_route = self.get_next_state()
                     self.check_score(new_route)
                     current_station = new_route.current_station
