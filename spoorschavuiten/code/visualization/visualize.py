@@ -139,7 +139,7 @@ def draw_lines(schedule: Schedule, xList: list, yList: list) -> None:
     '''
     Draws all connections as lines on the map.
     '''
-    for connection in schedule._connections:
+    for connection in schedule.connections:
         xA = connection._stationA._x
         yA = connection._stationA._y
         xB = connection._stationB._x
@@ -161,8 +161,8 @@ def draw_used_connections(schedule: Schedule, color: list) -> None:
     '''
     xList = []
     yList = []
-    for i, route in enumerate(schedule._routes):
-        for connection in route._route:
+    for i, route in enumerate(schedule.routes):
+        for connection in route.route:
             xA = connection._stationA._x
             yA = connection._stationA._y
             xB = connection._stationB._x
@@ -212,7 +212,7 @@ def outputToFile(schedule: Schedule, title: str, file: str):
     writeInFile("\n", file)
     writeInFile("train,stations", file)
     writeInFile("\n", file)
-    for i, route in enumerate(schedule._routes, 1):
+    for i, route in enumerate(schedule.routes, 1):
         writeInFile(f'train_{i},"{route._stations}"', file)
         writeInFile("\n", file)
     writeInFile(f"score,{schedule.calculate_value()}", file)
@@ -255,8 +255,8 @@ def routesToFile(schedule: Schedule, title, file):
     writeInFile(title, file)
     writeInFile("\n", file)
     writeInFile("\n", file)
-    for i, route in enumerate(schedule._routes, 1):
-        writeInFile(f'train_{i},"{route._route}"', file)
+    for i, route in enumerate(schedule.routes, 1):
+        writeInFile(f'train_{i},"{route.route}"', file)
         writeInFile("\n", file)
     writeInFile("\n", file)
     writeInFile("\n", file)

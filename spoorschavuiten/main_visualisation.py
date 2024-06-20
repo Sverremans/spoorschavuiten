@@ -45,10 +45,10 @@ hillClimber.run(5000, 4)
 
 # # hillClimber.generate_output_to_file()
 # # hillClimber.generate_output()
-# outputToFile(hillClimber._newSchedule, "Generated output of a hillclimber algorithm, 100000 iterations. 19-06-24")
+# outputToFile(hillClimber.newSchedule, "Generated output of a hillclimber algorithm, 100000 iterations. 19-06-24")
 # # print(hillClimber.scores)
 # # print(hillClimber.iterations)
-routesToFile(hillClimber._newSchedule, "test", "data/test.csv")
+routesToFile(hillClimber.newSchedule, "test", "data/test.csv")
 
 # outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, "Test, x", "data/test.csv")
 
@@ -57,5 +57,5 @@ routesToFile(hillClimber._newSchedule, "test", "data/test.csv")
 
 
 # # draw_figure_with_names(schedule2, colors, "data/netherlands_.geojson", "figures/test.jpg")
-# draw_figure_without_names(hillClimber._newSchedule, colors, "data/holland_2.geojson", "figures/test.jpg")
+# draw_figure_without_names(hillClimber.newSchedule, colors, "data/holland_2.geojson", "figures/test.jpg")
 # # draw_figure_no_stations(schedule, colors, "data/netherlands_.geojson", "figures/connectionsWithStationNames.jpg")

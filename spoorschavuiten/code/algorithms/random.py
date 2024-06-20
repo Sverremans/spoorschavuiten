@@ -17,7 +17,7 @@ class Random:
 
     def get_connections(self, currentStation) -> list:
         connections = []
-        for connection in self.schedule._connections:
+        for connection in self.schedule.connections:
             if connection._stationA == currentStation:
                 connections.append((connection, "f"))
             if connection._stationB == currentStation:
