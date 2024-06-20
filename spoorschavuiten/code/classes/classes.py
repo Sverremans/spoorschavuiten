@@ -2,7 +2,10 @@ import pandas as pd # type: ignore
 
 
 class Station:
-    """Station met bijbehorende coordinaten."""
+    '''
+    Every station has a name, an x coodinate and an y coordinate.
+    These coordinates are used to draw a map of all the stations.
+    '''
     def __init__(self, name: str, x: float, y: float) -> None:
         self._name = name
         self._x = x
@@ -13,7 +16,13 @@ class Station:
 
 
 class Connection:
-    """Verbinding tussen twee stations met bijbehorende duur in minuten."""
+    '''
+    A connection has the attributes to show the two stations the connection is in between.
+    A station A and a station B. The dist variable is the distance in minutes between the two stations.
+    The last attribute is a boolean, this states if the connections is used or not.
+
+    Pre: It needs two stations and the distance between those station for the object to be made.
+    '''
     def __init__(self, stationA: Station, stationB: Station, dist: int) -> None:
         self.stationA = stationA
         self.stationB = stationB
@@ -41,7 +50,11 @@ class Connection:
 
 
 class Route:
-    """Traject van connecties waar een trein langs komt."""
+    '''
+    A Route object contains a list of the different connections used for one train.
+    It also saves the stations it passed on the route in another list
+    Lastly it counts the duration of the different connections.
+    '''
     def __init__(self) -> None:
         self.route: list[Connection] = []
         self.stations: list[Station] = []
@@ -68,7 +81,13 @@ class Route:
 
 
 class Schedule:
-    """Maakt lijnvoering voor de regio"""
+    '''
+    In Schedule there is a list that contains all the routes that are made by an algorithm, these routes are Route objects.
+    Schedule keeps a note of all the time passed over all te routes in the list.
+    
+
+    Pre: Schedule needs a region to make new routes in.
+    '''
     def __init__(self, region) -> None:
         self.routes: list[Route] = []
         self._time_used: int = 0
