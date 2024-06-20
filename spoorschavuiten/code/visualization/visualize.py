@@ -179,6 +179,9 @@ def draw_used_connections(schedule: Schedule, color: list) -> None:
 
 
 def outputGraph(outputs: list, time: list) -> None:
+    '''
+    Creates a graph with bars for all the scores.
+    '''
     y = outputs
     y.sort()
     x = time
@@ -188,6 +191,9 @@ def outputGraph(outputs: list, time: list) -> None:
 
 
 def outputGraphHist(outputs: list, time: list) -> None:
+    '''
+    Creates a histogram of the inputed data.
+    '''
     y = outputs
     y.sort()
     x = time
@@ -196,13 +202,16 @@ def outputGraphHist(outputs: list, time: list) -> None:
     plt.show()
 
 
-def writeInFile(text: str, file: str):
+def writeInFile(text: str, file: str) -> None:
+    '''
+    Writes data to a file (File needs to be inputed).
+    '''
     file = open(file, "a")
     file.write(text)
     file.close()
 
 
-def outputToFile(schedule: Schedule, title: str, file: str):
+def outputToFile(schedule: Schedule, title: str, file: str) -> None:
     '''
     Writes the generated output in a desired textfile.
     title: The name of the used algorithm.
@@ -221,7 +230,10 @@ def outputToFile(schedule: Schedule, title: str, file: str):
     writeInFile("\n", file)
 
 
-def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list):
+def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list) -> None:
+    '''
+    Makes a graph that shows the steps to get a better score using the Hill Climber-algorithm.
+    '''
     plt.scatter(x, y, c= "black", s=30)
     
     plt.plot(xpoints, ypoints)
@@ -235,7 +247,10 @@ def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list):
     plt.show()
 
 
-def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title: str, file: str):
+def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title: str, file: str) -> None:
+    '''
+    Writes te data to create a graph using "makeHillClimberGraph" in a file.
+    '''
     writeInFile(title, file)
     writeInFile("\n", file)
     writeInFile("\n", file)
@@ -251,7 +266,10 @@ def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title:
     writeInFile("\n", file)
 
 
-def routesToFile(schedule: Schedule, title, file):
+def routesToFile(schedule: Schedule, title, file) -> None:
+    '''
+    Writes the connections used in a route to a new file.
+    '''
     writeInFile(title, file)
     writeInFile("\n", file)
     writeInFile("\n", file)
@@ -261,3 +279,5 @@ def routesToFile(schedule: Schedule, title, file):
     writeInFile("\n", file)
     writeInFile("\n", file)
     writeInFile("\n", file)
+
+
