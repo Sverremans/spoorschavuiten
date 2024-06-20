@@ -31,7 +31,6 @@ class HillClimber:
             new_greedy = Greedy(self.newSchedule, 120, 1)
             new_greedy.run()
 
-
     def mutate_schedule(self, nr_of_trains=1) -> None:
         # Verwijder n treinen
         if nr_of_trains > len(self.newSchedule.routes):
@@ -41,10 +40,9 @@ class HillClimber:
             nr_of_routes = len(self.newSchedule.routes)
             remove = random.choice(range(nr_of_routes))
 
-            time_remove = 0
+            # Trek minuten van te verwijderen trajecten van totaal af
             for connection in self.newSchedule.routes[remove].route:
-                time_remove += connection.get_dist()
-            self.newSchedule._time_used -= time_remove
+                self.newSchedule._time_used -= connection.get_dist()
 
             self.newSchedule.routes.pop(remove)
 
@@ -67,7 +65,6 @@ class HillClimber:
             else:
                 connection.not_used()
             
-
     def check_solution(self) -> bool:
         # Vergelijk waarden doelfuncties
         calc_value = self.newSchedule.calculate_value()
@@ -94,7 +91,6 @@ class HillClimber:
             # Doe mutate_schedule(nr_of_trains)
             self.mutate_schedule(nr_of_trains)
 
-
             # TODO: lees over generators https://realpython.com/introduction-to-python-generators/
             # Doe check_solution()
             if self.check_solution():
@@ -110,6 +106,7 @@ class HillClimber:
 
         # Set newSchedule to be the last improving solution
         self.newSchedule = self._oldSchedule
+
 
 class HcStopCondition(HillClimber):
     """Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden"""
@@ -129,7 +126,6 @@ class HcStopCondition(HillClimber):
         self.scoresPoints = []
         self.iterations_listPoints = []
 
-
     def run(self, iterations, nr_of_trains=1) -> None:
         # Sla iterations op
         self._iterations = iterations
@@ -145,7 +141,6 @@ class HcStopCondition(HillClimber):
             
             # Doe mutate_schedule(nr_of_trains)
             self.mutate_schedule(nr_of_trains)
-
 
             # TODO: lees over generators https://realpython.com/introduction-to-python-generators/
             # Doe check_solution()
