@@ -1,5 +1,6 @@
 import copy, random
 from code.algorithms.greedy import Greedy
+from code.classes.classes import Schedule
 
 # NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219 -> 9214 misschien mogelijk (-5). 
 # Dit komt zeer in de buurt (9202).
@@ -7,7 +8,7 @@ from code.algorithms.greedy import Greedy
 # TODO kijk eens naar deze manual: https://realpython.com/python-property/
 
 class HillClimber:
-    def __init__(self, schedule, maxTrains, maxTime) -> None:
+    def __init__(self, schedule: Schedule, maxTrains: int, maxTime: int) -> None:
         # Maak een kopie van Schedule-object
         self._oldSchedule = schedule
         self.newSchedule = copy.deepcopy(schedule)
@@ -82,7 +83,7 @@ class HillClimber:
     def generate_output(self) -> None:
         self.newSchedule.generate_output()
 
-    def run(self, iterations, nr_of_trains=1) -> None:
+    def run(self, iterations: int, nr_of_trains: int = 1) -> None:
         # Sla iterations op
         self._iterations = iterations
 
@@ -110,7 +111,7 @@ class HillClimber:
 
 class HcStopCondition(HillClimber):
     """Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden"""
-    def __init__(self, schedule, maxTime, maxTrains, cap = 100000) -> None:
+    def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int, cap: int = 100000) -> None:
         # Maak een kopie van Schedule-object
         self._oldSchedule = schedule
         self.newSchedule = copy.deepcopy(schedule)
@@ -126,7 +127,7 @@ class HcStopCondition(HillClimber):
         self.scoresPoints = []
         self.iterations_listPoints = []
 
-    def run(self, iterations, nr_of_trains=1) -> None:
+    def run(self, iterations: int, nr_of_trains: int = 1) -> None:
         # Sla iterations op
         self._iterations = iterations
 
