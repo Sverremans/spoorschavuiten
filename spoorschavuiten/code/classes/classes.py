@@ -15,27 +15,27 @@ class Station:
 class Connection:
     """Verbinding tussen twee stations met bijbehorende duur in minuten."""
     def __init__(self, stationA: Station, stationB: Station, dist: int) -> None:
-        self._stationA = stationA
-        self._stationB = stationB
+        self.stationA = stationA
+        self.stationB = stationB
         self._dist = dist
         self.used: bool = False
 
     def get_dist(self) -> int:
         return self._dist
 
-    def is_used(self):
+    def is_used(self) -> None:
         self.used = True
 
-    def not_used(self):
+    def not_used(self) -> None:
         self.used = False
     
     def __repr__(self) -> str:
-        return f"{self._stationA} naar {self._stationB}"
+        return f"{self.stationA} naar {self.stationB}"
     
     # added to fix depth_first score getting method
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         if isinstance(other, Connection):
-            return self._stationA._name == other._stationA._name and self._stationB._name == other._stationB._name
+            return self.stationA._name == other.stationA._name and self.stationB._name == other.stationB._name
         else:
             return False
 
@@ -44,21 +44,21 @@ class Route:
     """Traject van connecties waar een trein langs komt."""
     def __init__(self) -> None:
         self.route: list[Connection] = []
-        self._stations: list[Station] = []
+        self.stations: list[Station] = []
         self.time = 0
         self.current_station = None
     
-    def add_time(self, extraTime):
+    def add_time(self, extraTime) -> None:
         self.time += extraTime
 
-    def subtract_time(self, extraTime):
+    def subtract_time(self, extraTime) -> None:
         self.time -= extraTime
     
     def add_connection(self, connection) -> None:
         self.route.append(connection)
 
     def add_station(self, station) -> None:
-        self._stations.append(station)
+        self.stations.append(station)
 
     def get_dist(self) -> int:
         dist = 0
@@ -72,7 +72,7 @@ class Schedule:
     def __init__(self, region) -> None:
         self.routes: list[Route] = []
         self._time_used: int = 0
-        self._stations: dict[str, Station] = region._stations
+        self.stations: dict[str, Station] = region.stations
         self.connections: list[Connection] = self.clear_connections(region)
     
     def clear_connections(self, region) -> list[Connection]:
@@ -111,14 +111,14 @@ class Schedule:
     def generate_output(self) -> None:
         print("train,stations")
         for i, route in enumerate(self.routes, 1):
-            print(f'train_{i},"{route._stations}"')
+            print(f'train_{i},"{route.stations}"')
         print(f"score,{self.calculate_value()}")
 
 
 class Region:
     """Regio van stations en verbindingen waarin routes lopen."""
     def __init__(self, stations_file: str, connections_file: str) -> None:
-        self._stations: dict[str, Station] = self.load_stations(stations_file)
+        self.stations: dict[str, Station] = self.load_stations(stations_file)
         self.connections: list[Connection] = self.load_connections(connections_file)
 
     def load_stations(self, stations_file: str) -> list:
@@ -138,8 +138,8 @@ class Region:
         # add connections and distances
         df_connections = pd.read_csv(connections_file)
         for l in range(len(df_connections)):
-            stationA = self._stations[df_connections.loc[l, 'station1']]
-            stationB = self._stations[df_connections.loc[l, 'station2']]
+            stationA = self.stations[df_connections.loc[l, 'station1']]
+            stationB = self.stations[df_connections.loc[l, 'station2']]
             new_connection = Connection(stationA, stationB, df_connections.loc[l, 'distance'])
             connections.append(new_connection)
 

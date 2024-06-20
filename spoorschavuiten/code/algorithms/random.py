@@ -1,26 +1,26 @@
 import random
-from code.classes.classes import Route
+from code.classes.classes import Route, Station
 
 
 class Random:
     """
     Fully random algorithm.
     """
-    def __init__(self, schedule, maxTime: int, maxTrains: int):
+    def __init__(self, schedule, maxTime: int, maxTrains: int) -> None:
         self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains
         self.time = 0
 
-    def choose_station(self):
-        return random.choice(list(self.schedule._stations.values()))
+    def choose_station(self) -> Station:
+        return random.choice(list(self.schedule.stations.values()))
 
     def get_connections(self, currentStation) -> list:
         connections = []
         for connection in self.schedule.connections:
-            if connection._stationA == currentStation:
+            if connection.stationA == currentStation:
                 connections.append((connection, "f"))
-            if connection._stationB == currentStation:
+            if connection.stationB == currentStation:
                 connections.append((connection, "b"))
         return connections
     
@@ -38,9 +38,9 @@ class Random:
 
     def set_new_station(self, station, direction, connection):
         if direction == "f":
-            station = connection._stationB
+            station = connection.stationB
         else:
-            station = connection._stationA
+            station = connection.stationA
         return station
     
     def generate_output(self) -> None:

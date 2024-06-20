@@ -109,9 +109,9 @@ def draw_dots(schedule: Schedule, x: list, y: list) -> None:
     '''
     Draws all stations as dots on the map.
     '''
-    for station in schedule._stations:
-        x.append(schedule._stations[station]._x)
-        y.append(schedule._stations[station]._y)
+    for station in schedule.stations:
+        x.append(schedule.stations[station]._x)
+        y.append(schedule.stations[station]._y)
     plt.scatter(x, y, c= "black", s=30)
     plt.axis("off")
 
@@ -121,10 +121,10 @@ def draw_dots_with_names(schedule: Schedule, x: list, y: list) -> None:
     Draws all stations as dots on the map, also adds the name of the station to the plot.
     '''
     z = []
-    for station in schedule._stations:
-        x.append(schedule._stations[station]._x)
-        y.append(schedule._stations[station]._y)
-        z.append(schedule._stations[station]._name)
+    for station in schedule.stations:
+        x.append(schedule.stations[station]._x)
+        y.append(schedule.stations[station]._y)
+        z.append(schedule.stations[station]._name)
     plt.scatter(x, y, c= "black", s=30)
 
     for i, txt in enumerate(z):
@@ -140,10 +140,10 @@ def draw_lines(schedule: Schedule, xList: list, yList: list) -> None:
     Draws all connections as lines on the map.
     '''
     for connection in schedule.connections:
-        xA = connection._stationA._x
-        yA = connection._stationA._y
-        xB = connection._stationB._x
-        yB = connection._stationB._y
+        xA = connection.stationA._x
+        yA = connection.stationA._y
+        xB = connection.stationB._x
+        yB = connection.stationB._y
 
         xList.append(xA)
         yList.append(yA)
@@ -163,10 +163,10 @@ def draw_used_connections(schedule: Schedule, color: list) -> None:
     yList = []
     for i, route in enumerate(schedule.routes):
         for connection in route.route:
-            xA = connection._stationA._x
-            yA = connection._stationA._y
-            xB = connection._stationB._x
-            yB = connection._stationB._y
+            xA = connection.stationA._x
+            yA = connection.stationA._y
+            xB = connection.stationB._x
+            yB = connection.stationB._y
 
             xList.append(xA)
             yList.append(yA)
@@ -213,7 +213,7 @@ def outputToFile(schedule: Schedule, title: str, file: str):
     writeInFile("train,stations", file)
     writeInFile("\n", file)
     for i, route in enumerate(schedule.routes, 1):
-        writeInFile(f'train_{i},"{route._stations}"', file)
+        writeInFile(f'train_{i},"{route.stations}"', file)
         writeInFile("\n", file)
     writeInFile(f"score,{schedule.calculate_value()}", file)
     writeInFile("\n", file)

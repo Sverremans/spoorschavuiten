@@ -1,7 +1,8 @@
 import copy, random
 from code.algorithms.greedy import Greedy
 
-# NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219. Dit komt zeer in de buurt (9202).
+# NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219 -> 9214 misschien mogelijk (-5). 
+# Dit komt zeer in de buurt (9202).
 # NOTE voor Nederland is dit 7549.
 # TODO kijk eens naar deze manual: https://realpython.com/python-property/
 
@@ -75,7 +76,6 @@ class HillClimber:
             self._value = calc_value
             self._oldSchedule = self.newSchedule
             self.newSchedule = copy.deepcopy(self._oldSchedule)
-            # print("Verbetering gevonden")
             return True
         return False
 

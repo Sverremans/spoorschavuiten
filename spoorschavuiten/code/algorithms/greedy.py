@@ -12,11 +12,11 @@ class Greedy(Random):
         unused_connections = []
         
         for connection in self.schedule.connections:
-            if connection._stationA == current_station:
+            if connection.stationA == current_station:
                 possible_connections.append((connection, "f"))
                 if not connection.used:
                     unused_connections.append((connection, "f"))
-            if connection._stationB == current_station:
+            if connection.stationB == current_station:
                 possible_connections.append((connection, "b"))
                 if not connection.used:
                     unused_connections.append((connection, "b"))
