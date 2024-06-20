@@ -15,7 +15,7 @@ if __name__ == "__main__":
         "salmon", "deepskyblue", "deeppink", "darkviolet", "goldenrod"]
 
     holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
-    # nederland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
+    nederland = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
 
     # new_schedule = Schedule(holland)
     # max_trains = 7
@@ -28,17 +28,17 @@ if __name__ == "__main__":
     ### Hier volgt code om hillclimber te testen ###
 
     new_schedule = Schedule(holland)
-    max_trains = 4
+    max_trains = 7
     max_time = 120
     greedy_schedule = Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
 
     hillClimber = hc(new_schedule, max_time, max_trains)
-    hillClimber.run(1000000, 4)
+    hillClimber.run(10000, 4)
     hillClimber.generate_output()
     
-    depth_first = DepthFirst(new_schedule, max_time, max_trains)
-    depth_first.run()
+    # depth_first = DepthFirst(new_schedule, max_time, max_trains)
+    # depth_first.run()
 
     ### Hier eindigt code om hillclimber te testen ###
 

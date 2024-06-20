@@ -1,7 +1,8 @@
 import copy, random
 from code.algorithms.greedy import Greedy
 
-# NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219. Dit komt zeer in de buurt (9190).
+# NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219. Dit komt zeer in de buurt (9201).
+# NOTE voor Nederland is dit 7549.
 # TODO kijk eens naar deze manual: https://realpython.com/python-property/
 
 class HillClimber:
@@ -56,10 +57,10 @@ class HillClimber:
 
     def update_used_connections(self) -> None:
         """Updates the 'used' boolean of connection"""
-        used_connections = set()
+        used_connections = []
         for route in self._newSchedule._routes:
             for connection in route._route:
-                used_connections.add(connection)
+                used_connections.append(connection)
         for connection in self._newSchedule._connections:
             if connection in used_connections:
                 connection.is_used()
