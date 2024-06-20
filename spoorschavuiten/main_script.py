@@ -6,6 +6,7 @@ from code.algorithms.depth_first import DepthFirst
 from code.visualization.visualize import *
 from code.algorithms.hillclimber import HillClimber as hc
 from code.algorithms.hillclimber import HcStopCondition as hcStop
+from code.algorithms.hillclimber import Kopstations_HillClimber as ksHc
 
 
 if __name__ == "__main__":
@@ -33,11 +34,10 @@ if __name__ == "__main__":
     max_time = 120
     greedy_schedule = Kopstations_Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
-    greedy_schedule.generate_output()
 
-    # hillClimber = hc(new_schedule, max_time, max_trains)
-    # hillClimber.run(10000, 4)
-    # hillClimber.generate_output()
+    hillClimber = ksHc(new_schedule, max_time, max_trains)
+    hillClimber.run(100000, 4)
+    hillClimber.generate_output()
     
     # depth_first = DepthFirst(new_schedule, max_time, max_trains)
     # depth_first.run()

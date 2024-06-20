@@ -1,5 +1,5 @@
 import copy, random
-from code.algorithms.greedy import Greedy
+from code.algorithms.greedy import Greedy, Kopstations_Greedy
 from code.classes.classes import Schedule
 
 # NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219 -> 9214 misschien mogelijk (-5). 
@@ -168,3 +168,16 @@ class HcStopCondition(HillClimber):
 
         # Set newSchedule to be the last improving solution
         self.newSchedule = self._oldSchedule
+
+class Kopstations_HillClimber(HillClimber):
+    # FIXME: dit geeft een lagere score dan reguliere Hill Climber
+    def mutate_train(self) -> None:
+        # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
+        unused_connections = []
+        for connection in self.newSchedule.connections:
+            if not connection.used:
+                unused_connections.append(connection)
+
+        if unused_connections:
+            new_greedy = Kopstations_Greedy(self.newSchedule, 120, 1)
+            new_greedy.run()
