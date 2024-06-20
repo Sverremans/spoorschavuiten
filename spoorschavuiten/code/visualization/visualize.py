@@ -266,7 +266,7 @@ def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title:
     writeInFile("\n", file)
 
 
-def routesToFile(schedule: Schedule, title, file) -> None:
+def routesToFile(schedule: Schedule, title: str, file: str) -> None:
     '''
     Writes the connections used in a route to a new file.
     '''
@@ -281,3 +281,9 @@ def routesToFile(schedule: Schedule, title, file) -> None:
     writeInFile("\n", file)
 
 
+def scoresToFile(schedule: Schedule, numberOfIterations: int, file: str):
+    '''
+    Writes the scores of the Hill Climber into a CSV file, this can be used with outputGraph.
+    '''
+    writeInFile(f'"run_{numberOfIterations}, score", {schedule.calculate_value()}', file)
+    writeInFile("\n", file)
