@@ -1,14 +1,23 @@
 from code.algorithms.depth_first import DepthFirst
+from code.algorithms.depth_first_with_pruning import DepthFirstWithPruning
 from code.classes.classes import Schedule, Region
 from code.visualization.visualize import *
 
 holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
 new_schedule = Schedule(holland)
-max_trains = 4
+max_trains = 7
 max_time = 120
 
-depth_first = DepthFirst(new_schedule, max_time, max_trains)
-depth_first.run()
+greedy_lookahead = DepthFirstWithPruning(new_schedule, max_time, max_trains)
+greedy_lookahead.run()
+
+outputToFile(greedy_lookahead.schedule, "Greedy Lookahead algorithm output, 21/6/2024", "data/greedylookahead_ouput.csv")
+routesToFile(greedy_lookahead.schedule, "Greedy Lookahead algorithm output, 21/6/2024", "data/greedylookahead_route.csv")
+
+
+# depth_first = DepthFirst(new_schedule, max_time, max_trains)
+# depth_first.run()
+
 
 # outputToFile(depth_first.schedule, "Depht First algorithm output, 19/6/2024", "data/depthfirst_ouput.csv")
 # routesToFile(depth_first.schedule, "Depht First algorithm output, 19/6/2024", "data/depthfirst_route.csv")

@@ -3,9 +3,9 @@ import copy
 import time
 
 
-class DepthFirst():
+class DepthFirstWithPruning():
     """
-    A Depth First algorithm that builds a stack of schedules with a unique assignment of routes for each instance.
+    A Depth First algorithm that builds a stack of schedules with a unique assignment of routes for each instance, but prunes when after 4 connections added there is no improvement in score.
     """
 
     def __init__(self, schedule, maxTime: int, maxTrains: int):
@@ -33,8 +33,9 @@ class DepthFirst():
                 # for each possible starting position, visit all possible routes
                 while self.possible_routes:
                     step += 1
-                    print(f'Step {step}, current value: {self.best_score}, schedule: {len(self.schedule._routes)}')
+                    print(f'Step {step}, current value: {self.best_score}, schedule: {len(self.schedule.routes)}')
                     new_route = self.get_next_state()
+                    new_route = self.check_branch(new_route)
                     self.check_score(new_route)
                     current_station = new_route.current_station
                     self.build_children(new_route, current_station)
@@ -57,6 +58,35 @@ class DepthFirst():
 
         return self.possible_routes.pop()
     
+    def check_branch(self, new_route):
+        """
+        If last 4 additions have not improved score, stop the branch
+        """
+        connections_used = [connection for connection in new_route.route]
+        if self.schedule.routes:
+            scheduled_connections = [connection for route in self.schedule.routes for connection in route.route]
+        else:
+            scheduled_connections = []
+        
+        if len(connections_used) < 4:
+            x = len(connections_used)
+        else:
+            x = 4
+
+        not_improved = 0
+        for i in range(x):
+            if i == 1:
+                if connections_used[-i] in scheduled_connections and connections_used[-i] in connections_used[:-i]:
+                    not_improved += 1
+            else:
+                if connections_used[-i] in scheduled_connections and connections_used[-i] in (connections_used[:-i] + connections_used[-i+1:]):
+                    not_improved += 1
+        
+        if not_improved == 4:
+            return self.get_next_state()
+        else:
+            return new_route
+
     def check_score(self, new_route):
         """
         Check if new route has better score than best route
@@ -95,7 +125,7 @@ class DepthFirst():
 
     def get_connections(self, currentStation) -> list:
         connections = []
-        for connection in self.schedule._connections:
+        for connection in self.schedule.connections:
             if connection.stationA == currentStation:
                 connections.append((connection, "f"))
             if connection.stationB == currentStation:
