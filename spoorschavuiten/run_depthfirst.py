@@ -1,5 +1,5 @@
 from code.algorithms.depth_first import DepthFirst
-from code.algorithms.depth_first_with_pruning import DepthFirstWithPruning
+from code.algorithms.greedy_lookahead import GreedyLookahead
 from code.classes.classes import Schedule, Region
 from code.visualization.visualize import *
 
@@ -8,7 +8,7 @@ new_schedule = Schedule(holland)
 max_trains = 7
 max_time = 120
 
-greedy_lookahead = DepthFirstWithPruning(new_schedule, max_time, max_trains)
+greedy_lookahead = GreedyLookahead(new_schedule, max_time, max_trains, 3)
 greedy_lookahead.run()
 
 outputToFile(greedy_lookahead.schedule, "Greedy Lookahead algorithm output, 21/6/2024", "data/greedylookahead_ouput.csv")

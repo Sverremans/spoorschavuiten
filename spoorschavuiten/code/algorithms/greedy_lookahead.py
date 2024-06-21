@@ -3,15 +3,16 @@ import copy
 import time
 
 
-class DepthFirstWithPruning():
+class GreedyLookahead():
     """
-    A Depth First algorithm that builds a stack of schedules with a unique assignment of routes for each instance, but prunes when after 4 connections added there is no improvement in score.
+    A Greedy algorithm that builds a stack of schedules with a unique assignment of routes for each instance, but prunes when after 4 connections added there is no improvement in score.
     """
 
-    def __init__(self, schedule, maxTime: int, maxTrains: int):
+    def __init__(self, schedule, maxTime: int, maxTrains: int, lookahead: int):
         self.schedule = schedule
         self.maxTime = maxTime
         self.max_trains = maxTrains
+        self.lookahead = lookahead
 
         self.possible_routes = []
         self.best_route = None
@@ -68,13 +69,13 @@ class DepthFirstWithPruning():
         else:
             scheduled_connections = []
         
-        if len(connections_used) < 4:
-            x = len(connections_used)
+        if len(connections_used) < self.lookahead:
+            look = len(connections_used)
         else:
-            x = 4
+            look = self.lookahead
 
         not_improved = 0
-        for i in range(x):
+        for i in range(look):
             if i == 1:
                 if connections_used[-i] in scheduled_connections and connections_used[-i] in connections_used[:-i]:
                     not_improved += 1
@@ -82,7 +83,7 @@ class DepthFirstWithPruning():
                 if connections_used[-i] in scheduled_connections and connections_used[-i] in (connections_used[:-i] + connections_used[-i+1:]):
                     not_improved += 1
         
-        if not_improved == 4:
+        if not_improved == self.lookahead:
             return self.get_next_state()
         else:
             return new_route
