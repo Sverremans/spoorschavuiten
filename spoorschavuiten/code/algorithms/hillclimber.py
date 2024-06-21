@@ -61,10 +61,10 @@ class HillClimber:
 
     def update_used_connections(self) -> None:
         """Updates the 'used' boolean of connection"""
-        used_connections = []
+        used_connections = set()
         for route in self.newSchedule.routes:
             for connection in route.route:
-                used_connections.append(connection)
+                used_connections.add(connection)
         for connection in self.newSchedule.connections:
             if connection in used_connections:
                 connection.is_used()

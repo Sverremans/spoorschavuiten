@@ -2,30 +2,24 @@ from code.algorithms.random import Random
 from code.classes.classes import Route
 import random
 from typing import Any
-
+import functools
 
 class Greedy(Random):
     """
     Routes starts at random locations, but the rest is searched for in greedy way.
     """
     def get_connections(self, current_station) -> list:
-        possible_connections = []
+        possible_connections = self.schedule.get_connections(current_station)
         unused_connections = []
         
-        for connection in self.schedule.connections:
-            if connection.stationA == current_station:
-                possible_connections.append((connection, "f"))
-                if not connection.used:
-                    unused_connections.append((connection, "f"))
-            if connection.stationB == current_station:
-                possible_connections.append((connection, "b"))
-                if not connection.used:
-                    unused_connections.append((connection, "b"))
-        
+        for connection, direction in possible_connections:
+             if not connection.used:
+                    unused_connections.append((connection, direction))
+
         return possible_connections, unused_connections
 
     def choose_connection(self, possible_connections, unused_connections) -> Any:
-        if len(unused_connections) > 0:
+        if unused_connections:
             return random.choice(unused_connections)
         else:    
             return random.choice(possible_connections)

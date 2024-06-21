@@ -6,7 +6,7 @@ from code.algorithms.depth_first import DepthFirst
 from code.visualization.visualize import *
 from code.algorithms.hillclimber import HillClimber as hc
 from code.algorithms.hillclimber import HcStopCondition as hcStop
-from code.algorithms.hillclimber import termini_HillClimber_HillClimber as terHc
+from code.algorithms.hillclimber import termini_HillClimber as terHc
 
 
 if __name__ == "__main__":
@@ -29,14 +29,14 @@ if __name__ == "__main__":
 
     ### Hier volgt code om hillclimber te testen ###
 
-    new_schedule = Schedule(holland)
-    max_trains = 7
-    max_time = 120
+    new_schedule = Schedule(nederland)
+    max_trains = 9
+    max_time = 180
     greedy_schedule = termini_Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
 
-    hillClimber = terHc(new_schedule, max_time, max_trains)
-    hillClimber.run(100000, 4)
+    hillClimber = hc(new_schedule, max_time, max_trains)
+    hillClimber.run(10000, 4)
     hillClimber.generate_output()
     
     # depth_first = DepthFirst(new_schedule, max_time, max_trains)
