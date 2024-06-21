@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     start = time.time()
     all_outputs = []
-    times = 50
+    times = 1000000
     timeList = []
     colors = ["red", "blue", "pink", "black", "yellow",
         "hotpink", "orange", "violet", "cyan", "purple",
@@ -21,30 +21,21 @@ if __name__ == "__main__":
     for i in range(times):
         timeList.append(i + 1)
 
-    for _ in range(times):
-        # holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
-        # max_trains = 7
-
-        # for i in range(max_trains):
-        #     randomise.random_route(holland)
-        #     if holland.is_solution():
-        #         break
+    for i in range(times):
         schedule = Schedule(holland)
         randomSolution = rd.Random(schedule, 120, 7)
         randomSolution.run()
-        # onlyLines(holland)
-        # drawUsedConnections(holland, colors)
-        # visualizeMap(holland, "test.png")
 
         output = randomSolution.schedule.calculate_value()
-        print(schedule.calculate_value())
+        scoresToFile(schedule, i, "data/testen.csv")
+        # print(schedule.calculate_value())
         all_outputs.append(output)
 
-    # print("Average = " + str(sum(all_outputs) / 100000))
     end = time.time()
     # outputGraph(all_outputs, timeList)
+    # print(timeList)
     # print(all_outputs)
-    # outputGraphHist(all_outputs, timeList)
+    outputGraphHist(all_outputs, timeList)
 
     
     print(end - start)
