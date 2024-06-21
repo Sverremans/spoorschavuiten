@@ -190,15 +190,17 @@ def outputGraph(outputs: list, time: list) -> None:
     plt.show()
 
 
-def outputGraphHist(outputs: list, time: list) -> None:
+def outputGraphHist(outputs: list) -> None:
     '''
     Creates a histogram of the inputed data.
     '''
     y = outputs
     y.sort()
-    x = time
-    plt.hist(y, bins=10)
-    plt.savefig('figures/scoreVerdeling.png')
+    plt.hist(y, bins=20)
+    plt.xlabel("Score")
+    plt.ylabel("Number of occurrences")
+    plt.savefig('figures/randomScores.png')
+    plt.grid(True)
     plt.show()
 
 
@@ -285,5 +287,5 @@ def scoresToFile(schedule: Schedule, numberOfIterations: int, file: str):
     '''
     Writes the scores of the Hill Climber into a CSV file, this can be used with outputGraph.
     '''
-    writeInFile(f'"run_{numberOfIterations}, score", {schedule.calculate_value()}', file)
+    writeInFile(f'run_{numberOfIterations + 1}, {numberOfIterations + 1}, {schedule.calculate_value()}', file)
     writeInFile("\n", file)
