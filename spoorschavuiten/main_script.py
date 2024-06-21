@@ -32,11 +32,11 @@ if __name__ == "__main__":
     new_schedule = Schedule(nederland)
     max_trains = 9
     max_time = 180
-    greedy_schedule = termini_Greedy(new_schedule, max_time, max_trains)
+    greedy_schedule = Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
 
     hillClimber = hc(new_schedule, max_time, max_trains)
-    hillClimber.run(10000, 4)
+    hillClimber.run(1000000, 4)
     hillClimber.generate_output()
     
     # depth_first = DepthFirst(new_schedule, max_time, max_trains)
