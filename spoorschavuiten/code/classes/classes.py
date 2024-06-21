@@ -1,4 +1,5 @@
 import pandas as pd # type: ignore
+import functools
 
 
 class Station:
@@ -28,6 +29,7 @@ class Connection:
         self.stationB = stationB
         self._dist = dist
         self.used: bool = False
+        self._repr = f"{self.stationA} naar {self.stationB}"
 
     def get_dist(self) -> int:
         return self._dist
@@ -39,7 +41,7 @@ class Connection:
         self.used = False
     
     def __repr__(self) -> str:
-        return f"{self.stationA} naar {self.stationB}"
+        return self._repr
     
     # added to fix depth_first score getting method
     def __eq__(self, other) -> bool:
@@ -135,6 +137,18 @@ class Schedule:
         for i, route in enumerate(self.routes, 1):
             print(f'train_{i},"{route.stations}"')
         print(f"score,{self.calculate_value()}")
+
+    @functools.cache
+    def get_connections(self, current_station: Station) -> list[tuple[Connection, str]]:
+        possible_connections = []
+        
+        for connection in self.connections:
+            if connection.stationA == current_station:
+                possible_connections.append((connection, "f"))
+            if connection.stationB == current_station:
+                possible_connections.append((connection, "b"))
+        
+        return possible_connections
 
 
 class Region:

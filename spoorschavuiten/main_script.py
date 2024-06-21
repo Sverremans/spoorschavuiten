@@ -1,12 +1,12 @@
 from code.classes.classes import Region, Schedule
 from code.algorithms.random import Random
 from code.algorithms.greedy import Greedy
-from code.algorithms.greedy import Kopstations_Greedy
+from code.algorithms.greedy import termini_Greedy
 from code.algorithms.depth_first import DepthFirst
 from code.visualization.visualize import *
 from code.algorithms.hillclimber import HillClimber as hc
 from code.algorithms.hillclimber import HcStopCondition as hcStop
-from code.algorithms.hillclimber import Kopstations_HillClimber as ksHc
+from code.algorithms.hillclimber import termini_HillClimber as terHc
 
 
 if __name__ == "__main__":
@@ -29,14 +29,14 @@ if __name__ == "__main__":
 
     ### Hier volgt code om hillclimber te testen ###
 
-    new_schedule = Schedule(holland)
-    max_trains = 7
-    max_time = 120
-    greedy_schedule = Kopstations_Greedy(new_schedule, max_time, max_trains)
+    new_schedule = Schedule(nederland)
+    max_trains = 9
+    max_time = 180
+    greedy_schedule = Greedy(new_schedule, max_time, max_trains)
     greedy_schedule.run()
 
-    hillClimber = ksHc(new_schedule, max_time, max_trains)
-    hillClimber.run(100000, 4)
+    hillClimber = hc(new_schedule, max_time, max_trains)
+    hillClimber.run(1000000, 4)
     hillClimber.generate_output()
     
     # depth_first = DepthFirst(new_schedule, max_time, max_trains)

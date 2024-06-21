@@ -2,30 +2,24 @@ from code.algorithms.random import Random
 from code.classes.classes import Route
 import random
 from typing import Any
-
+import functools
 
 class Greedy(Random):
     """
     Routes starts at random locations, but the rest is searched for in greedy way.
     """
     def get_connections(self, current_station) -> list:
-        possible_connections = []
+        possible_connections = self.schedule.get_connections(current_station)
         unused_connections = []
         
-        for connection in self.schedule.connections:
-            if connection.stationA == current_station:
-                possible_connections.append((connection, "f"))
-                if not connection.used:
-                    unused_connections.append((connection, "f"))
-            if connection.stationB == current_station:
-                possible_connections.append((connection, "b"))
-                if not connection.used:
-                    unused_connections.append((connection, "b"))
-        
+        for connection, direction in possible_connections:
+             if not connection.used:
+                    unused_connections.append((connection, direction))
+
         return possible_connections, unused_connections
 
     def choose_connection(self, possible_connections, unused_connections) -> Any:
-        if len(unused_connections) > 0:
+        if unused_connections:
             return random.choice(unused_connections)
         else:    
             return random.choice(possible_connections)
@@ -67,30 +61,30 @@ class FixedGreedy(Greedy):
         self.time = 0
         random.seed(fixedSeed)
 
-class Kopstations_Greedy(Greedy):
+class termini_Greedy(Greedy):
     """
     Kiest eerst de stations met slechts één verbinding als startpunten.
     Deze heuristiek voorkomt het onnodig dubbel berijden van sporen.
     """
     def run(self) -> None:
         # Bepaal welke stations kopstations zijn
-        self._kopstations = []
-        self._unused_kopstations = []
+        self._termini = []
+        self._unused_termini = []
         for station in self.schedule.stations.values():
             if len(self.get_connections(station)[0]) == 1:
-                self._kopstations.append(station)
-                self._unused_kopstations.append(station)
+                self._termini.append(station)
+                self._unused_termini.append(station)
 
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
             
             # Kies eerst kopstations als beginpunten, daarna random andere stations
-            if self._unused_kopstations:
-                currentStation = self._unused_kopstations.pop()
+            if self._unused_termini:
+                currentStation = self._unused_termini.pop()
             else:
                 currentStation = self.choose_station()
-                while currentStation in self._kopstations:
+                while currentStation in self._termini:
                     currentStation = self.choose_station()
             route.add_station(currentStation)
 

@@ -24,4 +24,4 @@ for i in range(iterations):
     # routesToFile(hillClimber._newSchedule, f"Nederland test_{i + 1}", "data/test456.csv")
     # outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, f"Nederland test_{i + 1}", "data/test789.csv")
     scoresToFile(hillClimber.newSchedule, i, "data/testNew.csv")
-    # raise NotImplementedError
+
