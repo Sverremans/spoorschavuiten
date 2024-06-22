@@ -5,7 +5,7 @@ import time
 
 class GreedyLookahead():
     """
-    A Greedy algorithm that builds a stack of schedules with a unique assignment of routes for each instance, but prunes when after 4 connections added there is no improvement in score.
+    A Greedy algorithm that builds a stack of schedules with a unique assignment of routes for each instance, but prunes when after x connections added there is no improvement in score.
     """
 
     def __init__(self, schedule, maxTime: int, maxTrains: int, lookahead: int):
@@ -61,21 +61,18 @@ class GreedyLookahead():
     
     def check_branch(self, new_route):
         """
-        If last 4 additions have not improved score, stop the branch
+        If last x additions have not improved score, stop the branch
         """
         connections_used = [connection for connection in new_route.route]
+        if len(connections_used) < self.lookahead:
+            return new_route
         if self.schedule.routes:
             scheduled_connections = [connection for route in self.schedule.routes for connection in route.route]
         else:
             scheduled_connections = []
-        # wellicht dit veranderen.
-        if len(connections_used) < self.lookahead:
-            look = len(connections_used)
-        else:
-            look = self.lookahead
 
         not_improved = 0
-        for i in range(look):
+        for i in range(self.lookahead):
             if i == 1:
                 if connections_used[-i] in scheduled_connections and connections_used[-i] in connections_used[:-i]:
                     not_improved += 1
