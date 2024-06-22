@@ -42,7 +42,7 @@ class GreedyLookahead():
                     self.build_children(new_route, current_station)
 
             # past this point best possible route to add to schedule is found
-            print(f"passed this point. Best route is: {self.best_route._route}. Score: {self.best_score}")
+            print(f"passed this point. Best route is: {self.best_route.route}. Score: {self.best_score}")
             self.schedule.add_route(self.best_route)
             self.best_route = None
             self.best_score = 0
@@ -68,7 +68,7 @@ class GreedyLookahead():
             scheduled_connections = [connection for route in self.schedule.routes for connection in route.route]
         else:
             scheduled_connections = []
-        
+        # wellicht dit veranderen.
         if len(connections_used) < self.lookahead:
             look = len(connections_used)
         else:
