@@ -64,7 +64,7 @@ class GreedyLookahead():
         If last x additions have not improved score, stop the branch
         """
         connections_used = [connection for connection in new_route.route]
-        if len(connections_used) < self.lookahead:
+        if len(connections_used) < self.lookahead or len(self.possible_routes) == 0:
             return new_route
         if self.schedule.routes:
             scheduled_connections = [connection for route in self.schedule.routes for connection in route.route]
@@ -79,9 +79,11 @@ class GreedyLookahead():
             else:
                 if connections_used[-i] in scheduled_connections and connections_used[-i] in (connections_used[:-i] + connections_used[-i+1:]):
                     not_improved += 1
-        
+
+        # keep checking the next branch untill a good one is found
         if not_improved == self.lookahead:
-            return self.get_next_state()
+            new_route = self.get_next_state()
+            self.check_branch(new_route)
         else:
             return new_route
 
