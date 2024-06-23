@@ -1,24 +1,30 @@
-from code.classes.classes import Route
+from code.classes.classes import Route, Schedule
 import copy
 import time
 
 
 class GreedyLookahead():
     """
-    A Greedy algorithm that builds a stack of schedules with a unique assignment of routes for each instance, but prunes when after x connections added there is no improvement in score.
+    A Greedy algorithm that searches for the best routes in all possible configurations of a route to add to the schedule, but prunes a branch of possible routes when after x connections added there is no improvement in score.
+
+    pre: 
+    post:
     """
 
-    def __init__(self, schedule, maxTime: int, maxTrains: int, lookahead: int):
+    def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int, lookahead: int):
         self.schedule = schedule
         self.maxTime = maxTime
         self.max_trains = maxTrains
         self.lookahead = lookahead
 
-        self.possible_routes = []
-        self.best_route = None
-        self.best_score = 0
+        self.possible_routes: list[Route] = []
+        self.best_route: Route = None
+        self.best_score: int = 0
 
-    def run(self):
+    def run(self) -> None:
+        """
+        
+        """
         step = 0
         start = time.time()
 
@@ -74,16 +80,16 @@ class GreedyLookahead():
         not_improved = 0
         for i in range(self.lookahead):
             if i == 1:
-                if connections_used[-i] in scheduled_connections and connections_used[-i] in connections_used[:-i]:
+                if connections_used[-i] in scheduled_connections or connections_used[-i] in connections_used[:-i]:
                     not_improved += 1
             else:
-                if connections_used[-i] in scheduled_connections and connections_used[-i] in (connections_used[:-i] + connections_used[-i+1:]):
+                if connections_used[-i] in scheduled_connections or connections_used[-i] in (connections_used[:-i] + connections_used[-i+1:]):
                     not_improved += 1
 
         # keep checking the next branch untill a good one is found
         if not_improved == self.lookahead:
             new_route = self.get_next_state()
-            self.check_branch(new_route)
+            return self.check_branch(new_route)
         else:
             return new_route
 
