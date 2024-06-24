@@ -13,8 +13,8 @@ max_time = 180
 greedy_lookahead = GreedyLookahead(new_schedule, max_time, max_trains, 3)
 greedy_lookahead.run()
 
-outputToFile(greedy_lookahead.schedule, "Greedy Lookahead algorithm output, 23/6/2024", "data/greedylookahead_Nederland_ouput.csv")
-routesToFile(greedy_lookahead.schedule, "Greedy Lookahead algorithm output, 23/6/2024", "data/greedylookahead_Nederland_route.csv")
+outputToFile(greedy_lookahead.schedule, "Greedy Lookahead algorithm output_Nederland, 23/6/2024", "data/greedylookahead_ouput.csv")
+routesToFile(greedy_lookahead.schedule, "Greedy Lookahead algorithm output_Nederland, 23/6/2024", "data/greedylookahead_route.csv")
 
 
 # depth_first = DepthFirst(new_schedule, max_time, max_trains)

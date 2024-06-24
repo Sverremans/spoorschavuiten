@@ -67,7 +67,22 @@ if __name__ == "__main__":
     #     output2 = greedySolutionNed.schedule.calculate_value()
     #     scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_2.csv")
     #     # print(schedule.calculate_value())
-    #     # all_outputs.append(output2)
+    #     all_outputs.append(output)
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    # Greedy Nederland
+    for i in range(times):
+        schedule = Schedule(netherlands)
+        greedySolutionNed = gd.Greedy(schedule, 180, 20)
+        greedySolutionNed.run()
+
+        output2 = greedySolutionNed.schedule.calculate_value()
+        scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_3.csv")
+        # print(schedule.calculate_value())
+        # all_outputs.append(output2)
+        if (i + 1) % 5000 == 0:
+            print(f'Current iteration: {i + 1} out of {times}')
+            print(f"Time passed since last time: {time.time() - start}")
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
