@@ -47,16 +47,16 @@ if __name__ == "__main__":
     #     all_outputs.append(output)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    # Greedy Holland
-    for i in range(times):
-        schedule = Schedule(holland)
-        greedySolutionHol = gd.Greedy(schedule, 120, 7)
-        greedySolutionHol.run()
+    # # Greedy Holland
+    # for i in range(times):
+    #     schedule = Schedule(holland)
+    #     greedySolutionHol = gd.Greedy(schedule, 120, 7)
+    #     greedySolutionHol.run()
 
-        output = greedySolutionHol.schedule.calculate_value()
-        scoresToFile(schedule, i, "data/1000000GreedyScoresHolland.csv")
-        # print(schedule.calculate_value())
-        all_outputs.append(output)
+    #     output = greedySolutionHol.schedule.calculate_value()
+    #     scoresToFile(schedule, i, "data/1000000GreedyScoresHolland.csv")
+    #     # print(schedule.calculate_value())
+    #     all_outputs.append(output)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     # Greedy Nederland
@@ -66,9 +66,9 @@ if __name__ == "__main__":
         greedySolutionNed.run()
 
         output2 = greedySolutionNed.schedule.calculate_value()
-        scoresToFile(schedule, i, "data/1000000GreedyScoresNederland.csv")
+        scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_2.csv")
         # print(schedule.calculate_value())
-        all_outputs.append(output2)
+        # all_outputs.append(output2)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

@@ -8,15 +8,49 @@ import pandas as pd
 
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------
-score_list = []
-df_scores = pd.read_csv("data/1000000RandomScores.csv", header = None)
-for l in range(len(df_scores)):
-        score_list.append(df_scores.loc[l, 2])
-outputGraphHist(score_list)
+score_list1 = []
+df_scores1 = pd.read_csv("data/1000000RandomScoresHolland.csv", header = None)
+for l in range(len(df_scores1)):
+        score_list1.append(df_scores1.loc[l, 2])
+
+score_list2 = []
+df_scores2 = pd.read_csv("data/1000000GreedyScoresHolland.csv", header = None)
+for l in range(len(df_scores2)):
+        score_list2.append(df_scores2.loc[l, 2])
+
+outputGraphHistMultiple(score_list1, score_list2)
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------
-            
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+score_list1 = []
+df_scores1 = pd.read_csv("data/1000000RandomScoresNederland.csv", header = None)
+for l in range(len(df_scores1)):
+        score_list1.append(df_scores1.loc[l, 2])
 
+score_list2 = []
+df_scores2 = pd.read_csv("data/1000000GreedyScoresNederland.csv", header = None)
+for l in range(len(df_scores2)):
+        score_list2.append(df_scores2.loc[l, 2])
+
+outputGraphHistMultiple(score_list1, score_list2)
+
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# colors = ["red", "blue", "pink", "grey", "yellow",
+#         "hotpink", "orange", "violet", "cyan", "purple",
+#         "maroon", "indigo", "teal", "magenta", "crimson", "palevioletred", 
+#         "salmon", "deepskyblue", "deeppink", "darkviolet", "goldenrod", "red"]          
+
+# routes= [['Beverwijk naar Castricum', 'Zaandam naar Beverwijk', 'Zaandam naar Hoorn', 'Alkmaar naar Hoorn'], 
+#           ['Amsterdam Amstel naar Amsterdam Zuid', 'Amsterdam Amstel naar Amsterdam Centraal', 'Amsterdam Centraal naar Amsterdam Sloterdijk', 'Amsterdam Sloterdijk naar Zaandam', 'Zaandam naar Castricum', 'Castricum naar Alkmaar', 'Alkmaar naar Den Helder'], 
+#           ['Heemstede-Aerdenhout naar Haarlem', 'Leiden Centraal naar Heemstede-Aerdenhout', 'Den Haag Centraal naar Leiden Centraal', 'Delft naar Den Haag Centraal', 'Schiedam Centrum naar Delft', 'Rotterdam Centraal naar Schiedam Centrum', 'Dordrecht naar Rotterdam Centraal', 'Dordrecht naar Rotterdam Centraal', 'Rotterdam Centraal naar Rotterdam Alexander', 'Rotterdam Alexander naar Gouda'], 
+#           ['Den Haag Centraal naar Gouda', 'Gouda naar Alphen a/d Rijn', 'Leiden Centraal naar Alphen a/d Rijn', 'Leiden Centraal naar Schiphol Airport', 'Amsterdam Zuid naar Schiphol Airport', 'Amsterdam Zuid naar Amsterdam Sloterdijk', 'Amsterdam Sloterdijk naar Haarlem', 'Haarlem naar Beverwijk']]
+
+# holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
+# # netherlands = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv")
+
+# new_routes = convert_string_to_used_connections(routes, holland)
+# draw_figure_without_names(holland, colors, "data/holland_2.geojson", "figures/test.jpg", new_routes)
+# -----------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

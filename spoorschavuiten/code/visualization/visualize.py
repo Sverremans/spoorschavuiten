@@ -1,7 +1,7 @@
 import matplotlib # type: ignore
 matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt # type: ignore
-from code.classes.classes import Schedule
+from code.classes.classes import Schedule, Connection, Region
 from adjustText import adjust_text # type: ignore
 import geopandas as gpd # type: ignore
 
@@ -17,14 +17,15 @@ def draw_figure_with_names(schedule: Schedule, colors: list, geojson: str, file_
     visualize_map(file_name)
 
 
-def draw_figure_without_names(schedule: Schedule, colors: list, geojson: str, file_name: str):
+def draw_figure_without_names(schedule: Schedule, colors: list, geojson: str, file_name: str, routes):
     '''
     This function starts with drawing the desired region, the geojson file, without station names.
     It uses the schedule that is made to draw the used connections of the routes.
     The last step it takes in plotting the drawing and saving it as a picture.
     '''
     make_map(schedule, geojson)
-    draw_used_connections(schedule, colors)
+    # draw_used_connections(schedule, colors)
+    draw_used_connections_via_routes(routes, colors)
     visualize_map(file_name)
 
 
@@ -177,6 +178,43 @@ def draw_used_connections(schedule: Schedule, color: list) -> None:
             xList.clear()
             yList.clear()
 
+def draw_used_connections_via_routes(routes: list[list[Connection]], color: list) -> None:
+    '''
+    Draws all connections used in a route, all routes in the schedule get a different color. 
+    '''
+    xList = []
+    yList = []
+    for connect in routes:
+        for i, route in enumerate(connect):
+            xA = route.stationA._x
+            yA = route.stationA._y
+            xB = route.stationB._x
+            yB = route.stationB._y
+
+            xList.append(xA)
+            yList.append(yA)
+            xList.append(xB)
+            yList.append(yB)
+            plt.plot(xList, yList, c = color[i])
+            # print(color)
+            xList.clear()
+            yList.clear()
+
+
+def convert_string_to_used_connections(routes: list[list[str]], region: Region) ->  list[list[Connection]]:
+    '''
+    Converts strings to a connection.
+    These can be drawn with another function. 
+    '''
+    connections = region.connections
+    for connect in routes:
+        for i in range(len(connect)):
+            for j in range(len(connections)):
+                test = connections[j]
+                if connect[i] == test._repr:
+                    connect[i] = connections[j]
+    return routes
+
 
 def outputGraph(outputs: list, time: list) -> None:
     '''
@@ -197,6 +235,23 @@ def outputGraphHist(outputs: list) -> None:
     y = outputs
     y.sort()
     plt.hist(y, bins=20)
+    plt.xlabel("Score")
+    plt.ylabel("Number of occurrences")
+    plt.savefig('figures/randomScores.png')
+    plt.grid(True)
+    plt.show()
+
+
+def outputGraphHistMultiple(outputs1: list, outputs2: list) -> None:
+    '''
+    Creates a histogram of the inputed data.
+    '''
+    y1 = outputs1
+    y2 = outputs2
+
+    plt.hist(y1, bins=20, color= 'blue')
+    plt.hist(y2, bins=20, color= 'red')
+    plt.scatter(9202, 300000, color='black')
     plt.xlabel("Score")
     plt.ylabel("Number of occurrences")
     plt.savefig('figures/randomScores.png')
