@@ -234,27 +234,28 @@ def outputGraphHist(outputs: list) -> None:
     '''
     y = outputs
     y.sort()
-    plt.hist(y, bins=20)
+    plt.hist(y, bins=10, color = "black")
     plt.xlabel("Score")
     plt.ylabel("Number of occurrences")
-    plt.savefig('figures/randomScores.png')
+    plt.savefig('figures/climbScores.jpg')
     plt.grid(True)
     plt.show()
 
 
-def outputGraphHistMultiple(outputs1: list, outputs2: list) -> None:
+def outputGraphHistMultiple(outputs1: list, outputs2: list, outputs3: list) -> None:
     '''
     Creates a histogram of the inputed data.
     '''
     y1 = outputs1
     y2 = outputs2
+    y3 = outputs3
 
-    plt.hist(y1, bins=20, color= 'blue')
-    plt.hist(y2, bins=20, color= 'red')
-    plt.scatter(9202, 300000, color='black')
+    plt.hist(y1, bins=5, color= 'blue')
+    plt.hist(y2, bins=5, color= 'red')
+    plt.hist(y3, bins=1, color= 'black')
     plt.xlabel("Score")
     plt.ylabel("Number of occurrences")
-    plt.savefig('figures/randomScores.png')
+    plt.savefig('figures/randomScoresVSGreedyScores.jpg')
     plt.grid(True)
     plt.show()
 

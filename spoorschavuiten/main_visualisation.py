@@ -9,30 +9,36 @@ import pandas as pd
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------
 score_list1 = []
-df_scores1 = pd.read_csv("data/1000000RandomScoresHolland.csv", header = None)
+df_scores1 = pd.read_csv("data/1000000RandomScoresHolland_2.csv", header = None)
 for l in range(len(df_scores1)):
         score_list1.append(df_scores1.loc[l, 2])
-
+print(len(score_list1))
 score_list2 = []
-df_scores2 = pd.read_csv("data/1000000GreedyScoresHolland.csv", header = None)
+df_scores2 = pd.read_csv("data/1000000GreedyScoresHolland_2.csv", header = None)
 for l in range(len(df_scores2)):
         score_list2.append(df_scores2.loc[l, 2])
-
-outputGraphHistMultiple(score_list1, score_list2)
+print(len(score_list2))
+score_list3 = []
+df_scores3 = pd.read_csv("data/hillclimberHollandScores_3.csv", header = None)
+for l in range(len(df_scores3)):
+        score_list3.append(df_scores3.loc[l, 2])
+print(len(score_list3))
+outputGraphHistMultiple(score_list1, score_list2, score_list3)
+# outputGraphHist(score_list3)
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------
 # -----------------------------------------------------------------------------------------------------------------------------------------------
-score_list1 = []
-df_scores1 = pd.read_csv("data/1000000RandomScoresNederland.csv", header = None)
-for l in range(len(df_scores1)):
-        score_list1.append(df_scores1.loc[l, 2])
+# score_list1 = []
+# df_scores1 = pd.read_csv("data/1000000RandomScoresNederland.csv", header = None)
+# for l in range(len(df_scores1)):
+#         score_list1.append(df_scores1.loc[l, 2])
 
-score_list2 = []
-df_scores2 = pd.read_csv("data/1000000GreedyScoresNederland.csv", header = None)
-for l in range(len(df_scores2)):
-        score_list2.append(df_scores2.loc[l, 2])
+# score_list2 = []
+# df_scores2 = pd.read_csv("data/1000000GreedyScoresNederland.csv", header = None)
+# for l in range(len(df_scores2)):
+#         score_list2.append(df_scores2.loc[l, 2])
 
-outputGraphHistMultiple(score_list1, score_list2)
+# outputGraphHistMultiple(score_list1, score_list2)
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------
 # colors = ["red", "blue", "pink", "grey", "yellow",

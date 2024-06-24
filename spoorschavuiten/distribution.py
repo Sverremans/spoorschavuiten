@@ -1,5 +1,4 @@
 from code.classes.classes import Region, Schedule
-# from code.algorithms import randomise, randomise2, randomWithConstraints
 from code.algorithms import random as rd
 from code.algorithms import greedy as gd
 from code.visualization.visualize import *
@@ -17,22 +16,22 @@ if __name__ == "__main__":
 
     start = time.time()
     all_outputs = []
-    times = 1000000
+    times = 1299
     timeList = []
 
     for i in range(times):
         timeList.append(i + 1)
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    # # Random Holland
-    # for i in range(times):
-    #     schedule = Schedule(holland)
-    #     randomSolution = rd.Random(schedule, 120, 7)
-    #     randomSolution.run()
+    # Random Holland
+    for i in range(times):
+        schedule = Schedule(holland)
+        randomSolution = rd.Random(schedule, 120, 7)
+        randomSolution.run()
 
-    #     output = randomSolution.schedule.calculate_value()
-    #     scoresToFile(schedule, i, "data/1000000RandomScores.csv")
-    #     # print(schedule.calculate_value())
-    #     all_outputs.append(output)
+        output = randomSolution.schedule.calculate_value()
+        scoresToFile(schedule, i, "data/1000000RandomScoresHolland_2.csv")
+        # print(schedule.calculate_value())
+        all_outputs.append(output)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     # # Random Nederland
@@ -47,28 +46,28 @@ if __name__ == "__main__":
     #     all_outputs.append(output)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    # # Greedy Holland
-    # for i in range(times):
-    #     schedule = Schedule(holland)
-    #     greedySolutionHol = gd.Greedy(schedule, 120, 7)
-    #     greedySolutionHol.run()
+    # Greedy Holland
+    for i in range(times):
+        schedule = Schedule(holland)
+        greedySolutionHol = gd.Greedy(schedule, 120, 7)
+        greedySolutionHol.run()
 
-    #     output = greedySolutionHol.schedule.calculate_value()
-    #     scoresToFile(schedule, i, "data/1000000GreedyScoresHolland.csv")
-    #     # print(schedule.calculate_value())
-    #     all_outputs.append(output)
+        output = greedySolutionHol.schedule.calculate_value()
+        scoresToFile(schedule, i, "data/1000000GreedyScoresHolland_2.csv")
+        # print(schedule.calculate_value())
+        all_outputs.append(output)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    # Greedy Nederland
-    for i in range(times):
-        schedule = Schedule(netherlands)
-        greedySolutionNed = gd.Greedy(schedule, 180, 20)
-        greedySolutionNed.run()
+    # # Greedy Nederland
+    # for i in range(times):
+    #     schedule = Schedule(netherlands)
+    #     greedySolutionNed = gd.Greedy(schedule, 180, 20)
+    #     greedySolutionNed.run()
 
-        output2 = greedySolutionNed.schedule.calculate_value()
-        scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_2.csv")
-        # print(schedule.calculate_value())
-        # all_outputs.append(output2)
+    #     output2 = greedySolutionNed.schedule.calculate_value()
+    #     scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_2.csv")
+    #     # print(schedule.calculate_value())
+    #     # all_outputs.append(output2)
 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
