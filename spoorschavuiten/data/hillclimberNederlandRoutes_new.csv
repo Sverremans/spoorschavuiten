@@ -1,0 +1,1155 @@
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_1
+
+train_1,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_2,"[Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_3,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Castricum]"
+train_4,"[Weert naar Eindhoven, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Breda naar Dordrecht]"
+train_5,"[Leiden Centraal naar Alphen a/d Rijn, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum]"
+train_6,"[Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_7,"[Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg]"
+train_8,"[Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Zwolle naar Deventer, Assen naar Zwolle]"
+train_9,"[Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_10,"[Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS]"
+train_11,"[Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+train_12,"[Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Deventer naar Zutphen]"
+train_13,"[Assen naar Zwolle, Zwolle naar Deventer, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Nijmegen naar Arnhem Centraal]"
+train_14,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak]"
+train_15,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum]"
+train_16,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Delft naar Den Haag HS]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_2
+
+train_1,"[Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_2,"[Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Amsterdam Sloterdijk naar Zaandam, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+train_3,"[Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Laan v NOI naar Gouda]"
+train_4,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Deventer naar Zutphen, Deventer naar Almelo]"
+train_5,"[Breda naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht]"
+train_6,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum]"
+train_7,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Hilversum]"
+train_8,"[Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_9,"[Alkmaar naar Den Helder, Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Hoorn, Zaandam naar Hoorn]"
+train_10,"[Zutphen naar Dieren, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Tilburg, Tilburg naar Breda]"
+train_11,"[Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren, Arnhem Centraal naar Dieren]"
+train_12,"[Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg]"
+train_13,"[Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond]"
+train_14,"[Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer]"
+train_15,"[Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn]"
+train_16,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_3
+
+train_1,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_2,"[Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Deventer naar Zutphen, Zwolle naar Deventer, Zwolle naar Almelo]"
+train_3,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren]"
+train_4,"[Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond]"
+train_5,"[Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum]"
+train_6,"[Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_7,"[Zaandam naar Hoorn, Zaandam naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn]"
+train_8,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amersfoort]"
+train_9,"[Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn]"
+train_10,"[Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Gouda, Den Haag Centraal naar Gouda]"
+train_11,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Zwolle naar Amersfoort]"
+train_12,"[Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Den Haag Laan v NOI naar Gouda]"
+train_13,"[Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak]"
+train_14,"[Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_15,"[Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond]"
+train_16,"[Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_4
+
+train_1,"[Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk]"
+train_2,"[Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Haarlem naar Beverwijk]"
+train_3,"[Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda]"
+train_4,"[Breda naar Dordrecht, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_5,"[Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem]"
+train_6,"[Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Apeldoorn, Apeldoorn naar Zutphen]"
+train_7,"[Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_8,"[Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Delft naar Den Haag HS]"
+train_9,"[Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Amstel]"
+train_10,"[s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort]"
+train_11,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout]"
+train_12,"[Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen]"
+train_13,"[Den Haag Centraal naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amersfoort, Zwolle naar Amersfoort]"
+train_14,"[Eindhoven naar Helmond, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen]"
+train_15,"[Groningen naar Assen, Assen naar Zwolle, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_16,"[Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar Tilburg, Tilburg naar Breda]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_5
+
+train_1,"[Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_2,"[Eindhoven naar s-Hertogenbosch, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen]"
+train_3,"[Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_4,"[Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Ede-Wageningen]"
+train_5,"[Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Almelo, Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort]"
+train_6,"[Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort]"
+train_7,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk]"
+train_8,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal]"
+train_9,"[Utrecht Centraal naar Gouda, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+train_10,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft]"
+train_11,"[Breda naar Dordrecht, Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_12,"[Zwolle naar Amersfoort, Assen naar Zwolle, Groningen naar Assen, Groningen naar Assen]"
+train_13,"[Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander]"
+train_14,"[Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS, Delft naar Den Haag HS]"
+train_15,"[Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_16,"[Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk, Beverwijk naar Castricum]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_6
+
+train_1,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum]"
+train_2,"[Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_3,"[Roosendaal naar Vlissingen]"
+train_4,"[Leiden Centraal naar Alphen a/d Rijn, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS, Delft naar Den Haag HS, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+train_5,"[Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Hilversum]"
+train_6,"[Groningen naar Assen, Assen naar Zwolle, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_7,"[Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_8,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_9,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum]"
+train_10,"[Utrecht Centraal naar Gouda, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Schiphol Airport]"
+train_11,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda]"
+train_12,"[Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_13,"[Zwolle naar Almelo, Zwolle naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar s-Hertogenbosch]"
+train_14,"[Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_15,"[Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport]"
+train_16,"[Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Oss]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_7
+
+train_1,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum]"
+train_2,"[Apeldoorn naar Zutphen, Deventer naar Zutphen, Zwolle naar Deventer, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede]"
+train_3,"[Assen naar Zwolle, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_4,"[Roosendaal naar Vlissingen, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum]"
+train_5,"[Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+train_6,"[Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam]"
+train_7,"[Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_8,"[Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_9,"[Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_10,"[Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Amsterdam Amstel]"
+train_11,"[Leiden Centraal naar Alphen a/d Rijn, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen]"
+train_12,"[Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Etten-Leur, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen]"
+train_13,"[Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Apeldoorn, Deventer naar Apeldoorn, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal]"
+train_14,"[Deventer naar Zutphen, Zwolle naar Deventer, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_15,"[Haarlem naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid]"
+train_16,"[Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Gouda, Gouda naar Alphen a/d Rijn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_8
+
+train_1,"[Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Zutphen, Deventer naar Zutphen, Deventer naar Zutphen, Zutphen naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen]"
+train_2,"[Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_3,"[Utrecht Centraal naar Gouda, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Hilversum]"
+train_4,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_5,"[s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal]"
+train_6,"[Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_7,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum]"
+train_8,"[Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Alphen a/d Rijn]"
+train_9,"[Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen, Deventer naar Zutphen, Deventer naar Apeldoorn]"
+train_10,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Almelo]"
+train_11,"[Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout]"
+train_12,"[Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht]"
+train_13,"[Den Haag HS naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid]"
+train_14,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond]"
+train_15,"[Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_16,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_9
+
+train_1,"[Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Tilburg, s-Hertogenbosch naar Tilburg]"
+train_2,"[Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Breda naar Etten-Leur, Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg]"
+train_3,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+train_4,"[Zwolle naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_5,"[Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn]"
+train_6,"[Alkmaar naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Laan v NOI naar Leiden Centraal]"
+train_7,"[Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_8,"[Groningen naar Assen, Assen naar Zwolle, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_9,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+train_10,"[Groningen naar Assen, Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Groningen]"
+train_11,"[Zwolle naar Deventer, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Alphen a/d Rijn]"
+train_12,"[Den Haag Centraal naar Gouda, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal]"
+train_13,"[Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal]"
+train_14,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal]"
+train_15,"[Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_16,"[Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amersfoort]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_10
+
+train_1,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander]"
+train_2,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Deventer naar Zutphen, Apeldoorn naar Zutphen]"
+train_3,"[Roosendaal naar Vlissingen]"
+train_4,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Centraal naar Almere Centrum]"
+train_5,"[Delft naar Den Haag HS, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum]"
+train_6,"[Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Ede-Wageningen]"
+train_7,"[Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_8,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+train_9,"[Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_10,"[Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch]"
+train_11,"[Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem]"
+train_12,"[Zaandam naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar]"
+train_13,"[Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_14,"[Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_15,"[Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander]"
+train_16,"[Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_11
+
+train_1,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_2,"[Alkmaar naar Den Helder, Castricum naar Alkmaar, Beverwijk naar Castricum, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Almere Centrum]"
+train_3,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Castricum]"
+train_4,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Almelo, Zwolle naar Almelo]"
+train_5,"[Breda naar Etten-Leur, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda]"
+train_6,"[Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Schiphol Airport]"
+train_7,"[Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_8,"[Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Delft naar Den Haag HS]"
+train_9,"[Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn]"
+train_10,"[Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Centraal]"
+train_11,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort]"
+train_12,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss]"
+train_13,"[Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal]"
+train_14,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Deventer, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren]"
+train_15,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch]"
+train_16,"[Weert naar Eindhoven, Weert naar Eindhoven, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_12
+
+train_1,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Hilversum naar Almere Centrum]"
+train_2,"[Breda naar Etten-Leur, Breda naar Etten-Leur, Breda naar Dordrecht, Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_3,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport]"
+train_4,"[Delft naar Den Haag HS, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn]"
+train_5,"[Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Oss naar Nijmegen, s-Hertogenbosch naar Oss]"
+train_6,"[Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Almelo]"
+train_7,"[Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda]"
+train_8,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Beverwijk naar Castricum, Zaandam naar Beverwijk]"
+train_9,"[Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_10,"[Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo]"
+train_11,"[Assen naar Zwolle, Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen]"
+train_12,"[Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_13,"[Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen]"
+train_14,"[Zutphen naar Dieren, Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen]"
+train_15,"[Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS, Den Haag HS naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_16,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_13
+
+train_1,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum]"
+train_2,"[Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+train_3,"[Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_4,"[Den Haag Centraal naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht]"
+train_5,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond]"
+train_6,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Zwolle naar Deventer, Zwolle naar Amersfoort]"
+train_7,"[Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel]"
+train_8,"[Roermond naar Weert, Roermond naar Weert, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss]"
+train_9,"[Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Almelo, Almelo naar Hengelo, Almelo naar Hengelo]"
+train_10,"[Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum]"
+train_11,"[Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum]"
+train_12,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_13,"[Leiden Centraal naar Alphen a/d Rijn, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Schiphol Airport]"
+train_14,"[Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, Oss naar Nijmegen]"
+train_15,"[Haarlem naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum]"
+train_16,"[Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amersfoort]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_14
+
+train_1,"[Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander]"
+train_2,"[Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_3,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Groningen naar Assen, Groningen naar Assen]"
+train_4,"[Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Zaandam naar Beverwijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Hilversum]"
+train_5,"[Breda naar Etten-Leur, Breda naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI]"
+train_6,"[Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Breda naar Dordrecht, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond]"
+train_7,"[Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI]"
+train_8,"[Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss]"
+train_9,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg]"
+train_10,"[Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Delft naar Den Haag HS, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda]"
+train_11,"[Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_12,"[Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_13,"[Zwolle naar Amersfoort, Zwolle naar Deventer, Deventer naar Almelo, Almelo naar Hengelo, Almelo naar Hengelo, Almelo naar Hengelo, Hengelo naar Enschede]"
+train_14,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_15,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar s-Hertogenbosch]"
+train_16,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_15
+
+train_1,"[Zwolle naar Almelo, Assen naar Zwolle, Groningen naar Assen]"
+train_2,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal]"
+train_3,"[Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo]"
+train_4,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Apeldoorn]"
+train_5,"[Alkmaar naar Den Helder, Castricum naar Alkmaar, Castricum naar Alkmaar, Castricum naar Alkmaar, Beverwijk naar Castricum, Beverwijk naar Castricum, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+train_6,"[Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal]"
+train_7,"[Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert]"
+train_8,"[Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amersfoort]"
+train_9,"[Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Den Haag HS naar Gouda]"
+train_10,"[Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_11,"[Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren]"
+train_12,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar s-Hertogenbosch, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_13,"[Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort, Zwolle naar Amersfoort]"
+train_14,"[Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal]"
+train_15,"[Tilburg naar Breda, Breda naar Dordrecht, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch]"
+train_16,"[Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_16
+
+train_1,"[Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen]"
+train_2,"[Zaandam naar Beverwijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Hilversum]"
+train_3,"[Weert naar Eindhoven, Weert naar Eindhoven, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo, Helmond naar Venlo]"
+train_4,"[Amsterdam Amstel naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport]"
+train_5,"[Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI]"
+train_6,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal]"
+train_7,"[Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Dordrecht]"
+train_8,"[Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Roermond naar Weert, Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond]"
+train_9,"[Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum, Haarlem naar Beverwijk]"
+train_10,"[Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_11,"[Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede]"
+train_12,"[Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda]"
+train_13,"[Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_14,"[Roosendaal naar Vlissingen, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander]"
+train_15,"[Deventer naar Almelo, Deventer naar Zutphen, Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Zwolle naar Deventer]"
+train_16,"[Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_17
+
+train_1,"[Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_2,"[Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_3,"[Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum]"
+train_4,"[Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Delft naar Den Haag HS]"
+train_5,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk, Beverwijk naar Castricum, Beverwijk naar Castricum, Beverwijk naar Castricum]"
+train_6,"[Deventer naar Apeldoorn, Zwolle naar Deventer, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen]"
+train_7,"[Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amersfoort]"
+train_8,"[Tilburg naar Breda, Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Delft naar Den Haag Centraal]"
+train_9,"[Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Zuid]"
+train_10,"[Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_11,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Dordrecht]"
+train_12,"[Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo, Helmond naar Venlo]"
+train_13,"[Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg]"
+train_14,"[Zaandam naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag Laan v NOI naar Gouda]"
+train_15,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_16,"[Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Alexander naar Gouda, Utrecht Centraal naar Gouda]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_18
+
+train_1,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Laan v NOI naar Leiden Centraal]"
+train_2,"[Alkmaar naar Den Helder, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_3,"[Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_4,"[Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_5,"[Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren]"
+train_6,"[Roosendaal naar Vlissingen, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander]"
+train_7,"[Deventer naar Zutphen, Deventer naar Almelo, Zwolle naar Almelo, Zwolle naar Amersfoort]"
+train_8,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Almere Centrum]"
+train_9,"[Castricum naar Alkmaar, Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal]"
+train_10,"[Almelo naar Hengelo, Zwolle naar Almelo, Assen naar Zwolle, Groningen naar Assen]"
+train_11,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum]"
+train_12,"[Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht]"
+train_13,"[Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+train_14,"[s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn]"
+train_15,"[Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Delft naar Den Haag HS]"
+train_16,"[Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_19
+
+train_1,"[Roosendaal naar Vlissingen, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander]"
+train_2,"[Alkmaar naar Den Helder, Alkmaar naar Den Helder, Castricum naar Alkmaar, Beverwijk naar Castricum, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem]"
+train_3,"[Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Zutphen, Zutphen naar Dieren]"
+train_4,"[s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen]"
+train_5,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_6,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Almere Centrum]"
+train_7,"[Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht]"
+train_8,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Apeldoorn, Deventer naar Apeldoorn, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_9,"[Zwolle naar Deventer, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen]"
+train_10,"[Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_11,"[Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn]"
+train_12,"[Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amersfoort, Zwolle naar Amersfoort, Assen naar Zwolle]"
+train_13,"[Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Schiphol Airport]"
+train_14,"[s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Centraal]"
+train_15,"[Den Haag HS naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Amsterdam Amstel]"
+train_16,"[Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_20
+
+train_1,"[Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Gouda, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Delft naar Den Haag HS]"
+train_2,"[Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Beverwijk]"
+train_3,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel]"
+train_4,"[Eindhoven naar Tilburg, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch]"
+train_5,"[Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Etten-Leur, Breda naar Etten-Leur, Tilburg naar Breda]"
+train_6,"[Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar]"
+train_7,"[Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Weert naar Eindhoven, Weert naar Eindhoven, Eindhoven naar Helmond, Eindhoven naar Helmond]"
+train_8,"[Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Assen naar Zwolle, Groningen naar Assen]"
+train_9,"[Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen]"
+train_10,"[Helmond naar Venlo, Eindhoven naar Helmond, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_11,"[Deventer naar Almelo, Zwolle naar Almelo, Steenwijk naar Zwolle, Steenwijk naar Zwolle]"
+train_12,"[Zwolle naar Deventer, Deventer naar Zutphen, Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_13,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_14,"[Den Haag Centraal naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Breda naar Etten-Leur, Breda naar Etten-Leur]"
+train_15,"[Rotterdam Alexander naar Gouda, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Laan v NOI naar Gouda]"
+train_16,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_21
+
+train_1,"[Deventer naar Zutphen, Deventer naar Zutphen, Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Hilversum]"
+train_2,"[Zaandam naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum]"
+train_3,"[Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_4,"[Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda]"
+train_5,"[Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Beverwijk naar Castricum, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+train_6,"[Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum]"
+train_7,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel]"
+train_8,"[Helmond naar Venlo, Eindhoven naar Helmond, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Sittard naar Roermond, Roermond naar Weert]"
+train_9,"[Groningen naar Assen, Assen naar Zwolle, Zwolle naar Deventer, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Zutphen naar Dieren]"
+train_10,"[Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar s-Hertogenbosch]"
+train_11,"[Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_12,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk]"
+train_13,"[Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen]"
+train_14,"[Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_15,"[Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren]"
+train_16,"[Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_22
+
+train_1,"[Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Tilburg naar Breda, s-Hertogenbosch naar Tilburg]"
+train_2,"[Alkmaar naar Hoorn, Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_3,"[Groningen naar Assen, Assen naar Zwolle, Zwolle naar Deventer, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort]"
+train_4,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Amersfoort]"
+train_5,"[Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Almere Centrum]"
+train_6,"[Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam]"
+train_7,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert]"
+train_8,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Zutphen, Deventer naar Zutphen]"
+train_9,"[Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda]"
+train_10,"[Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS]"
+train_11,"[Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid]"
+train_12,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+train_13,"[Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_14,"[Den Haag Laan v NOI naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht]"
+train_15,"[Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen]"
+train_16,"[Utrecht Centraal naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Alphen a/d Rijn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_23
+
+train_1,"[Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_2,"[Utrecht Centraal naar Gouda, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_3,"[Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Almere Centrum]"
+train_4,"[Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda]"
+train_5,"[Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal]"
+train_6,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Almelo, Deventer naar Almelo]"
+train_7,"[Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen]"
+train_8,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren]"
+train_9,"[Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Zutphen, Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Deventer naar Apeldoorn]"
+train_10,"[Beverwijk naar Castricum, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem]"
+train_11,"[Breda naar Etten-Leur, Breda naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht]"
+train_12,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg]"
+train_13,"[Zaandam naar Beverwijk, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn]"
+train_14,"[Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Hilversum]"
+train_15,"[Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_16,"[Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_24
+
+train_1,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen]"
+train_2,"[Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Utrecht Centraal naar Gouda]"
+train_3,"[Assen naar Zwolle, Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen]"
+train_4,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Apeldoorn, Apeldoorn naar Zutphen]"
+train_5,"[Zaandam naar Hoorn, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_6,"[Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn]"
+train_7,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_8,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_9,"[Eindhoven naar s-Hertogenbosch, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander]"
+train_10,"[Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_11,"[Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen, Deventer naar Zutphen, Deventer naar Almelo]"
+train_12,"[Helmond naar Venlo, Eindhoven naar Helmond, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_13,"[Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Breda naar Etten-Leur]"
+train_14,"[Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem]"
+train_15,"[Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Delft naar Den Haag HS, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn]"
+train_16,"[Tilburg naar Breda, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Zutphen naar Dieren, Zutphen naar Dieren, Zutphen naar Dieren]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_25
+
+train_1,"[Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Delft naar Den Haag HS, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_2,"[Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Hilversum]"
+train_3,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport]"
+train_4,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_5,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_6,"[Roermond naar Weert, Roermond naar Weert, Roermond naar Weert, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen]"
+train_7,"[Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander]"
+train_8,"[Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder, Alkmaar naar Den Helder, Castricum naar Alkmaar, Beverwijk naar Castricum]"
+train_9,"[Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Heemstede-Aerdenhout]"
+train_10,"[Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Zwolle naar Deventer, Zwolle naar Amersfoort]"
+train_11,"[Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar s-Hertogenbosch, Eindhoven naar s-Hertogenbosch]"
+train_12,"[Breda naar Dordrecht, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal]"
+train_13,"[Roermond naar Weert, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal]"
+train_14,"[Almelo naar Hengelo, Zwolle naar Almelo, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk]"
+train_15,"[Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amersfoort]"
+train_16,"[Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Castricum naar Alkmaar]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_26
+
+train_1,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_2,"[Den Haag HS naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid]"
+train_3,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_4,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Amersfoort]"
+train_5,"[s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort]"
+train_6,"[Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_7,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum]"
+train_8,"[Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn]"
+train_9,"[Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal]"
+train_10,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem]"
+train_11,"[Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Zwolle naar Deventer, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede]"
+train_12,"[Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft]"
+train_13,"[Breda naar Etten-Leur, Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amersfoort]"
+train_14,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport]"
+train_15,"[Zaandam naar Hoorn, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_16,"[Deventer naar Almelo, Deventer naar Zutphen, Apeldoorn naar Zutphen, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_27
+
+train_1,"[Den Haag Centraal naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren]"
+train_2,"[Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_3,"[Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft]"
+train_4,"[Roosendaal naar Vlissingen]"
+train_5,"[Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar Tilburg, Tilburg naar Breda]"
+train_6,"[Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Deventer naar Almelo, Deventer naar Almelo, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren]"
+train_7,"[Gouda naar Alphen a/d Rijn, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Hilversum]"
+train_8,"[Rotterdam Alexander naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid]"
+train_9,"[Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum]"
+train_10,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Assen naar Zwolle, Groningen naar Assen]"
+train_11,"[Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal, Den Haag HS naar Leiden Centraal]"
+train_12,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond]"
+train_13,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Hilversum naar Almere Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum]"
+train_14,"[Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_15,"[Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Apeldoorn]"
+train_16,"[Beverwijk naar Castricum, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Zaandam naar Beverwijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_28
+
+train_1,"[Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Zutphen, Deventer naar Zutphen, Deventer naar Almelo]"
+train_2,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal]"
+train_3,"[Breda naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Gouda]"
+train_4,"[Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn]"
+train_5,"[Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_6,"[Roosendaal naar Vlissingen, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss]"
+train_7,"[Oss naar Nijmegen, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen]"
+train_8,"[Den Haag Centraal naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum]"
+train_9,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch]"
+train_10,"[Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Gouda, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI]"
+train_11,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem]"
+train_12,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg]"
+train_13,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amersfoort, Zwolle naar Amersfoort]"
+train_14,"[Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Schiphol Airport]"
+train_15,"[Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak]"
+train_16,"[Zwolle naar Deventer, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_29
+
+train_1,"[Zwolle naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Deventer naar Zutphen, Apeldoorn naar Zutphen]"
+train_2,"[Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Almere Centrum]"
+train_3,"[Assen naar Zwolle, Zwolle naar Almelo, Almelo naar Hengelo, Almelo naar Hengelo, Almelo naar Hengelo, Hengelo naar Enschede]"
+train_4,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_5,"[Den Haag HS naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+train_6,"[Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_7,"[Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Deventer naar Almelo, Zwolle naar Almelo]"
+train_8,"[Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Utrecht Centraal naar Alphen a/d Rijn]"
+train_9,"[Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum]"
+train_10,"[Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg]"
+train_11,"[Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg, Tilburg naar Breda, Tilburg naar Breda]"
+train_12,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder, Alkmaar naar Den Helder]"
+train_13,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Oss naar Nijmegen, Oss naar Nijmegen]"
+train_14,"[Alkmaar naar Den Helder, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk]"
+train_15,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_16,"[Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_30
+
+train_1,"[Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_2,"[Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+train_3,"[Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Zwolle naar Amersfoort]"
+train_4,"[Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum]"
+train_5,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Assen naar Zwolle, Groningen naar Assen]"
+train_6,"[Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Tilburg naar Breda, Tilburg naar Breda, Tilburg naar Breda, s-Hertogenbosch naar Tilburg]"
+train_7,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Haarlem naar Beverwijk]"
+train_8,"[Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn]"
+train_9,"[Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer]"
+train_10,"[Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar s-Hertogenbosch]"
+train_11,"[Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond]"
+train_12,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond]"
+train_13,"[Apeldoorn naar Zutphen, Apeldoorn naar Zutphen, Apeldoorn naar Zutphen, Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Deventer naar Almelo]"
+train_14,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch]"
+train_15,"[Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+train_16,"[Leiden Centraal naar Alphen a/d Rijn, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_31
+
+train_1,"[Assen naar Zwolle, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_2,"[Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn]"
+train_3,"[Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn]"
+train_4,"[Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg, Tilburg naar Breda]"
+train_5,"[Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_6,"[Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn]"
+train_7,"[Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer]"
+train_8,"[Eindhoven naar Tilburg, Tilburg naar Breda, Tilburg naar Breda, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak]"
+train_9,"[Zwolle naar Amersfoort, Zwolle naar Deventer, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Nijmegen naar Arnhem Centraal]"
+train_10,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander]"
+train_11,"[Den Haag HS naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Deventer naar Almelo]"
+train_12,"[Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum]"
+train_13,"[Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem]"
+train_14,"[Oss naar Nijmegen, s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_15,"[Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Tilburg naar Breda]"
+train_16,"[s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo, Helmond naar Venlo]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_32
+
+train_1,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Almere Centrum]"
+train_2,"[Roosendaal naar Vlissingen, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Dordrecht]"
+train_3,"[Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal]"
+train_4,"[Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Zwolle naar Deventer, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_5,"[Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_6,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amersfoort, Zwolle naar Amersfoort, Assen naar Zwolle]"
+train_7,"[Deventer naar Almelo, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg]"
+train_8,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond]"
+train_9,"[Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Delft naar Den Haag HS, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Utrecht Centraal naar Gouda]"
+train_10,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort]"
+train_11,"[Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal]"
+train_12,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Castricum naar Alkmaar, Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk]"
+train_13,"[Haarlem naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Centraal naar Gouda, Den Haag Centraal naar Gouda]"
+train_14,"[Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen]"
+train_15,"[Leeuwarden naar Groningen, Leeuwarden naar Groningen, Groningen naar Assen, Groningen naar Assen]"
+train_16,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_33
+
+train_1,"[Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Deventer, Deventer naar Apeldoorn]"
+train_2,"[Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht, Roosendaal naar Dordrecht, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Dordrecht]"
+train_3,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch]"
+train_4,"[Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amersfoort]"
+train_5,"[s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Almelo]"
+train_6,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_7,"[Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn]"
+train_8,"[Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport]"
+train_9,"[Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem]"
+train_10,"[Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_11,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum]"
+train_12,"[Den Haag Centraal naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem]"
+train_13,"[Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar Helmond]"
+train_14,"[Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+train_15,"[Hilversum naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_16,"[Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_34
+
+train_1,"[Breda naar Etten-Leur, Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum]"
+train_2,"[Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Dordrecht]"
+train_3,"[Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_4,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum]"
+train_5,"[Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Hilversum]"
+train_6,"[Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Ede-Wageningen]"
+train_7,"[Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Zwolle naar Deventer, Assen naar Zwolle]"
+train_8,"[Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_9,"[Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel]"
+train_10,"[Deventer naar Almelo, Zwolle naar Almelo, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_11,"[Deventer naar Zutphen, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Zwolle naar Deventer]"
+train_12,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_13,"[Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn]"
+train_14,"[Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport]"
+train_15,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar s-Hertogenbosch, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_16,"[Eindhoven naar Tilburg, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_35
+
+train_1,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Zwolle naar Deventer, Zwolle naar Amersfoort]"
+train_2,"[Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_3,"[Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Hilversum]"
+train_4,"[Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_5,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Hilversum, Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_6,"[s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Tilburg, Tilburg naar Breda]"
+train_7,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond]"
+train_8,"[Nijmegen naar Arnhem Centraal, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amsterdam Amstel]"
+train_9,"[Beverwijk naar Castricum, Haarlem naar Beverwijk, Haarlem naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_10,"[Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS, Delft naar Den Haag HS]"
+train_11,"[Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht]"
+train_12,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid]"
+train_13,"[Steenwijk naar Zwolle, Assen naar Zwolle, Groningen naar Assen, Leeuwarden naar Groningen]"
+train_14,"[Leiden Centraal naar Alphen a/d Rijn, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_15,"[Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_16,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_36
+
+train_1,"[Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn]"
+train_2,"[Groningen naar Assen, Assen naar Zwolle, Zwolle naar Deventer, Deventer naar Almelo]"
+train_3,"[Roosendaal naar Vlissingen]"
+train_4,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_5,"[Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn]"
+train_6,"[Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag HS naar Gouda]"
+train_7,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal]"
+train_8,"[Haarlem naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_9,"[Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Utrecht Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Laan v NOI naar Leiden Centraal]"
+train_10,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_11,"[Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal]"
+train_12,"[Eindhoven naar Helmond, Eindhoven naar Helmond, Eindhoven naar Helmond, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak]"
+train_13,"[Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen]"
+train_14,"[s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_15,"[Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Breda naar Dordrecht, Roosendaal naar Dordrecht, Roosendaal naar Dordrecht]"
+train_16,"[Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_37
+
+train_1,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Alphen a/d Rijn]"
+train_2,"[Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum]"
+train_3,"[Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Beverwijk]"
+train_4,"[Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht]"
+train_5,"[Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_6,"[Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Almelo]"
+train_7,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede]"
+train_8,"[Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Deventer naar Zutphen, Deventer naar Almelo]"
+train_9,"[Groningen naar Assen, Assen naar Zwolle, Assen naar Zwolle]"
+train_10,"[s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_11,"[Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Gouda, Den Haag HS naar Gouda]"
+train_12,"[Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft]"
+train_13,"[Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amersfoort]"
+train_14,"[Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond]"
+train_15,"[Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem]"
+train_16,"[Helmond naar Venlo, Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar Helmond]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_38
+
+train_1,"[Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal]"
+train_2,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum]"
+train_3,"[Zaandam naar Hoorn, Zaandam naar Hoorn, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn]"
+train_4,"[Deventer naar Zutphen, Zwolle naar Deventer, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn]"
+train_5,"[Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander]"
+train_6,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar Helmond, Eindhoven naar Helmond, Weert naar Eindhoven, Weert naar Eindhoven, Eindhoven naar Tilburg]"
+train_7,"[Tilburg naar Breda, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Gouda]"
+train_8,"[Den Haag Laan v NOI naar Gouda, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Schiphol Airport]"
+train_9,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen]"
+train_10,"[Almelo naar Hengelo, Almelo naar Hengelo, Almelo naar Hengelo, Zwolle naar Almelo, Steenwijk naar Zwolle, Heerenveen naar Steenwijk]"
+train_11,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_12,"[Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk]"
+train_13,"[Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid]"
+train_14,"[Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_15,"[Eindhoven naar s-Hertogenbosch, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen]"
+train_16,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_39
+
+train_1,"[Alkmaar naar Hoorn, Alkmaar naar Den Helder, Alkmaar naar Den Helder, Castricum naar Alkmaar, Zaandam naar Castricum]"
+train_2,"[Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Almelo, Deventer naar Almelo, Deventer naar Apeldoorn]"
+train_3,"[Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_4,"[Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum]"
+train_5,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_6,"[Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Blaak]"
+train_7,"[Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem]"
+train_8,"[Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Amersfoort, Utrecht Centraal naar Amersfoort]"
+train_9,"[Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn]"
+train_10,"[Gouda naar Alphen a/d Rijn, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS]"
+train_11,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg]"
+train_12,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Assen naar Zwolle, Groningen naar Assen]"
+train_13,"[Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Leeuwarden naar Heerenveen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk]"
+train_14,"[Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander]"
+train_15,"[Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal]"
+train_16,"[Deventer naar Almelo, Deventer naar Zutphen, Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Gouda]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_40
+
+train_1,"[Alkmaar naar Den Helder, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_2,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Almelo]"
+train_3,"[Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_4,"[Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Hilversum]"
+train_5,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak]"
+train_6,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel]"
+train_7,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur]"
+train_8,"[Deventer naar Zutphen, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo]"
+train_9,"[s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard]"
+train_10,"[Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen]"
+train_11,"[Roosendaal naar Vlissingen]"
+train_12,"[Den Haag HS naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag Laan v NOI naar Gouda]"
+train_13,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_14,"[Den Haag HS naar Gouda, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur]"
+train_15,"[Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar Helmond]"
+train_16,"[Utrecht Centraal naar Gouda, Utrecht Centraal naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Deventer, Deventer naar Apeldoorn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_41
+
+train_1,"[Deventer naar Zutphen, Deventer naar Zutphen, Apeldoorn naar Zutphen, Apeldoorn naar Zutphen, Zutphen naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen, Deventer naar Apeldoorn]"
+train_2,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss]"
+train_3,"[Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Amersfoort]"
+train_4,"[Roosendaal naar Vlissingen, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg]"
+train_5,"[Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag HS naar Gouda, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_6,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen]"
+train_7,"[Apeldoorn naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn, Zwolle naar Deventer]"
+train_8,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_9,"[Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn]"
+train_10,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Hilversum naar Almere Centrum]"
+train_11,"[Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_12,"[Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum]"
+train_13,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam]"
+train_14,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_15,"[Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, Oss naar Nijmegen, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg]"
+train_16,"[Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_42
+
+train_1,"[Almelo naar Hengelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Zutphen, Deventer naar Zutphen]"
+train_2,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Haarlem naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum]"
+train_3,"[Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch]"
+train_4,"[Breda naar Dordrecht, Roosendaal naar Dordrecht, Roosendaal naar Vlissingen]"
+train_5,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_6,"[Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS]"
+train_7,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_8,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum]"
+train_9,"[s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo, Helmond naar Venlo]"
+train_10,"[Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar s-Hertogenbosch]"
+train_11,"[Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Alphen a/d Rijn]"
+train_12,"[Zaandam naar Hoorn, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Den Haag Centraal naar Gouda]"
+train_13,"[Castricum naar Alkmaar, Alkmaar naar Den Helder, Alkmaar naar Den Helder, Alkmaar naar Hoorn]"
+train_14,"[s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Schiphol Airport]"
+train_15,"[Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Rotterdam Alexander naar Gouda]"
+train_16,"[Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_43
+
+train_1,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Hilversum]"
+train_2,"[Den Haag Laan v NOI naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander]"
+train_3,"[Groningen naar Assen, Assen naar Zwolle, Zwolle naar Almelo]"
+train_4,"[s-Hertogenbosch naar Tilburg, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Hilversum naar Almere Centrum]"
+train_5,"[Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar]"
+train_6,"[Castricum naar Alkmaar, Alkmaar naar Den Helder, Alkmaar naar Den Helder, Alkmaar naar Den Helder]"
+train_7,"[Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht]"
+train_8,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel]"
+train_9,"[Deventer naar Apeldoorn, Zwolle naar Deventer, Zwolle naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Gouda]"
+train_10,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren]"
+train_11,"[Eindhoven naar Tilburg, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard]"
+train_12,"[Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch]"
+train_13,"[Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen, Deventer naar Zutphen, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_14,"[Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_15,"[Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport]"
+train_16,"[Roosendaal naar Vlissingen, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_44
+
+train_1,"[Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_2,"[Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Almere Centrum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Gouda, Den Haag HS naar Gouda]"
+train_3,"[Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda]"
+train_4,"[Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven]"
+train_5,"[Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal]"
+train_6,"[Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle, Zwolle naar Deventer]"
+train_7,"[Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout]"
+train_8,"[Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg]"
+train_9,"[Assen naar Zwolle, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort, Deventer naar Apeldoorn]"
+train_10,"[Breda naar Dordrecht, Breda naar Dordrecht, Breda naar Etten-Leur, Breda naar Etten-Leur, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+train_11,"[Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_12,"[Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amersfoort]"
+train_13,"[Alkmaar naar Hoorn, Zaandam naar Hoorn, Amsterdam Sloterdijk naar Zaandam, Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar s-Hertogenbosch]"
+train_14,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Nijmegen naar Arnhem Centraal]"
+train_15,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk]"
+train_16,"[Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_45
+
+train_1,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_2,"[Roosendaal naar Vlissingen]"
+train_3,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Zwolle naar Deventer, Assen naar Zwolle]"
+train_4,"[Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag Laan v NOI naar Leiden Centraal]"
+train_5,"[Apeldoorn naar Zutphen, Deventer naar Zutphen, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss]"
+train_6,"[Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_7,"[Zaandam naar Castricum, Zaandam naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_8,"[Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk]"
+train_9,"[Breda naar Etten-Leur, Breda naar Etten-Leur, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, Eindhoven naar s-Hertogenbosch, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond]"
+train_10,"[Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Steenwijk naar Zwolle, Heerenveen naar Steenwijk]"
+train_11,"[Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen]"
+train_12,"[Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Laan v NOI]"
+train_13,"[Zwolle naar Almelo, Assen naar Zwolle, Groningen naar Assen]"
+train_14,"[Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Breda naar Dordrecht, Dordrecht naar Rotterdam Centraal]"
+train_15,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum]"
+train_16,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Gouda, Rotterdam Alexander naar Gouda]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_46
+
+train_1,"[Deventer naar Apeldoorn, Deventer naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo]"
+train_2,"[Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_3,"[Castricum naar Alkmaar, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS]"
+train_4,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum]"
+train_5,"[Haarlem naar Beverwijk, Beverwijk naar Castricum, Beverwijk naar Castricum, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_6,"[Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Alphen a/d Rijn]"
+train_7,"[Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk]"
+train_8,"[Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_9,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Oss naar Nijmegen]"
+train_10,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Tilburg naar Breda, Eindhoven naar Tilburg]"
+train_11,"[Assen naar Zwolle, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo]"
+train_12,"[Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum]"
+train_13,"[Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren]"
+train_14,"[Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_15,"[Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Breda naar Dordrecht, Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum]"
+train_16,"[Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Zutphen, Zutphen naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen, Apeldoorn naar Amersfoort]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_47
+
+train_1,"[Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout]"
+train_2,"[Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum]"
+train_3,"[Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Tilburg, Tilburg naar Breda, Tilburg naar Breda, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen]"
+train_4,"[Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen]"
+train_5,"[Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Zutphen, Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Zwolle naar Deventer]"
+train_6,"[Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Zwolle naar Deventer, Assen naar Zwolle]"
+train_7,"[Den Haag HS naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal]"
+train_8,"[Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_9,"[Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder, Alkmaar naar Den Helder]"
+train_10,"[Alkmaar naar Den Helder, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk]"
+train_11,"[Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Vlissingen]"
+train_12,"[Gouda naar Alphen a/d Rijn, Den Haag HS naar Gouda, Delft naar Den Haag HS, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft]"
+train_13,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Castricum, Zaandam naar Castricum]"
+train_14,"[Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort]"
+train_15,"[Eindhoven naar Helmond, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen]"
+train_16,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_48
+
+train_1,"[Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS]"
+train_2,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Apeldoorn, Deventer naar Apeldoorn, Deventer naar Apeldoorn]"
+train_3,"[Den Haag HS naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Zuid]"
+train_4,"[Zwolle naar Almelo, Deventer naar Almelo, Deventer naar Zutphen, Deventer naar Zutphen, Deventer naar Almelo]"
+train_5,"[Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_6,"[Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Breda naar Dordrecht]"
+train_7,"[Tilburg naar Breda, Eindhoven naar Tilburg, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard]"
+train_8,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Arnhem Centraal naar Dieren]"
+train_9,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam]"
+train_10,"[Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_11,"[Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond, Weert naar Eindhoven, Weert naar Eindhoven, Weert naar Eindhoven]"
+train_12,"[Hilversum naar Almere Centrum, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar Alphen a/d Rijn]"
+train_13,"[Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS]"
+train_14,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen]"
+train_15,"[Amsterdam Amstel naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal]"
+train_16,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Gouda]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_49
+
+train_1,"[Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Amstel naar Amsterdam Centraal, Utrecht Centraal naar Amsterdam Amstel]"
+train_2,"[Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Deventer, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen]"
+train_3,"[Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg]"
+train_4,"[Apeldoorn naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Hilversum, Amsterdam Amstel naar Hilversum]"
+train_5,"[Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo]"
+train_6,"[Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren]"
+train_7,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_8,"[Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_9,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Hoorn]"
+train_10,"[Den Haag Laan v NOI naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal]"
+train_11,"[Haarlem naar Beverwijk, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Castricum naar Alkmaar]"
+train_12,"[Den Haag HS naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht, Tilburg naar Breda]"
+train_13,"[Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_14,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Deventer, Deventer naar Apeldoorn]"
+train_15,"[Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert]"
+train_16,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Alphen a/d Rijn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_50
+
+train_1,"[Roosendaal naar Vlissingen, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg]"
+train_2,"[Zwolle naar Amersfoort, Zwolle naar Deventer, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort]"
+train_3,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar Helmond]"
+train_4,"[Hengelo naar Enschede, Hengelo naar Enschede, Almelo naar Hengelo, Deventer naar Almelo, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen]"
+train_5,"[Zaandam naar Castricum, Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem]"
+train_6,"[Amsterdam Amstel naar Almere Centrum, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Gouda, Den Haag HS naar Gouda, Delft naar Den Haag HS]"
+train_7,"[Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak]"
+train_8,"[Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Centraal]"
+train_9,"[Assen naar Zwolle, Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen]"
+train_10,"[Amsterdam Sloterdijk naar Zaandam, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum]"
+train_11,"[Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder, Alkmaar naar Den Helder]"
+train_12,"[Arnhem Centraal naar Ede-Wageningen, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Dordrecht, Roosendaal naar Dordrecht]"
+train_13,"[Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar s-Hertogenbosch, Eindhoven naar s-Hertogenbosch, Weert naar Eindhoven, Roermond naar Weert, Roermond naar Weert]"
+train_14,"[Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Amersfoort]"
+train_15,"[Den Haag HS naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS]"
+train_16,"[Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Centraal naar Rotterdam Alexander]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_51
+
+train_1,"[Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen]"
+train_2,"[Groningen naar Assen, Assen naar Zwolle, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen]"
+train_3,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amsterdam Amstel]"
+train_4,"[Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Hilversum]"
+train_5,"[Zaandam naar Hoorn, Zaandam naar Beverwijk, Haarlem naar Beverwijk, Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar]"
+train_6,"[Alkmaar naar Den Helder, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum, Beverwijk naar Castricum]"
+train_7,"[Hilversum naar Almere Centrum, Almere Centrum naar Lelystad Centrum, Almere Centrum naar Lelystad Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Beverwijk]"
+train_8,"[Deventer naar Zutphen, Deventer naar Apeldoorn, Apeldoorn naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum]"
+train_9,"[Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Roosendaal naar Dordrecht]"
+train_10,"[Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum]"
+train_11,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Zwolle naar Deventer, Deventer naar Almelo]"
+train_12,"[Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+train_13,"[Den Haag Centraal naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Delft naar Den Haag HS, Den Haag HS naar Gouda, Gouda naar Alphen a/d Rijn]"
+train_14,"[Groningen naar Assen, Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk]"
+train_15,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI]"
+train_16,"[Tilburg naar Breda, s-Hertogenbosch naar Tilburg, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Apeldoorn naar Zutphen]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_52
+
+train_1,"[Deventer naar Almelo, Deventer naar Zutphen, Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Centraal]"
+train_2,"[Roosendaal naar Vlissingen, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda]"
+train_3,"[Apeldoorn naar Zutphen, Deventer naar Apeldoorn, Zwolle naar Deventer, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede, Hengelo naar Enschede]"
+train_4,"[Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch, s-Hertogenbosch naar Oss, Oss naar Nijmegen, Nijmegen naar Arnhem Centraal, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Deventer naar Zutphen]"
+train_5,"[Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Assen naar Zwolle, Groningen naar Assen]"
+train_6,"[Sittard naar Roermond, Sittard naar Heerlen, Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert]"
+train_7,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Almere Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amersfoort]"
+train_8,"[Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_9,"[Eindhoven naar Helmond, Weert naar Eindhoven, Weert naar Eindhoven, Eindhoven naar Tilburg, Tilburg naar Breda, Breda naar Dordrecht, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum]"
+train_10,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Rotterdam Alexander naar Gouda]"
+train_11,"[Leeuwarden naar Groningen, Leeuwarden naar Heerenveen, Heerenveen naar Steenwijk, Steenwijk naar Zwolle]"
+train_12,"[Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal, Etten-Leur naar Roosendaal]"
+train_13,"[Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag HS, Den Haag HS naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Den Haag HS naar Leiden Centraal]"
+train_14,"[Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Gouda, Utrecht Centraal naar Gouda, Utrecht Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid]"
+train_15,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar]"
+train_16,"[Delft naar Den Haag Centraal, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Zaandam naar Castricum, Zaandam naar Beverwijk]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_53
+
+train_1,"[Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen, Assen naar Zwolle]"
+train_2,"[Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Centraal naar Almere Centrum]"
+train_3,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum]"
+train_4,"[Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Eindhoven naar s-Hertogenbosch, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_5,"[Zaandam naar Beverwijk, Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag Centraal naar Leiden Centraal, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Leiden Centraal, Leiden Centraal naar Schiphol Airport]"
+train_6,"[Hengelo naar Enschede, Almelo naar Hengelo, Zwolle naar Almelo, Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Heerenveen naar Steenwijk]"
+train_7,"[Utrecht Centraal naar Amsterdam Centraal, Utrecht Centraal naar s-Hertogenbosch, s-Hertogenbosch naar Tilburg, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal]"
+train_8,"[Roosendaal naar Vlissingen, Roosendaal naar Dordrecht, Breda naar Dordrecht, Tilburg naar Breda]"
+train_9,"[Alkmaar naar Den Helder, Castricum naar Alkmaar, Castricum naar Alkmaar, Alkmaar naar Hoorn, Zaandam naar Hoorn, Zaandam naar Castricum]"
+train_10,"[Almere Centrum naar Lelystad Centrum, Amsterdam Amstel naar Almere Centrum, Utrecht Centraal naar Amsterdam Amstel, Utrecht Centraal naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen]"
+train_11,"[Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Schiedam Centrum, Schiedam Centrum naar Delft]"
+train_12,"[Breda naar Dordrecht, Tilburg naar Breda, Eindhoven naar Tilburg, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard]"
+train_13,"[Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn]"
+train_14,"[Utrecht Centraal naar Hilversum, Utrecht Centraal naar Ede-Wageningen, Arnhem Centraal naar Ede-Wageningen, Arnhem Centraal naar Dieren, Zutphen naar Dieren, Deventer naar Zutphen, Zwolle naar Deventer]"
+train_15,"[Den Haag HS naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Blaak, Rotterdam Blaak naar Rotterdam Alexander]"
+train_16,"[Heerenveen naar Steenwijk, Steenwijk naar Zwolle, Zwolle naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Alphen a/d Rijn]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_54
+
+train_1,"[Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Breda naar Dordrecht]"
+train_2,"[Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, s-Hertogenbosch naar Tilburg, Eindhoven naar Tilburg, Eindhoven naar Helmond, Helmond naar Venlo]"
+train_3,"[Zutphen naar Dieren, Arnhem Centraal naar Dieren, Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amsterdam Centraal, Amsterdam Centraal naar Almere Centrum, Almere Centrum naar Lelystad Centrum]"
+train_4,"[Eindhoven naar s-Hertogenbosch, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Alphen a/d Rijn, Gouda naar Alphen a/d Rijn, Utrecht Centraal naar Gouda]"
+train_5,"[Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Hoorn, Alkmaar naar Hoorn, Alkmaar naar Den Helder]"
+train_6,"[Breda naar Etten-Leur, Tilburg naar Breda, Tilburg naar Breda, Breda naar Etten-Leur, Etten-Leur naar Roosendaal, Roosendaal naar Dordrecht, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft]"
+train_7,"[Den Haag HS naar Leiden Centraal, Leiden Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Laan v NOI naar Leiden Centraal, Delft naar Den Haag Laan v NOI, Delft naar Den Haag Laan v NOI, Den Haag Laan v NOI naar Leiden Centraal, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk]"
+train_8,"[Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Zaandam, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Utrecht Centraal naar Schiphol Airport, Utrecht Centraal naar Amersfoort]"
+train_9,"[Deventer naar Apeldoorn, Deventer naar Almelo, Zwolle naar Almelo, Assen naar Zwolle]"
+train_10,"[Den Haag Centraal naar Gouda, Delft naar Den Haag Centraal, Delft naar Den Haag HS, Den Haag HS naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal, Leiden Centraal naar Alphen a/d Rijn]"
+train_11,"[Steenwijk naar Zwolle, Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Groningen naar Assen]"
+train_12,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Hilversum, Hilversum naar Almere Centrum, Amsterdam Amstel naar Almere Centrum]"
+train_13,"[Heemstede-Aerdenhout naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Hilversum, Utrecht Centraal naar Amsterdam Amstel]"
+train_14,"[Zwolle naar Deventer, Zwolle naar Amersfoort, Apeldoorn naar Amersfoort, Apeldoorn naar Zutphen, Deventer naar Zutphen]"
+train_15,"[Zaandam naar Hoorn, Zaandam naar Beverwijk, Beverwijk naar Castricum, Beverwijk naar Castricum, Haarlem naar Beverwijk, Haarlem naar Beverwijk]"
+train_16,"[Eindhoven naar Helmond, Weert naar Eindhoven, Roermond naar Weert, Sittard naar Roermond, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Heerlen, Sittard naar Heerlen]"
+
+
+
+Nederland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_55
+
+train_1,"[Zutphen naar Dieren, Arnhem Centraal naar Dieren, Nijmegen naar Arnhem Centraal, Oss naar Nijmegen, s-Hertogenbosch naar Oss, Utrecht Centraal naar s-Hertogenbosch, Utrecht Centraal naar Amsterdam Centraal]"
+train_2,"[Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Centraal naar Schiedam Centrum, Rotterdam Blaak naar Schiedam Centrum, Rotterdam Blaak naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Laan v NOI naar Gouda, Den Haag Laan v NOI naar Leiden Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda]"
+train_3,"[Amsterdam Amstel naar Hilversum, Amsterdam Amstel naar Almere Centrum, Amsterdam Centraal naar Almere Centrum, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Amstel naar Amsterdam Centraal]"
+train_4,"[Apeldoorn naar Amersfoort, Zwolle naar Amersfoort, Zwolle naar Almelo, Almelo naar Hengelo, Hengelo naar Enschede]"
+train_5,"[Almelo naar Hengelo, Deventer naar Almelo, Zwolle naar Deventer, Assen naar Zwolle]"
+train_6,"[Heerenveen naar Steenwijk, Leeuwarden naar Heerenveen, Leeuwarden naar Groningen, Leeuwarden naar Groningen]"
+train_7,"[Utrecht Centraal naar Alphen a/d Rijn, Utrecht Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport]"
+train_8,"[Almere Centrum naar Lelystad Centrum, Hilversum naar Almere Centrum, Utrecht Centraal naar Hilversum, Utrecht Centraal naar Amsterdam Amstel, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk]"
+train_9,"[Arnhem Centraal naar Ede-Wageningen, Utrecht Centraal naar Ede-Wageningen, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Amersfoort, Utrecht Centraal naar Schiphol Airport, Leiden Centraal naar Schiphol Airport]"
+train_10,"[Helmond naar Venlo, Helmond naar Venlo, Eindhoven naar Helmond, Eindhoven naar Tilburg, s-Hertogenbosch naar Tilburg]"
+train_11,"[Sittard naar Heerlen, Maastricht naar Sittard, Maastricht naar Sittard, Sittard naar Roermond, Roermond naar Weert, Weert naar Eindhoven, Eindhoven naar s-Hertogenbosch]"
+train_12,"[Haarlem naar Beverwijk, Heemstede-Aerdenhout naar Haarlem, Leiden Centraal naar Heemstede-Aerdenhout, Den Haag HS naar Leiden Centraal, Delft naar Den Haag HS, Delft naar Den Haag Centraal, Den Haag Centraal naar Leiden Centraal, Den Haag HS naar Leiden Centraal, Den Haag HS naar Gouda]"
+train_13,"[Den Haag Laan v NOI naar Gouda, Delft naar Den Haag Laan v NOI, Schiedam Centrum naar Delft, Rotterdam Blaak naar Schiedam Centrum, Dordrecht naar Rotterdam Blaak, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal]"
+train_14,"[Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Beverwijk naar Castricum, Zaandam naar Beverwijk, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Haarlem]"
+train_15,"[Dordrecht naar Rotterdam Blaak, Roosendaal naar Dordrecht, Etten-Leur naar Roosendaal, Breda naar Etten-Leur, Tilburg naar Breda, Eindhoven naar Tilburg, Eindhoven naar Helmond, Eindhoven naar Helmond]"
+train_16,"[Steenwijk naar Zwolle, Zwolle naar Almelo, Deventer naar Almelo, Deventer naar Apeldoorn, Apeldoorn naar Zutphen]"
+
+
+

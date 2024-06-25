@@ -17,14 +17,24 @@ def draw_figure_with_names(schedule: Schedule, colors: list, geojson: str, file_
     visualize_map(file_name)
 
 
-def draw_figure_without_names(schedule: Schedule, colors: list, geojson: str, file_name: str, routes):
+def draw_figure_without_names(schedule: Schedule, colors: list, geojson: str, file_name: str):
     '''
     This function starts with drawing the desired region, the geojson file, without station names.
     It uses the schedule that is made to draw the used connections of the routes.
     The last step it takes in plotting the drawing and saving it as a picture.
     '''
     make_map(schedule, geojson)
-    # draw_used_connections(schedule, colors)
+    draw_used_connections(schedule, colors)
+    visualize_map(file_name)
+
+
+def draw_finished_map(schedule: Schedule, colors: list, geojson: str, file_name: str, routes: list[Connection]):
+    '''
+    This function starts with drawing the desired region, the geojson file, without station names.
+    It uses the schedule that is made to draw the used connections of the routes.
+    The last step it takes in plotting the drawing and saving it as a picture.
+    '''
+    make_map_no_lines(schedule, geojson)
     draw_used_connections_via_routes(routes, colors)
     visualize_map(file_name)
 
@@ -62,6 +72,22 @@ def make_map(schedule: Schedule, geojson: str) -> None:
 
     draw_dots(schedule, x, y)
     draw_lines(schedule, xConnection, yConnection)
+    plt.grid(False)
+
+
+def make_map_no_lines(schedule: Schedule, geojson: str) -> None:
+    '''
+    All stations and connections are imported, stations are made to be a dot on the plot.
+    Connections are made to be a dotted line between dots on the plot.  
+    '''
+    xConnection = []
+    yConnection = []
+    x = []
+    y = []
+
+    draw_map_background(geojson)
+
+    draw_dots(schedule, x, y)
     plt.grid(False)
 
 
@@ -184,8 +210,8 @@ def draw_used_connections_via_routes(routes: list[list[Connection]], color: list
     '''
     xList = []
     yList = []
-    for connect in routes:
-        for i, route in enumerate(connect):
+    for i, connect in enumerate(routes):
+        for route in connect:
             xA = route.stationA._x
             yA = route.stationA._y
             xB = route.stationB._x
@@ -242,21 +268,21 @@ def outputGraphHist(outputs: list) -> None:
     plt.show()
 
 
-def outputGraphHistMultiple(outputs1: list, outputs2: list, outputs3: list) -> None:
+def outputGraphHistMultiple(outputs1: list, outputs2: list) -> None:
     '''
     Creates a histogram of the inputed data.
     '''
     y1 = outputs1
     y2 = outputs2
-    y3 = outputs3
+    plt.figure(figsize =(10, 7))
 
-    plt.hist(y1, bins=5, color= 'blue')
-    plt.hist(y2, bins=5, color= 'red')
-    plt.hist(y3, bins=1, color= 'black')
+    plt.hist(y1, bins=20, color= 'blue')
+    plt.hist(y2, bins=20, color= 'red')
+    plt.legend(['Random', 'Greedy'])
+    plt.title("Verdeling van 1000000 herhalingen van een random en een greedy algoritme: Nederland")
     plt.xlabel("Score")
     plt.ylabel("Number of occurrences")
-    plt.savefig('figures/randomScoresVSGreedyScores.jpg')
-    plt.grid(True)
+    plt.savefig('figures/randomScoresVSGreedyScoresNederland.jpg')
     plt.show()
 
 

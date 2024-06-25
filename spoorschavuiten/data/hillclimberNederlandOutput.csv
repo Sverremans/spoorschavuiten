@@ -25974,3 +25974,28 @@ train_20,"[Amsterdam Amstel, Utrecht Centraal, Hilversum, Utrecht Centraal, Alph
 score,5655.2808988764045
 
 
+
+Nederland; 1000 runs; hillclimber die stopt na 50000 keer geen verberering te vinden. 25/06/2024 run_1001
+
+train,stations
+train_1,"[Amsterdam Zuid, Amsterdam Amstel, Hilversum, Almere Centrum, Lelystad Centrum, Almere Centrum, Amsterdam Centraal, Amsterdam Sloterdijk]"
+train_2,"[Venlo, Helmond, Eindhoven, s-Hertogenbosch, Utrecht Centraal, Alphen a/d Rijn]"
+train_3,"[Almere Centrum, Amsterdam Amstel, Utrecht Centraal, Hilversum, Utrecht Centraal, Amersfoort, Apeldoorn]"
+train_4,"[Hoorn, Alkmaar, Castricum, Beverwijk, Zaandam, Castricum, Beverwijk, Castricum]"
+train_5,"[Breda, Dordrecht, Rotterdam Centraal, Schiedam Centrum, Delft, Den Haag HS, Gouda, Rotterdam Alexander, Rotterdam Blaak, Rotterdam Alexander, Rotterdam Blaak]"
+train_6,"[Oss, Nijmegen, Arnhem Centraal, Dieren, Zutphen, Deventer, Apeldoorn, Zutphen, Apeldoorn]"
+train_7,"[Almere Centrum, Hilversum, Utrecht Centraal, Gouda, Den Haag Centraal, Leiden Centraal, Den Haag HS]"
+train_8,"[Amsterdam Sloterdijk, Haarlem, Heemstede-Aerdenhout, Leiden Centraal, Alphen a/d Rijn, Gouda, Den Haag Laan v NOI, Gouda]"
+train_9,"[Den Haag HS, Leiden Centraal, Schiphol Airport, Utrecht Centraal, Ede-Wageningen, Arnhem Centraal, Dieren, Arnhem Centraal]"
+train_10,"[Assen, Groningen, Leeuwarden, Heerenveen, Steenwijk, Zwolle]"
+train_11,"[Den Haag Centraal, Delft, Den Haag Laan v NOI, Leiden Centraal, Alphen a/d Rijn, Utrecht Centraal, Amsterdam Centraal, Amsterdam Amstel]"
+train_12,"[Assen, Zwolle, Deventer, Almelo, Hengelo, Enschede, Hengelo]"
+train_13,"[Tilburg, Eindhoven, Weert, Roermond, Sittard, Maastricht, Sittard, Heerlen]"
+train_14,"[Almelo, Zwolle, Amersfoort, Utrecht Centraal]"
+train_15,"[Heemstede-Aerdenhout, Haarlem, Beverwijk]"
+train_16,"[Vlissingen, Roosendaal, Etten-Leur, Breda, Tilburg, s-Hertogenbosch, Oss]"
+train_17,"[Delft, Schiedam Centrum, Rotterdam Blaak, Dordrecht, Roosendaal, Dordrecht, Rotterdam Centraal, Rotterdam Alexander, Rotterdam Centraal]"
+train_18,"[Schiphol Airport, Amsterdam Zuid, Amsterdam Sloterdijk, Zaandam, Hoorn, Alkmaar, Den Helder]"
+score,6289.0
+
+
