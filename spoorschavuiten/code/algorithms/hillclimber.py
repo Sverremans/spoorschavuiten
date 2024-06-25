@@ -5,7 +5,6 @@ from code.classes.classes import Schedule
 # NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219 -> 9214 misschien mogelijk (-5). 
 # Dit komt zeer in de buurt (9202).
 # NOTE voor Nederland is dit 7549.
-# TODO kijk eens naar deze manual: https://realpython.com/python-property/
 
 class HillClimber:
     """
@@ -60,7 +59,7 @@ class HillClimber:
             self.mutate_train()
 
     def update_used_connections(self) -> None:
-        """Updates the 'used' boolean of connection"""
+        """Update de 'used' boolean van connection"""
         used_connections = set()
         for route in self.newSchedule.routes:
             for connection in route.route:
@@ -75,7 +74,7 @@ class HillClimber:
         # Vergelijk waarden doelfuncties
         calc_value = self.newSchedule.calculate_value()
         
-        # Note that we allow equality to increase our chances of finding a better schedule later
+        # Merk op dat we gelijkheden toestaan om onze kans later een betere dienstregeling te vinden laten toenemen
         if calc_value >= self._value:
             # Sla nieuw Schedule op indien het beter is
             self._value = calc_value
@@ -96,7 +95,6 @@ class HillClimber:
             # Doe mutate_schedule(nr_of_trains)
             self.mutate_schedule(nr_of_trains)
 
-            # TODO: lees over generators https://realpython.com/introduction-to-python-generators/
             # Doe check_solution()
             if self.check_solution():
                 self.scores.append(self._value)
@@ -109,7 +107,7 @@ class HillClimber:
 
         self.iterations_list.append(self._iterations)
 
-        # Set newSchedule to be the last improving solution
+        # Laat newSchedule de laatste verbeterde oplossing zijn
         self.newSchedule = self._oldSchedule
 
 
@@ -149,7 +147,6 @@ class HcStopCondition(HillClimber):
             # Doe mutate_schedule(nr_of_trains)
             self.mutate_schedule(nr_of_trains)
 
-            # TODO: lees over generators https://realpython.com/introduction-to-python-generators/
             # Doe check_solution()
             if self.check_solution():
                 self.scores.append(self._value)
@@ -166,11 +163,12 @@ class HcStopCondition(HillClimber):
 
         self.iterations_list.append(self._iterations)
 
-        # Set newSchedule to be the last improving solution
+        # Laat newSchedule de laatste verbeterde oplossing zijn
         self.newSchedule = self._oldSchedule
 
+
 class termini_HillClimber(HillClimber):
-    # FIXME: dit geeft een lagere score dan reguliere Hill Climber
+    # NOTE: dit geeft een lagere score dan reguliere Hill Climber
     def mutate_train(self) -> None:
         # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
         unused_connections = []
