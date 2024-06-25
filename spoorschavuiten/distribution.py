@@ -4,11 +4,6 @@ from code.algorithms import greedy as gd
 from code.visualization.visualize import *
 import time
 
-colors = ["red", "blue", "pink", "black", "yellow",
-        "hotpink", "orange", "violet", "cyan", "purple",
-        "maroon", "indigo", "teal", "magenta", "crimson", "palevioletred", 
-        "salmon", "deepskyblue", "deeppink", "darkviolet", "goldenrod"]
-
 if __name__ == "__main__":
 
     holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
@@ -16,11 +11,14 @@ if __name__ == "__main__":
 
     start = time.time()
     all_outputs = []
-    times = 1299
+    times = 1000000
     timeList = []
 
     for i in range(times):
         timeList.append(i + 1)
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Met de volgende regels code worden 1000000 random dienstregelingen gemaakt voor Holland.
+# Deze scores worden opgeslagen in losse bestanden waar vervolgens histogrammen en boxplots mee gemaakt worden. 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     # Random Holland
     for i in range(times):
@@ -28,23 +26,22 @@ if __name__ == "__main__":
         randomSolution = rd.Random(schedule, 120, 7)
         randomSolution.run()
 
-        output = randomSolution.schedule.calculate_value()
         scoresToFile(schedule, i, "data/1000000RandomScoresHolland_2.csv")
-        # print(schedule.calculate_value())
-        all_outputs.append(output)
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    # # Random Nederland
-    # for i in range(times):
-    #     schedule = Schedule(netherlands)
-    #     randomSolution = rd.Random(schedule, 180, 20)
-    #     randomSolution.run()
+# Met de volgende regels code worden 1000000 random dienstregelingen gemaakt voor Nederland.
+# Deze scores worden opgeslagen in losse bestanden waar vervolgens histogrammen en boxplots mee gemaakt worden. 
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    # Random Nederland
+    for i in range(times):
+        schedule = Schedule(netherlands)
+        randomSolution = rd.Random(schedule, 180, 20)
+        randomSolution.run()
 
-    #     output = randomSolution.schedule.calculate_value()
-    #     scoresToFile(schedule, i, "data/1000000RandomScoresNederland.csv")
-    #     # print(schedule.calculate_value())
-    #     all_outputs.append(output)
-
+        scoresToFile(schedule, i, "data/1000000RandomScoresNederland.csv")
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Met de volgende regels code worden 1000000 greedy dienstregelingen gemaakt voor Holland.
+# Het greedy algoritme houd rekening met al gebruikte verbindingen en vermijdt deze wanneer het mogelijk is.
+# Deze scores worden opgeslagen in losse bestanden waar vervolgens histogrammen en boxplots mee gemaakt worden. 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     # Greedy Holland
     for i in range(times):
@@ -52,23 +49,11 @@ if __name__ == "__main__":
         greedySolutionHol = gd.Greedy(schedule, 120, 7)
         greedySolutionHol.run()
 
-        output = greedySolutionHol.schedule.calculate_value()
         scoresToFile(schedule, i, "data/1000000GreedyScoresHolland_2.csv")
-        # print(schedule.calculate_value())
-        all_outputs.append(output)
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    # # Greedy Nederland
-    # for i in range(times):
-    #     schedule = Schedule(netherlands)
-    #     greedySolutionNed = gd.Greedy(schedule, 180, 20)
-    #     greedySolutionNed.run()
-
-    #     output2 = greedySolutionNed.schedule.calculate_value()
-    #     scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_2.csv")
-    #     # print(schedule.calculate_value())
-    #     all_outputs.append(output)
-
+# Met de volgende regels code worden 1000000 greedy dienstregelingen gemaakt voor Nederland.
+# Het greedy algoritme houd rekening met al gebruikte verbindingen en vermijdt deze wanneer het mogelijk is.
+# Deze scores worden opgeslagen in losse bestanden waar vervolgens histogrammen en boxplots mee gemaakt worden. 
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     # Greedy Nederland
     for i in range(times):
@@ -76,15 +61,8 @@ if __name__ == "__main__":
         greedySolutionNed = gd.Greedy(schedule, 180, 20)
         greedySolutionNed.run()
 
-        output2 = greedySolutionNed.schedule.calculate_value()
         scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_3.csv")
-        # print(schedule.calculate_value())
-        # all_outputs.append(output2)
-        if (i + 1) % 5000 == 0:
-            print(f'Current iteration: {i + 1} out of {times}')
-            print(f"Time passed since last time: {time.time() - start}")
-
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     end = time.time()
     print(end - start)
