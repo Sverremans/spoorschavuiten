@@ -1,29 +1,25 @@
 from code.classes.classes import Route, Schedule
+from code.algorithms.depth_first import DepthFirst
 import copy
 import time
 
 
-class GreedyLookahead():
+class GreedyLookahead(DepthFirst):
     """
-    A Greedy algorithm that searches for the best routes in all possible configurations of a route to add to the schedule, but prunes a branch of possible routes when after x connections added there is no improvement in score.
-
-    pre: 
-    post:
+    A Greedy algorithm that searches through all possible configurations of a route and adds the highest scoring one to schedule, 
+        but prunes the branch of configurations prematurely if after 'x' connections set a new one is not used.
     """
 
     def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int, lookahead: int):
-        self.schedule = schedule
-        self.maxTime = maxTime
-        self.max_trains = maxTrains
+        super().__init__(schedule, maxTime, maxTrains)
         self.lookahead = lookahead
-
-        self.possible_routes: list[Route] = []
-        self.best_route: Route = None
-        self.best_score: int = 0
 
     def run(self) -> None:
         """
-        
+        Runs the algorithm.
+
+        pre: self.schedule is an object of type Schedule and self.max_trains is a positive integer.
+        post: adds routes to self.schedule. The amount depends on if all connections are set before self.max_trains.
         """
         step = 0
         start = time.time()
@@ -61,13 +57,13 @@ class GreedyLookahead():
         end = time.time()
         print(f"Duration of algorithm in seconds: {end - start}")
 
-    def get_next_state(self):
-
-        return self.possible_routes.pop()
-    
-    def check_branch(self, new_route):
+    def check_branch(self, new_route: Route) -> Route:
         """
-        If last x additions have not improved score, stop the branch
+        If last 'x' additions on the route have not improved score, stop the branch and get next state. 
+            Keep doing untill better route is found.
+
+        pre: new_route is an object of type Route.
+        post: returns an object of type Route or calls self.get_next_state() and calls itself again.
         """
         connections_used = [connection for connection in new_route.route]
         if len(connections_used) < self.lookahead or len(self.possible_routes) == 0:
@@ -92,55 +88,3 @@ class GreedyLookahead():
             return self.check_branch(new_route)
         else:
             return new_route
-
-    def check_score(self, new_route):
-        """
-        Check if new route has better score than best route
-        """
-        new_score = self.get_score(new_route)
-        if new_score > self.best_score:
-            self.best_route = new_route
-            self.best_score = new_score
-
-    def get_score(self, new_route):
-        """
-        Returns score for the potential route
-        """
-        if self.schedule.routes:
-            scheduled_connections = {connection for route in self.schedule.routes for connection in route.route}
-        else:
-            scheduled_connections = set()
-        connections_used = {connection for connection in new_route.route}
-        added_connections = connections_used - scheduled_connections
-        fraction = len(added_connections) / len(self.schedule.connections)
-
-        return fraction * 10000 - (100 + new_route.time)
-
-    def build_children(self, route, current_station):
-        possible_connections = self.get_connections(current_station)
-        for possible_connection in possible_connections:
-            connection, direction = possible_connection
-            new_route = copy.deepcopy(route)
-            new_route.add_time(connection.get_dist())
-            if new_route.time > self.maxTime:
-                new_route.subtract_time(connection.get_dist())
-                continue
-            new_route.add_connection(connection)
-            new_route.current_station = self.get_new_station(current_station, direction, connection)
-            self.possible_routes.append(new_route)
-
-    def get_connections(self, currentStation) -> list:
-        connections = []
-        for connection in self.schedule.connections:
-            if connection.stationA == currentStation:
-                connections.append((connection, "f"))
-            if connection.stationB == currentStation:
-                connections.append((connection, "b"))
-        return connections
-
-    def get_new_station(self, station, direction, connection):
-        if direction == "f":
-            station = connection.stationB
-        else:
-            station = connection.stationA
-        return station
