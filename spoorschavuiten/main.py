@@ -5,6 +5,7 @@ from code.algorithms.greedy import Greedy, FixedGreedy, Termini_Greedy
 from code.algorithms.greedy_lookahead import GreedyLookahead
 from code.algorithms.hillclimber import HillClimber, HcStopCondition, Termini_HillClimber
 from code.algorithms.depth_first import DepthFirst
+from code.visualization.visualize import *
 
 if __name__ == "__main__":
     
@@ -49,72 +50,110 @@ if __name__ == "__main__":
     if args.max_time:
         max_time = args.max_time
 
-    # TODO: doe hier if, elif, elif, etcetera
+    # Voer het gekozen algoritme uit
     if algorithm == 'Random':
-        new_schedule = Schedule(map)
-        random_schedule = Random(new_schedule, max_time, max_trains)
-        random_schedule.run()
-        random_schedule.generate_output()
+        for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            random_schedule = Random(new_schedule, max_time, max_trains)
+            random_schedule.run()
+
+            outputToFile(new_schedule, f'Random {args.map} run number {run_nr + 1}', f'data/output/random/random_{args.map}_output.csv')
+            routesToFile(new_schedule, f'Random {args.map} run number {run_nr + 1}', f'data/output/random/random_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/random/random_{args.map}_scores.csv')
+
 
     elif algorithm == 'FixedRandom':
-        new_schedule = Schedule(map)
-        fixed_random_schedule = FixedRandom(new_schedule, max_time, max_trains, seed)
-        fixed_random_schedule.run()
-        fixed_random_schedule.generate_output()
+        for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            fixed_random_schedule = FixedRandom(new_schedule, max_time, max_trains, seed)
+            fixed_random_schedule.run()
+
+            outputToFile(new_schedule, f'FixedRandom {args.map} run number {run_nr + 1}', f'data/output/random/fixedrandom_{args.map}_output.csv')
+            routesToFile(new_schedule, f'FixedRandom {args.map} run number {run_nr + 1}', f'data/output/random/fixedrandom_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/random/fixedrandom_{args.map}_scores.csv')
     
     elif algorithm == 'Greedy':
-        new_schedule = Schedule(map)
-        greedy_schedule = Greedy(new_schedule, max_time, max_trains)
-        greedy_schedule.run()
-        greedy_schedule.generate_output()
+        for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            greedy_schedule = Greedy(new_schedule, max_time, max_trains)
+            greedy_schedule.run()
+
+            outputToFile(new_schedule, f'Greedy {args.map} run number {run_nr + 1}', f'data/output/greedy/greedy_{args.map}_output.csv')
+            routesToFile(new_schedule, f'Greedy {args.map} run number {run_nr + 1}', f'data/output/greedy/greedy_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/greedy/greedy_{args.map}_scores.csv')
     
     elif algorithm == 'FixedGreedy':
-        new_schedule = Schedule(map)
-        fixed_greedy_schedule = FixedGreedy(new_schedule, max_time, max_trains, seed)
-        fixed_greedy_schedule.run()
-        fixed_greedy_schedule.generate_output()
-    
+        for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            fixed_greedy_schedule = FixedGreedy(new_schedule, max_time, max_trains, seed)
+            fixed_greedy_schedule.run()
+
+            outputToFile(new_schedule, f'FixedGreedy {args.map} run number {run_nr + 1}', f'data/output/greedy/fixedgreedy_{args.map}_output.csv')
+            routesToFile(new_schedule, f'FixedGreedy {args.map} run number {run_nr + 1}', f'data/output/greedy/fixedgreedy_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/greedy/fixedgreedy_{args.map}_scores.csv')
+        
     elif algorithm == 'Termini_Greedy':
-        new_schedule = Schedule(map)
-        termini_greedy_schedule = Termini_Greedy(new_schedule, max_time, max_trains)
-        termini_greedy_schedule.run()
-        termini_greedy_schedule.generate_output()
+        for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            termini_greedy_schedule = Termini_Greedy(new_schedule, max_time, max_trains)
+            termini_greedy_schedule.run()
+
+            outputToFile(new_schedule, f'Termini_Greedy {args.map} run number {run_nr + 1}', f'data/output/greedy/termini_greedy_{args.map}_output.csv')
+            routesToFile(new_schedule, f'Termini_Greedy {args.map} run number {run_nr + 1}', f'data/output/greedy/termini_greedy_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/greedy/termini_greedy_{args.map}_scores.csv')
     
     elif algorithm == 'GreedyLookAhead':
-        new_schedule = Schedule(map)
-        greedy_lookahead_schedule = GreedyLookahead(new_schedule, max_time, max_trains, 3)
-        greedy_lookahead_schedule.run()
-        # TODO: wegschrijven
+        for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            greedy_lookahead_schedule = GreedyLookahead(new_schedule, max_time, max_trains, 3)
+            greedy_lookahead_schedule.run()
+            
+            outputToFile(new_schedule, f'GreedyLookAhead {args.map} run number {run_nr + 1}', f'data/output/greedy_lookahead/greedylookahead_{args.map}_output.csv')
+            routesToFile(new_schedule, f'GreedyLookAhead {args.map} run number {run_nr + 1}', f'data/output/greedy_lookahead/greedylookahead_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/greedy_lookahead/greedylookahead_{args.map}_scores.csv')
     
     elif algorithm == 'HillClimber':
-        new_schedule = Schedule(map)
-        random_schedule = Random(new_schedule, max_time, max_trains)
-        random_schedule.run()
         for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            random_schedule = Random(new_schedule, max_time, max_trains)
+            random_schedule.run()
             hillclimber_schedule = HillClimber(new_schedule, max_trains, max_time)
             hillclimber_schedule.run(iterations, changes)
-            hillclimber_schedule.generate_output()
+
+            outputToFile(new_schedule, f'HillClimber {args.map} run number {run_nr + 1}', f'data/output/hillclimber/hillclimber_{args.map}_output.csv')
+            routesToFile(new_schedule, f'HillClimber {args.map} run number {run_nr + 1}', f'data/output/hillclimber/hillclimber_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/hillclimber/hillclimber_{args.map}_scores.csv')
     
     elif algorithm == 'HcStopCondition':
-        new_schedule = Schedule(map)
-        random_schedule = Random(new_schedule, max_time, max_trains)
-        random_schedule.run()
         for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            random_schedule = Random(new_schedule, max_time, max_trains)
+            random_schedule.run()
             hcstopcondition_schedule = HcStopCondition(new_schedule, max_time, max_trains, cap)
             hcstopcondition_schedule.run(iterations, changes)
-            hcstopcondition_schedule.generate_output()
+
+            outputToFile(new_schedule, f'HcStopCondition {args.map} run number {run_nr + 1}', f'data/output/hillclimber/hcstopcondition_{args.map}_output.csv')
+            routesToFile(new_schedule, f'HcStopCondition {args.map} run number {run_nr + 1}', f'data/output/hillclimber/hcstopcondition_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/hillclimber/hcstopcondition_{args.map}_scores.csv')
     
     elif algorithm == 'Termini_HillClimber':
-        new_schedule = Schedule(map)
-        random_schedule = Random(new_schedule, max_time, max_trains)
-        random_schedule.run()
         for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            random_schedule = Random(new_schedule, max_time, max_trains)
+            random_schedule.run()
             termini_hillclimber_schedule = Termini_HillClimber(new_schedule, max_trains, max_time)
             termini_hillclimber_schedule.run(iterations, changes)
-            termini_hillclimber_schedule.generate_output()
+
+            outputToFile(new_schedule, f'Termini_HillClimber {args.map} run number {run_nr + 1}', f'data/output/hillclimber/termini_hillclimber_{args.map}_output.csv')
+            routesToFile(new_schedule, f'Termini_HillClimber {args.map} run number {run_nr + 1}', f'data/output/hillclimber/termini_hillclimber_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/hillclimber/termini_hillclimber_{args.map}_scores.csv')
     
     elif algorithm == 'DepthFirst':
-        new_schedule = Schedule(map)
-        depthfirst_schedule = DepthFirst(new_schedule, max_time, max_trains)
-        depthfirst_schedule.run()
-        # TODO: wegschrijven
+        for run_nr in range(nr_of_runs):
+            new_schedule = Schedule(map)
+            depthfirst_schedule = DepthFirst(new_schedule, max_time, max_trains)
+            depthfirst_schedule.run()
+            
+            outputToFile(new_schedule, f'DepthFirst {args.map} run number {run_nr + 1}', f'data/output/depthfirst/depthfirst_{args.map}_output.csv')
+            routesToFile(new_schedule, f'DepthFirst {args.map} run number {run_nr + 1}', f'data/output/depthfirst/depthfirst_{args.map}_routes.csv')
+            scoresToFile(new_schedule, run_nr, f'data/output/depthfirst/depthfirst_{args.map}_scores.csv')
