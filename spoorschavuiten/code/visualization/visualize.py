@@ -333,7 +333,7 @@ def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list) -> None:
     plt.yticks(fontsize=15)
     # plt.yscale("log")
     # plt.xscale("log")
-    plt.savefig("data/hillClimber_Holland_9202.jpg")
+    plt.savefig("figures/hillClimber_Nederland_6289.jpg")
     plt.show()
 
 
