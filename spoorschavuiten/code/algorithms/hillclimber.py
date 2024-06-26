@@ -17,10 +17,10 @@ class HillClimber:
         self._maxTrains = maxTrains
         self._maxTime = maxTime
         
-        self.scores = [schedule.calculate_value()]
-        self.iterations_list = []
+        self.scores = []
+        self.iterations_list = [0]
         self.scoresPoints = []
-        self.iterations_listPoints = []
+        self.iterations_listPoints = [0]
 
     def mutate_train(self) -> None:
         # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
@@ -102,7 +102,9 @@ class HillClimber:
                 self.scoresPoints.append(self._value)
                 self.iterations_listPoints.append(i + 1)
 
-        self.iterations_list.append(self._iterations)
+        self.iterations_list.append(self.iterations_list[-1])
+        self.scoresPoints.append(self.scoresPoints[-1])
+        self.scores.append(self.scores[-1])
 
         # Laat newSchedule de laatste verbeterde oplossing zijn
         self.newSchedule = self._oldSchedule
@@ -146,7 +148,9 @@ class HcStopCondition(HillClimber):
             else:
                 no_improvement_counter += 1
 
-        self.iterations_list.append(self._iterations)
+        self.iterations_list.append(self.iterations_list[-1])
+        self.scoresPoints.append(self.scoresPoints[-1])
+        self.scores.append(self.scores[-1])
 
         # Laat newSchedule de laatste verbeterde oplossing zijn
         self.newSchedule = self._oldSchedule
