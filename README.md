@@ -28,12 +28,17 @@ Als laatste wordt voor **'min'** het totale aantal minuten ingevoerd dat alle ge
 
 Dienstregelingen worden gegenereerd door verschillende algoritmes.
 We hebben de volgende algoritmes gemaakt:
-1. Random
-2. Greedy
-3. Depth-first
-4. Greedy with lookahead
-5. Hillclimber
-
+- Random - Deze voegt trajecten toe aan de dienstregeling op een volledige willekeurige manier. Startend vanaf een random station volgt de trein een random traject van aaneengeschakelde verbindingen. 
+- Greedy - Deze voegt trajecten toe aan de dienstregeling op een greedy manier. Dat betekent dat de verbingen die gekozen worden met voorkeur onbereden zijn. Als die niet aanwezig zijn vanaf een bepaald station, dan wordt er willekeurig een al bereden verbindingen gekozen. Start stations zijn nog steeds random gekozen.
+    - Termini Greedy - Een variant van de Greedy die niet willekeurig start stations uitkiest. Eerst worden kopstations (stations met één verbinding) gebruikt, daarna zal het uitkiezen weer willekeurig gaan.
+- Depth-first - Een Depth First-zoekalgoritme dat alle mogelijke configuraties van een traject doorzoekt en 
+    voegt de hoogst scorende toe aan de dienstregeling.
+    - Greedy Lookahead - Een variant van de Depth-first die een tak van configuraties voortijdig snoeit als er na het instellen van 'x' aantal verbindingen geen nieuwe verbinding wordt gekozen.
+- Hillclimber - Neemt een ingevulde dienstregeling en plant steeds n treinen opnieuw in. Slaat verbeteringen op en gooit verslechteringen weg. 
+    - Hillclimber Stop Condition - Een variant van de Hillclimber die na een vast aantal iteraties waar geen verbetering is gevonden het algoritme stopt.
+    - Termini Hillclimber - Een variant van de Hillclimber waarbij een Termini Greedy algoritme wordt gebruikt bij
+    het inplannen van een nieuwe trein i.p.v. een Greedy.
+ 
 ## Aan de slag
 
 ### Vereisten
