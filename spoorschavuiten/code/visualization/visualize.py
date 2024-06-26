@@ -321,16 +321,19 @@ def makeHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list) -> None:
     '''
     Makes a graph that shows the steps to get a better score using the Hill Climber-algorithm.
     '''
+    plt.figure(figsize =(9, 6))
     plt.scatter(x, y, c= "black", s=30)
     
     plt.plot(xpoints, ypoints)
 
-    plt.title("Hill Climber-Algoritme")
-    plt.xlabel("Iteraties")
-    plt.ylabel("Score")
+    plt.title("Hill Climber-Algoritme", fontsize = 20)
+    plt.xlabel("Iteraties", fontsize = 16)
+    plt.xticks(fontsize=15)
+    plt.ylabel("Score", fontsize = 16)
+    plt.yticks(fontsize=15)
     # plt.yscale("log")
-    plt.xscale("log")
-    plt.savefig("data/hillClimber.jpg")
+    # plt.xscale("log")
+    plt.savefig("data/hillClimber_Holland_9202.jpg")
     plt.show()
 
 
@@ -341,13 +344,13 @@ def outputHillClimberGraph(x: list, y: list, xpoints: list, ypoints:list, title:
     writeInFile(title, file)
     writeInFile("\n", file)
     writeInFile("\n", file)
-    writeInFile(f'"x, punten voor lijn tekenen", "{x}"', file)
+    writeInFile(f'"x", "{x}"', file)
     writeInFile("\n", file)
-    writeInFile(f'"y, punten voor lijn tekenen", "{y}"', file)
+    writeInFile(f'"y", "{y}"', file)
     writeInFile("\n", file)
-    writeInFile(f'"x, punten van verbetering", "{xpoints}"', file)
+    writeInFile(f'"xpoints", "{xpoints}"', file)
     writeInFile("\n", file)
-    writeInFile(f'"y, punten van verbetering", "{ypoints}"', file)
+    writeInFile(f'"ypoints", "{ypoints}"', file)
     writeInFile("\n", file)
     writeInFile("\n", file)
     writeInFile("\n", file)
