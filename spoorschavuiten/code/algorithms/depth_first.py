@@ -40,7 +40,7 @@ class DepthFirst():
                 # for each possible starting position, visit all possible routes
                 while self.possible_routes:
                     step += 1
-                    print(f'Step {step}, current value: {self.best_score}, schedule: {len(self.schedule._routes)}')
+                    print(f'Step {step}, current value: {self.best_score}, schedule: {len(self.schedule.routes)}')
                     new_route = self.get_next_state()
                     self.check_score(new_route)
                     current_station = new_route.current_station

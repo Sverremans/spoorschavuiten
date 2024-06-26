@@ -1,5 +1,5 @@
 import copy, random
-from code.algorithms.greedy import Greedy, termini_Greedy
+from code.algorithms.greedy import Greedy, Termini_Greedy
 from code.classes.classes import Schedule
 
 # NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219 -> 9214 misschien mogelijk (-5). 
@@ -167,7 +167,7 @@ class HcStopCondition(HillClimber):
         self.newSchedule = self._oldSchedule
 
 
-class termini_HillClimber(HillClimber):
+class Termini_HillClimber(HillClimber):
     # NOTE: dit geeft een lagere score dan reguliere Hill Climber
     def mutate_train(self) -> None:
         # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
@@ -177,5 +177,5 @@ class termini_HillClimber(HillClimber):
                 unused_connections.append(connection)
 
         if unused_connections:
-            new_greedy = termini_Greedy(self.newSchedule, 120, 1)
+            new_greedy = Termini_Greedy(self.newSchedule, 120, 1)
             new_greedy.run()

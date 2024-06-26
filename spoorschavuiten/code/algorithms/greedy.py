@@ -61,7 +61,7 @@ class FixedGreedy(Greedy):
         self.time = 0
         random.seed(fixedSeed)
 
-class termini_Greedy(Greedy):
+class Termini_Greedy(Greedy):
     """
     Kiest eerst de stations met slechts één verbinding als startpunten.
     Deze heuristiek voorkomt het onnodig dubbel berijden van sporen.

@@ -1,12 +1,12 @@
 from code.classes.classes import Region, Schedule
 from code.algorithms.random import Random
 from code.algorithms.greedy import Greedy
-from code.algorithms.greedy import termini_Greedy
+from code.algorithms.greedy import Termini_Greedy
 from code.algorithms.depth_first import DepthFirst
 from code.visualization.visualize import *
 from code.algorithms.hillclimber import HillClimber as hc
 from code.algorithms.hillclimber import HcStopCondition as hcStop
-from code.algorithms.hillclimber import termini_HillClimber as terHc
+from code.algorithms.hillclimber import Termini_HillClimber as terHc
 import time
 
 start_time = time.time()
