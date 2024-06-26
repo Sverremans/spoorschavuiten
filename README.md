@@ -58,6 +58,11 @@ sudo apt install python3-tk -y
 
 ### Gebruik
 
+De code kan worden gerund vanuit de volgende working directory:
+```
+spoorschavuiten/spoorschavuiten
+```
+
 De algoritmes kunnen gerund worden door het aanroepen van:
 
 ```
