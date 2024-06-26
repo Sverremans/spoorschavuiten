@@ -1,11 +1,40 @@
 # Spoorschavuiten 
-#### Sipke "achternaam", Massimo "achternaam" en Sverre van der Zalm
+#### Sipke de Boer, Massimo "achternaam" en Sverre van der Zalm
 ## Algoritmen en Heuristieken - RailNL
+---
+[comment]: <> (De case wordt uitgelegd)
 
 Wij hebben gekozen om voor het vak Algoritmen en Heuristieken, de case RailNL uit te werken.
 
-De opdracht was simpel, creeër een dienstregeling voor de spoorwegen in Holland en Nederland.
+De opdracht was simpel, creeër een dienstregeling voor de spoorwegen in Holland en Nederland met een zo'n hoog mogelijke score.
+Om dit te doen wordt er gebruik gemaakt van een bepaalde terminologie:
+- dienstregeling = alle trajecten in een regio bij elkaar
+- regio = Holland of Nederland, en alles stations en verbindingen die zeze bevat.
+- traject = alle verbindingen die een trein berijdt, een traject kan niet langer duren dan de maximale tijd.
+- verbinding = het stuk spoor tussen twee stations
+- maximale tijd = de maximale tijd die een trein mag rijden, voor Holland is dit 120 minuten, voor Nederland is dit 180 minuten.
 
+Deze score wordt met de volgende formule berekent:
+
+**S = p * 10000 - (T * 100 + min)**
+
+Voor **'p'** wordt een fractie van het aantal gebruikte verbindingen gebruikt.
+
+Voor **'T'** wordt het aantal gebruikte treinen in gevuld. 
+Het maximaal aantal treinen dat mag gebruikt worden in Holland is 7, voor Nederland is dit maximale aantal 20 treinen.
+
+Als laatste wordt voor **'min'** het totale aantal minuten ingevoerd dat alle gebruikte treinen bezig zijn om alle verbindingen in hun traject te berijden.
+
+
+Door gebruik te maken van verschillende algoritmes worden mogelijke dienstregelingen gemaakt en er wordt een score berekend.
+
+---
+[comment]: <> (Uitgelegd hoe de algoritmes via de command line gerund kunnen worden, plus alle argumenten die daar bij horen.)
+
+tekst
+
+
+---
 
 Wij werken met verschillende scripts om de verschillende algoritmen te laten runnen.
 
