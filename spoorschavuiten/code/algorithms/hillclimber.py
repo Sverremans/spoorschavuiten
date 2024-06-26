@@ -2,9 +2,6 @@ import copy, random
 from code.algorithms.greedy import Greedy, Termini_Greedy
 from code.classes.classes import Schedule
 
-# NOTE de theoretisch maximaal haalbare score is 1*10000 - (4 * 100 + 381) = 9219 -> 9214 misschien mogelijk (-5). 
-# Dit komt zeer in de buurt (9202).
-# NOTE voor Nederland is dit 7549.
 
 class HillClimber:
     """
@@ -113,23 +110,11 @@ class HillClimber:
 
 class HcStopCondition(HillClimber):
     """
-    Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden
+    Laat Hill Climber stoppen als er na een vast aantal iteraties geen verbetering is gevonden.
     """
     def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int, cap: int = 100000) -> None:
-        # Maak een kopie van Schedule-object
-        self._oldSchedule = schedule
-        self.newSchedule = copy.deepcopy(schedule)
-        # Bereken de doelfuntie
-        self._value = schedule.calculate_value()
-        self._maxTrains = maxTrains
-        self._maxTime = maxTime
-
+        super().__init__(schedule, maxTrains, maxTime)
         self._cap = cap
-        
-        self.scores = [schedule.calculate_value()]
-        self.iterations_list = []
-        self.scoresPoints = []
-        self.iterations_listPoints = []
 
     def run(self, iterations: int, nr_of_trains: int = 1) -> None:
         # Sla iterations op
@@ -168,6 +153,10 @@ class HcStopCondition(HillClimber):
 
 
 class Termini_HillClimber(HillClimber):
+    """
+    Variatie van Hillclimber waarbij een Termini Greedy algoritme wordt gebruikt bij
+    het inplannen van een nieuwe trein i.p.v. een Greedy.
+    """
     # NOTE: dit geeft een lagere score dan reguliere Hill Climber
     def mutate_train(self) -> None:
         # Plan een nieuwe trein in indien er nog sporen ongebruikt zijn
