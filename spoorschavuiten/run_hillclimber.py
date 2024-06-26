@@ -3,6 +3,7 @@ from code.algorithms.random import FixedRandom, Random
 from code.classes.classes import Schedule, Region
 from code.visualization.visualize import *
 import time
+import argparse
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # print("start")

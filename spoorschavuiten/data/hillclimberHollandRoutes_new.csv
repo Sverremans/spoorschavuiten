@@ -898,3 +898,21 @@ train_4,"[Amsterdam Zuid naar Schiphol Airport, Amsterdam Amstel naar Amsterdam 
 
 
 
+Holland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_1
+
+train_1,"[Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Zuid naar Schiphol Airport, Leiden Centraal naar Schiphol Airport, Den Haag Centraal naar Leiden Centraal, Den Haag Centraal naar Gouda, Rotterdam Alexander naar Gouda, Rotterdam Centraal naar Rotterdam Alexander, Dordrecht naar Rotterdam Centraal]"
+train_2,"[Beverwijk naar Castricum, Zaandam naar Beverwijk, Zaandam naar Hoorn, Alkmaar naar Hoorn]"
+train_3,"[Rotterdam Centraal naar Schiedam Centrum, Schiedam Centrum naar Delft, Delft naar Den Haag Centraal, Den Haag Centraal naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk]"
+train_4,"[Alkmaar naar Den Helder, Castricum naar Alkmaar, Zaandam naar Castricum, Amsterdam Sloterdijk naar Zaandam, Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Haarlem, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid]"
+
+
+
+Holland, 1000 runs, hillclimber die stopt na 1000000. 25/06/2024 run_2
+
+train_1,"[Rotterdam Alexander naar Gouda, Gouda naar Alphen a/d Rijn, Leiden Centraal naar Alphen a/d Rijn, Leiden Centraal naar Schiphol Airport, Amsterdam Zuid naar Schiphol Airport, Amsterdam Zuid naar Amsterdam Sloterdijk, Amsterdam Centraal naar Amsterdam Sloterdijk, Amsterdam Amstel naar Amsterdam Centraal, Amsterdam Amstel naar Amsterdam Zuid, Amsterdam Zuid naar Schiphol Airport]"
+train_2,"[Leiden Centraal naar Heemstede-Aerdenhout, Heemstede-Aerdenhout naar Haarlem, Haarlem naar Beverwijk, Beverwijk naar Castricum, Castricum naar Alkmaar, Alkmaar naar Den Helder]"
+train_3,"[Amsterdam Sloterdijk naar Haarlem, Amsterdam Sloterdijk naar Zaandam, Zaandam naar Hoorn, Alkmaar naar Hoorn, Castricum naar Alkmaar, Zaandam naar Castricum, Zaandam naar Beverwijk]"
+train_4,"[Delft naar Den Haag Centraal, Schiedam Centrum naar Delft, Rotterdam Centraal naar Schiedam Centrum, Dordrecht naar Rotterdam Centraal, Dordrecht naar Rotterdam Centraal, Rotterdam Centraal naar Rotterdam Alexander, Rotterdam Alexander naar Gouda, Den Haag Centraal naar Gouda, Den Haag Centraal naar Leiden Centraal]"
+
+
+
