@@ -173,3 +173,9 @@ outputGraphHistMultiple(score_list1, score_list2)
 # plt.savefig("figures/Boxplot_Nederland_CloseUp")
 # plt.show()
 # -----------------------------------------------------------------------------------------------------------------------------------------------
+colors = ['red', 'blue']
+routes = []
+
+holland = Region("data/input/StationsHolland.csv", "data/input/ConnectiesHolland.csv")
+new_routes = convert_string_to_used_connections(routes, holland)
+draw_finished_map(holland, colors, "data/holland_2.geojson", "figures/hollandIngevuldDoorHillclimberAlgoritme_9202.jpg", new_routes)

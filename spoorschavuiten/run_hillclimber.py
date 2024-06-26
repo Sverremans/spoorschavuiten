@@ -29,10 +29,10 @@ for i in range(iterations):
     hillClimber = HcStopCondition(schedule, 120, 7, 100000)
     hillClimber.run(100000, 4)
 
-    outputToFile(hillClimber.newSchedule, f"Holland; 10000 runs; hillclimber die stopt na 100000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimberHollandOutput_3.csv")
-    routesToFile(hillClimber.newSchedule, f"Holland, 10000 runs, hillclimber die stopt na 100000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimberHollandRoutes_3.csv")
-    outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, f"Holland, 10000 runs, hillclimber die stopt na 100000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimberHollandGraph_3.csv")
-    scoresToFile(hillClimber.newSchedule, i, "data/output/hillclimberHollandScores_3.csv")
+    outputToFile(hillClimber.newSchedule, f"Holland; 10000 runs; hillclimber die stopt na 100000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimber/run_3/hillclimberHollandOutput_3.csv")
+    routesToFile(hillClimber.newSchedule, f"Holland, 10000 runs, hillclimber die stopt na 100000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimber/run_3/hillclimberHollandRoutes_3.csv")
+    outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, f"Holland, 10000 runs, hillclimber die stopt na 100000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimber/run_3/hillclimberHollandGraph_3.csv")
+    scoresToFile(hillClimber.newSchedule, i, "data/output/hillclimber/run_3/hillclimberHollandScores_3.csv")
 
 end = time.time()
 print(end - start)
@@ -62,10 +62,10 @@ for i in range(iterations):
     hillClimber = HcStopCondition(schedule2, 180, 20, 50000)
     hillClimber.run(50000, 12)
 
-    outputToFile(hillClimber.newSchedule, f"Nederland; 1000 runs; hillclimber die stopt na 50000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimberNederlandOutput.csv")
-    routesToFile(hillClimber.newSchedule, f"Nederland, 1000 runs, hillclimber die stopt na 50000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimberNederlandRoutes.csv")
-    outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, f"Nederland, 1000 runs, hillclimber die stopt na 50000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimberNederlandGraph.csv")
-    scoresToFile(hillClimber.newSchedule, i, "data/output/hillclimberNederlandScores.csv")
+    outputToFile(hillClimber.newSchedule, f"Nederland; 1000 runs; hillclimber die stopt na 50000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimber/run_1/hillclimberNederlandOutput.csv")
+    routesToFile(hillClimber.newSchedule, f"Nederland, 1000 runs, hillclimber die stopt na 50000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimber/run_1/hillclimberNederlandRoutes.csv")
+    outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, f"Nederland, 1000 runs, hillclimber die stopt na 50000 keer geen verberering te vinden. 23/06/2024 run_{i + 1}", "data/output/hillclimber/run_1/hillclimberNederlandGraph.csv")
+    scoresToFile(hillClimber.newSchedule, i, "data/output/hillclimber/run_1/hillclimberNederlandScores.csv")
 
 end = time.time()
 print(end - start)
@@ -95,10 +95,10 @@ for i in range(iterations):
     hillClimber = HillClimber(schedule2, 16, 180)
     hillClimber.run(1000000, 3)
 
-    outputToFile(hillClimber.newSchedule, f"Nederland; 100 runs; hillclimber die stopt na 1000000. 25/06/2024 run_{i + 1}", "data/output/hillclimberNederlandOutput_new.csv")
-    routesToFile(hillClimber.newSchedule, f"Nederland, 100 runs, hillclimber die stopt na 1000000. 25/06/2024 run_{i + 1}", "data/output/hillclimberNederlandRoutes_new.csv")
-    outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, f"Nederland, 100 runs, hillclimber die stopt na 1000000. 25/06/2024  run_{i + 1}", "data/output/hillclimberNederlandGraph_new.csv")
-    scoresToFile(hillClimber.newSchedule, i, "data/output/hillclimberNederlandScores_new.csv")
+    outputToFile(hillClimber.newSchedule, f"Nederland; 100 runs; hillclimber die stopt na 1000000. 25/06/2024 run_{i + 1}", "data/output/hillclimber/run_4/hillclimberNederlandOutput_new.csv")
+    routesToFile(hillClimber.newSchedule, f"Nederland, 100 runs, hillclimber die stopt na 1000000. 25/06/2024 run_{i + 1}", "data/output/hillclimber/run_4/hillclimberNederlandRoutes_new.csv")
+    outputHillClimberGraph(hillClimber.iterations_listPoints, hillClimber.scoresPoints, hillClimber.iterations_list, hillClimber.scores, f"Nederland, 100 runs, hillclimber die stopt na 1000000. 25/06/2024  run_{i + 1}", "data/output/hillclimber/run_4/hillclimberNederlandGraph_new.csv")
+    scoresToFile(hillClimber.newSchedule, i, "data/output/hillclimber/run_4/hillclimberNederlandScores_new.csv")
 
 end = time.time()
 print(end - start)
