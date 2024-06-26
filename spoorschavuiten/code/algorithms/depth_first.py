@@ -23,7 +23,8 @@ class DepthFirst():
         Runs the algorithm.
 
         pre: self.schedule is an object of type Schedule and self.max_trains is a positive integer.
-        post: adds routes to self.schedule. The amount depends on if all connections are set before self.max_trains.
+        post: adds routes to self.schedule. The amount depends on if all connections are set before self.max_trains. 
+                Furthermore, it prints update statements in terminal to check the progression of the algorithm.
         """
         step = 0
         start = time.time()
@@ -40,7 +41,7 @@ class DepthFirst():
                 # for each possible starting position, visit all possible routes
                 while self.possible_routes:
                     step += 1
-                    print(f'Step {step}, current value: {self.best_score}, schedule: {len(self.schedule.routes)}')
+                    print(f'Step {step}, current station: {station}, schedule: {len(self.schedule.routes)}')
                     new_route = self.get_next_state()
                     self.check_score(new_route)
                     current_station = new_route.current_station
