@@ -1,5 +1,5 @@
 # Spoorschavuiten 
-#### Sipke de Boer, Massimo "achternaam" en Sverre van der Zalm
+#### Sipke de Boer, Massimo Carbone en Sverre van der Zalm
 ## Algoritmen en Heuristieken - RailNL
 ---
 [comment]: <> (De case wordt uitgelegd)
