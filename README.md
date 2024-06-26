@@ -64,7 +64,7 @@ De algoritmes kunnen gerund worden door het aanroepen van:
 python main.py
 ```
 
-Met behulp van flags kunnen command line arguments worden toegevoegd. Specifiek kan dat als volgt:
+Met behulp van flags kunnen command-line arguments worden toegevoegd. Specifiek kan dat als volgt:
 
 ```
 options:
@@ -88,7 +88,7 @@ options:
   -ca CAP, --cap CAP    Enter the cap for HcStopCondition. Chooses 50000 by default.
 ```
 
-Stel bijvoorbeeld dat het hillclimber algoritme met stopconditie dient te worden aangeroepen, waarbij het algoritme 200000 iteraties moet doen, tenzij er na 30000 iteraties geen verbetering is gevonden. Er worden maximaal 10 treinen ingepland, elk maximaal 100 minuten. De regio is Holland. Het algoritme moet 10 keer worden uitgevoerd, dat wil zeggen 10 keer een compleet nieuwe run. Er worden per iteratie 4 treinen opnieuw ingepland. Dit alles kan worden uitgevoerd door de volgende command line te runnen:
+Stel bijvoorbeeld dat het hillclimber-algoritme met stopconditie dient te worden aangeroepen, waarbij het algoritme 200000 iteraties moet doen, tenzij er na 30000 iteraties geen verbetering is gevonden. Er worden maximaal 10 treinen ingepland, elk maximaal 100 minuten. De regio is Holland. Het algoritme moet 10 keer worden uitgevoerd, dat wil zeggen 10 keer een compleet nieuwe run. Er worden per iteratie 4 treinen opnieuw ingepland. Dit alles kan worden uitgevoerd door de volgende command line te runnen:
 
 ```
 python3 main.py -a HcStopCondition -i 200000 -ca 30000 -tr 10 -ti 100 -r Holland -n 10 -c 4
