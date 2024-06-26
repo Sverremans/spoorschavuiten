@@ -1,8 +1,8 @@
 # Spoorschavuiten 
 #### Sipke de Boer, Massimo Carbone en Sverre van der Zalm
 ## Algoritmen en Heuristieken - RailNL
----
-[comment]: <> (De case wordt uitgelegd)
+
+### Introductie
 
 Wij hebben gekozen om voor het vak Algoritmen en Heuristieken, de case RailNL uit te werken.
 
@@ -28,13 +28,42 @@ Als laatste wordt voor **'min'** het totale aantal minuten ingevoerd dat alle ge
 
 Door gebruik te maken van verschillende algoritmes worden mogelijke dienstregelingen gemaakt en er wordt een score berekend.
 
----
-[comment]: <> (Uitgelegd hoe de algoritmes via de command line gerund kunnen worden, plus alle argumenten die daar bij horen.)
+## Aan de slag
 
-tekst
+### Vereisten
 
+Deze codebase is volledig geschreven in Python 3.7. In requirements.txt staan alle benodigde packages om de code succesvol te draaien. Deze zijn gemakkelijk te installeren via pip dmv. de volgende instructie:
 
----
+```
+pip install -r requirements.txt
+```
+
+Of via conda:
+
+```
+conda install --file requirements.txt
+```
+
+### Gebruik
+
+Een voorbeeldje kan gerund worden door aanroepen van:
+
+```
+python main.py
+```
+
+Het bestand geeft een voorbeeld voor gebruik van de verschillende functies.
+
+### Structuur
+
+De hierop volgende lijst beschrijft de belangrijkste mappen en files in het project, en waar je ze kan vinden:
+
+- **/code**: bevat alle code van dit project
+  - **/code/algorithms**: bevat de code voor algoritmes
+  - **/code/classes**: bevat de drie benodigde classes voor deze case
+  - **/code/visualisation**: bevat de bokeh code voor de visualisatie
+- **/data**: bevat de verschillende databestanden die nodig zijn om de graaf te vullen en te visualiseren
+
 
 Wij werken met verschillende scripts om de verschillende algoritmen te laten runnen.
 
