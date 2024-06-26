@@ -6,8 +6,8 @@ import time
 
 if __name__ == "__main__":
 
-    holland = Region("data/StationsHolland.csv", "data/ConnectiesHolland.csv")
-    netherlands = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv") 
+    holland = Region("data/input/StationsHolland.csv", "data/input/ConnectiesHolland.csv")
+    netherlands = Region("data/input/StationsNationaal.csv", "data/input/ConnectiesNationaal.csv") 
 
     start = time.time()
     times = 1000000
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         randomSolution = rd.Random(schedule, 120, 7)
         randomSolution.run()
 
-        scoresToFile(schedule, i, "data/1000000RandomScoresHolland_2.csv")
+        scoresToFile(schedule, i, "data/output/random/1000000RandomScoresHolland.csv")
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Met de volgende regels code worden 1000000 random dienstregelingen gemaakt voor Nederland.
 # Deze scores worden opgeslagen in losse bestanden waar vervolgens histogrammen en boxplots mee gemaakt worden. 
@@ -32,7 +32,7 @@ if __name__ == "__main__":
         randomSolution = rd.Random(schedule, 180, 20)
         randomSolution.run()
 
-        scoresToFile(schedule, i, "data/1000000RandomScoresNederland.csv")
+        scoresToFile(schedule, i, "data/output/random/1000000RandomScoresNederland.csv")
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Met de volgende regels code worden 1000000 greedy dienstregelingen gemaakt voor Holland.
 # Het greedy algoritme houd rekening met al gebruikte verbindingen en vermijdt deze wanneer het mogelijk is.
@@ -44,7 +44,7 @@ if __name__ == "__main__":
         greedySolutionHol = gd.Greedy(schedule, 120, 7)
         greedySolutionHol.run()
 
-        scoresToFile(schedule, i, "data/1000000GreedyScoresHolland_2.csv")
+        scoresToFile(schedule, i, "data/output/greedy/1000000GreedyScoresHolland.csv")
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Met de volgende regels code worden 1000000 greedy dienstregelingen gemaakt voor Nederland.
 # Het greedy algoritme houd rekening met al gebruikte verbindingen en vermijdt deze wanneer het mogelijk is.
@@ -56,7 +56,7 @@ if __name__ == "__main__":
         greedySolutionNed = gd.Greedy(schedule, 180, 20)
         greedySolutionNed.run()
 
-        scoresToFile(schedule, i, "data/1000000GreedyScoresNederland_3.csv")
+        scoresToFile(schedule, i, "data/output/greedy/1000000GreedyScoresNederland.csv")
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     end = time.time()
