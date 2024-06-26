@@ -10,12 +10,7 @@ if __name__ == "__main__":
     netherlands = Region("data/StationsNationaal.csv", "data/ConnectiesNationaal.csv") 
 
     start = time.time()
-    all_outputs = []
     times = 1000000
-    timeList = []
-
-    for i in range(times):
-        timeList.append(i + 1)
 #----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Met de volgende regels code worden 1000000 random dienstregelingen gemaakt voor Holland.
 # Deze scores worden opgeslagen in losse bestanden waar vervolgens histogrammen en boxplots mee gemaakt worden. 
