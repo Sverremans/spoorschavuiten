@@ -7,7 +7,7 @@ import time
 class GreedyLookahead(DepthFirst):
     """
     A Greedy algorithm that searches through all possible configurations of a route and adds the highest scoring one to schedule, 
-        but prunes the branch of configurations prematurely if after 'x' connections set a new one is not used.
+    but prunes the branch of configurations prematurely if after 'x' connections set a new one is not used.
     """
 
     def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int, lookahead: int):
@@ -36,7 +36,7 @@ class GreedyLookahead(DepthFirst):
                 # for each possible starting position, visit all possible routes
                 while self.possible_routes:
                     step += 1
-                    print(f'Step {step}, current value: {self.best_score}, schedule: {len(self.schedule.routes)}')
+                    print(f'Step {step}, current station: {station}, schedule: {len(self.schedule.routes)}')
                     new_route = self.get_next_state()
                     new_route = self.check_branch(new_route)
                     self.check_score(new_route)
@@ -60,7 +60,7 @@ class GreedyLookahead(DepthFirst):
     def check_branch(self, new_route: Route) -> Route:
         """
         If last 'x' additions on the route have not improved score, stop the branch and get next state. 
-            Keep doing untill better route is found.
+        Keep doing untill better route is found.
 
         pre: new_route is an object of type Route.
         post: returns an object of type Route or calls self.get_next_state() and calls itself again.

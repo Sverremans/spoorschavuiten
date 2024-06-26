@@ -6,7 +6,7 @@ import time
 class DepthFirst():
     """
     A Depth First search algorithm that searches through all possible configurations of a route and 
-        adds the highest scoring one to schedule.
+    adds the highest scoring one to schedule.
     """
 
     def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int):
@@ -75,7 +75,7 @@ class DepthFirst():
 
         pre: new_route is an object of type Route.
         post: if new_score is higher than current, then self.best_route and self.best_score are assigned a new value, 
-                otherwise nothing changes.
+            otherwise nothing changes.
         """
 
         new_score = self.get_score(new_route)
@@ -124,7 +124,8 @@ class DepthFirst():
         Returns possible directions the route can go from current station.
 
         pre: current station is an object of type Station.
-        post: returns a list of tuples of connection objects of type connection with a string which indicates forwards or backwards.
+        post: returns a list of tuples of connection objects of type connection with a string 
+            which indicates forwards or backwards.
         """
         connections = []
         for connection in self.schedule.connections:
