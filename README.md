@@ -9,12 +9,17 @@ De opdracht was simpel, creeër een dienstregeling voor de spoorwegen in Holland
 
 Wij werken met verschillende scripts om de verschillende algoritmen te laten runnen.
 
+
 Met het bestand *distribution.py* worden het Random en Greedy algortime gerunt.
 Het bestand is opgedeeld in verschillende stukjes code die resultaten genereren.
 Met variabele *times* wordt aangegeven hoe vaak het algoritme herhaald moet worden, vervolgens wordt er een lege dienstergeling mee gegeven aan het algoritme.
 Deze wordt daarna ingevuld door het algoritme, de score die de dienstregeling haalt wordt opgeslagen in een los bestand.
 Als dit *times* keer wordt herhaald, bevat dit bestand dus ook *times* aantal behaalde scores.
 Deze scores worden vervolgens gebruikt om een histogram en ee boxplot te kunnen maken.
+
+Type in de terminal ***"python3 distribution.py"*** om deze code te laten runnen en data te genereren.
+Dit zal resulteren in 4 csv bestanden:
+- 
 
 
 
@@ -32,6 +37,7 @@ Deze werkt hetzelfde aleen stop deze nadat het algoritme *1000000* (of zelf nade
 
 Van alle resultaten wordt de output, score en routes opgeslagen in losse bestanden. Deze data kan vervolgens worden gebruikt om de kaart met alle treinen te tekenen, of te laten zien op welke iteraties het Hill Climber algoritme een verbeterig heeft gevonden.
 
+Type in de terminal ***"python3 run_hillclimber.py"*** om deze code te laten runnen en data te genereren.
 
 In *run_depthfirst.py*
 
