@@ -1,14 +1,19 @@
 from code.algorithms.random import Random
-from code.classes.classes import Route
+from code.classes.classes import Route, Station, Connection, Schedule
 import random
-from typing import Any
 import functools
+
 
 class Greedy(Random):
     """
-    Routes starts at random locations, but the rest is searched for in greedy way.
+    Algorithm that adds routes to schedule. Starting a route in random station and then taking paths of linked connections. 
+    Connections are set with preference for unused ones.
     """
-    def get_connections(self, current_station) -> list:
+    def get_connections(self, current_station: Station) -> tuple[list[tuple[Connection, str]], list[tuple[Connection, str]]]:
+        """
+        Returns tuple of lists of available connections and their directions (forwards or backwards) from current station. 
+        The first list is of all possible connections. The second list is of all unused possible connections.
+        """
         possible_connections = self.schedule.get_connections(current_station)
         unused_connections = []
         
@@ -18,13 +23,20 @@ class Greedy(Random):
 
         return possible_connections, unused_connections
 
-    def choose_connection(self, possible_connections, unused_connections) -> Any:
+    def choose_connection(self, possible_connections: list[tuple[Connection, str]], unused_connections: list[tuple[Connection, str]]) -> tuple[Connection, str]:
+        """
+        Returns a randomly choosen unused connection and direction, but if there is none 
+        it returns a randomly choosen used connection and direction.
+        """
         if unused_connections:
             return random.choice(unused_connections)
         else:    
             return random.choice(possible_connections)
 
     def run(self) -> None:
+        """
+        Runs the algorithm.
+        """
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
@@ -54,19 +66,23 @@ class Greedy(Random):
 
 
 class FixedGreedy(Greedy):
-    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
-        self.schedule = schedule
-        self.maxTime = maxTime
-        self.maxTrains = maxTrains
-        self.time = 0
+    """
+    A variation on the Greedy algorithm that returns the same output based on a fixedseed.
+    """
+    def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
+        super().__init__(schedule, maxTime, maxTrains)
         random.seed(fixedSeed)
+
 
 class termini_Greedy(Greedy):
     """
-    Kiest eerst de stations met slechts één verbinding als startpunten.
-    Deze heuristiek voorkomt het onnodig dubbel berijden van sporen.
+    A variation on the Greedy algorithm that preferrably chooses start stations with only one connection, 
+    if none it chooses a random start station again. This heuristic prevents some use of connections twice.
     """
     def run(self) -> None:
+        """
+        Runs the algorithm.
+        """
         # Bepaal welke stations kopstations zijn
         self._termini = []
         self._unused_termini = []

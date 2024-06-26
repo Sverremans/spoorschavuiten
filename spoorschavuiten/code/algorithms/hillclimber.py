@@ -36,7 +36,7 @@ class HillClimber:
             new_greedy = Greedy(self.newSchedule, 120, 1)
             new_greedy.run()
 
-    def mutate_schedule(self, nr_of_trains=1) -> None:
+    def mutate_schedule(self, nr_of_trains: int = 1) -> None:
         # Verwijder n treinen
         if nr_of_trains > len(self.newSchedule.routes):
             nr_of_trains = len(self.newSchedule.routes)
