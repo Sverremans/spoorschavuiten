@@ -20,6 +20,7 @@ if __name__ == "__main__":
     parser.add_argument('-i', '--iterations', type=int, default=100000, help='Enter the number of iterations for the hillclimber algorithms. Chooses 100000 by default.')
     parser.add_argument('-c', '--changes', type=int, default=2, help='Enter the number of changes per iteration for the hillclimber algorithms. Chooses 2 by default.')
     parser.add_argument('-ca', '--cap', type=int, default=50000, help='Enter the cap for HcStopCondition. Chooses 50000 by default.')
+    parser.add_argument('-l', '--lookahead', type=int, default=3, help='Enter the value of the lookahead parameter for the GreedyLookAhead algorithm. Chooses 3 by default.')
     args = parser.parse_args()
 
     # Laad de data in
@@ -43,6 +44,7 @@ if __name__ == "__main__":
     iterations = args.iterations
     changes = args.changes
     cap = args.cap
+    lookahead = args.lookahead
     
     # Overschrijf de constraints indien gewenst
     if args.max_trains:
@@ -104,7 +106,7 @@ if __name__ == "__main__":
     elif algorithm == 'GreedyLookAhead':
         for run_nr in range(nr_of_runs):
             new_schedule = Schedule(railmap)
-            greedy_lookahead_schedule = GreedyLookahead(new_schedule, max_time, max_trains, 3)
+            greedy_lookahead_schedule = GreedyLookahead(new_schedule, max_time, max_trains, lookahead)
             greedy_lookahead_schedule.run()
             
             outputToFile(new_schedule, f'GreedyLookAhead {args.railmap} run number {run_nr + 1}', f'data/output/greedy_lookahead/greedylookahead_{args.railmap}_output.csv')
