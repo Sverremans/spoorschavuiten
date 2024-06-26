@@ -1,6 +1,5 @@
-# Spoorschavuiten 
-#### Sipke de Boer, Massimo Carbone en Sverre van der Zalm
-## Algoritmen en Heuristieken - RailNL
+# Algoritmen en Heuristieken - RailNL
+### Spoorschavuiten: Sipke de Boer, Massimo Carbone en Sverre van der Zalm
 
 ### Introductie
 
