@@ -1,5 +1,5 @@
 # Algoritmen en Heuristieken - RailNL
-### Door Sipke de Boer, Massimo Carbone en Sverre van der Zalm a.k.a De Spoorschavuiten
+### Door Sipke de Boer, Massimo Carbone en Sverre van der Zalm a.k.a. De Spoorschavuiten
 
 ## Introductie
 
@@ -68,6 +68,44 @@ De algoritmes kunnen gerund worden door het aanroepen van:
 ```
 python main.py
 ```
+
+Met behulp van flags kunnen command-line arguments worden toegevoegd. Specifiek kan dat als volgt:
+
+```
+options:
+  -h, --help            show this help message and exit
+  -a {Random,FixedRandom,Greedy,FixedGreedy,Termini_Greedy,GreedyLookAhead,HillClimber,HcStopCondition,Termini_HillClimber,DepthFirst}, --algorithm {Random,FixedRandom,Greedy,FixedGreedy,Termini_Greedy,GreedyLookAhead,HillClimber,HcStopCondition,Termini_HillClimber,DepthFirst}
+                        Choose between Random, FixedRandom, Greedy, FixedGreedy, Termini_Greedy, GreedyLookAhead, HillClimber, HcStopCondition,
+                        Termini_HillClimber, DepthFirst. Chooses HillClimber by default.
+  -n NR_OF_RUNS, --nr_of_runs NR_OF_RUNS
+                        Enter the number of runs. Chooses 1 by default.
+  -s SEED, --seed SEED  Enter a seed for fixed algorithms. Chooses 1234 by default.
+  -r {Holland,Nederland}, --railmap {Holland,Nederland}
+                        Choose between Holland and Nederland. Chooses Holland by default.
+  -tr MAX_TRAINS, --max_trains MAX_TRAINS
+                        Enter the maximum number of trains. Chooses 7 for Holland and 20 for Nederland by default.
+  -ti MAX_TIME, --max_time MAX_TIME
+                        Enter the maximum time in minutes for the length of each train path. Chooses 120 for Holland and 180 for Nederland by default.
+  -i ITERATIONS, --iterations ITERATIONS
+                        Enter the number of iterations for the hillclimber algorithms. Chooses 100000 by default.
+  -c CHANGES, --changes CHANGES
+                        Enter the number of changes per iteration for the hillclimber algorithms. Chooses 2 by default.
+  -ca CAP, --cap CAP    Enter the cap for HcStopCondition. Chooses 50000 by default.
+```
+
+Stel bijvoorbeeld dat het hillclimber-algoritme met stopconditie dient te worden aangeroepen, waarbij het algoritme 200000 iteraties moet doen, tenzij er na 30000 iteraties geen verbetering is gevonden. Er worden maximaal 10 treinen ingepland, elk maximaal 100 minuten. De regio is Holland. Het algoritme moet 10 keer worden uitgevoerd, dat wil zeggen 10 keer een compleet nieuwe run. Er worden per iteratie 4 treinen opnieuw ingepland. Dit alles kan worden uitgevoerd door de volgende command line te runnen:
+
+```
+python3 main.py -a HcStopCondition -i 200000 -ca 30000 -tr 10 -ti 100 -r Holland -n 10 -c 4
+```
+
+Merk op dat het deel
+
+```
+-r Holland
+```
+
+eigenlijk overbodig is; Holland is de default value die wordt gekozen als de user niets specificeert.
 
 ## Hieronder oude README tekst
 Met het bestand *distribution.py* worden het Random en Greedy algortime gerunt.
