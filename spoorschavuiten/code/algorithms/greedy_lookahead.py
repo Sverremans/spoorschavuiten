@@ -20,6 +20,7 @@ class GreedyLookahead(DepthFirst):
 
         pre: self.schedule is an object of type Schedule and self.max_trains is a positive integer.
         post: adds routes to self.schedule. The amount depends on if all connections are set before self.max_trains.
+                Furthermore, it prints update statements in terminal to check the progression of the algorithm.
         """
         step = 0
         start = time.time()

@@ -61,7 +61,6 @@ if __name__ == "__main__":
             routesToFile(new_schedule, f'Random {args.railmap} run number {run_nr + 1}', f'data/output/random/random_{args.railmap}_routes.csv')
             scoresToFile(new_schedule, run_nr, f'data/output/random/random_{args.railmap}_scores.csv')
 
-
     elif algorithm == 'FixedRandom':
         for run_nr in range(nr_of_runs):
             new_schedule = Schedule(railmap)
