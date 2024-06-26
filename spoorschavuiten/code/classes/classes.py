@@ -22,7 +22,7 @@ class Connection:
     A station A and a station B. The dist variable is the distance in minutes between the two stations.
     The last attribute is a boolean, this states if the connections is used or not.
 
-    Pre: It needs two stations and the distance between those station for the object to be made.
+    pre: It needs two stations and the distance between those station for the object to be made.
     '''
     def __init__(self, stationA: Station, stationB: Station, dist: int) -> None:
         self.stationA = stationA
@@ -43,7 +43,6 @@ class Connection:
     def __repr__(self) -> str:
         return self._repr
     
-    # added to fix depth_first score getting method
     def __eq__(self, other) -> bool:
         if isinstance(other, Connection):
             return self.stationA._name == other.stationA._name and self.stationB._name == other.stationB._name
@@ -66,16 +65,16 @@ class Route:
         self.time = 0
         self.current_station = None
     
-    def add_time(self, extraTime) -> None:
+    def add_time(self, extraTime: int) -> None:
         self.time += extraTime
 
-    def subtract_time(self, extraTime) -> None:
+    def subtract_time(self, extraTime: int) -> None:
         self.time -= extraTime
     
-    def add_connection(self, connection) -> None:
+    def add_connection(self, connection: Connection) -> None:
         self.route.append(connection)
 
-    def add_station(self, station) -> None:
+    def add_station(self, station: Station) -> None:
         self.stations.append(station)
 
     def get_dist(self) -> int:
@@ -85,29 +84,62 @@ class Route:
         return dist
 
 
+class Region:
+    """
+    Regio van stations en verbindingen waarin routes lopen.
+    """
+    def __init__(self, stations_file: str, connections_file: str) -> None:
+        self.stations: dict[str, Station] = self.load_stations(stations_file)
+        self.connections: list[Connection] = self.load_connections(connections_file)
+
+    def load_stations(self, stations_file: str) -> dict[str, Station]:
+        stations = {}
+
+        # add stations with coordinates
+        df_stations = pd.read_csv(stations_file)
+        for l in range(len(df_stations)):
+            new_station = Station(df_stations.loc[l, 'station'], df_stations.loc[l, 'x'], df_stations.loc[l, 'y'])
+            stations[new_station._name] = new_station
+
+        return stations
+
+    def load_connections(self, connections_file: str) -> list[Connection]:
+        connections = []
+
+        # add connections and distances
+        df_connections = pd.read_csv(connections_file)
+        for l in range(len(df_connections)):
+            stationA = self.stations[df_connections.loc[l, 'station1']]
+            stationB = self.stations[df_connections.loc[l, 'station2']]
+            new_connection = Connection(stationA, stationB, df_connections.loc[l, 'distance'])
+            connections.append(new_connection)
+
+        return connections
+
+
 class Schedule:
     '''
     In Schedule there is a list that contains all the routes that are made by an algorithm, these routes are Route objects.
     Schedule keeps a note of all the time passed over all te routes in the list.
     
 
-    Pre: Schedule needs a region to make new routes in.
+    pre: Schedule needs a region to make new routes in.
     '''
-    def __init__(self, region) -> None:
+    def __init__(self, region: Region) -> None:
         self.routes: list[Route] = []
         self._time_used: int = 0
         self.stations: dict[str, Station] = region.stations
         self.connections: list[Connection] = self.clear_connections(region)
     
-    def clear_connections(self, region) -> list[Connection]:
+    def clear_connections(self, region: Region) -> list[Connection]:
         for connection in region.connections:
             connection.used = False
         return region.connections
     
-    def add_route(self, route) -> None:
+    def add_route(self, route: Route) -> None:
         self.routes.append(route)
 
-    def update_time(self, time) -> None:
+    def update_time(self, time: int) -> None:
         self._time_used += time
 
     def is_solution(self) -> bool:
@@ -149,34 +181,3 @@ class Schedule:
                 possible_connections.append((connection, "b"))
         
         return possible_connections
-
-
-class Region:
-    """Regio van stations en verbindingen waarin routes lopen."""
-    def __init__(self, stations_file: str, connections_file: str) -> None:
-        self.stations: dict[str, Station] = self.load_stations(stations_file)
-        self.connections: list[Connection] = self.load_connections(connections_file)
-
-    def load_stations(self, stations_file: str) -> list:
-        stations = {}
-
-        # add stations with coordinates
-        df_stations = pd.read_csv(stations_file)
-        for l in range(len(df_stations)):
-            new_station = Station(df_stations.loc[l, 'station'], df_stations.loc[l, 'x'], df_stations.loc[l, 'y'])
-            stations[new_station._name] = new_station
-
-        return stations
-
-    def load_connections(self, connections_file: str) -> list:
-        connections = []
-
-        # add connections and distances
-        df_connections = pd.read_csv(connections_file)
-        for l in range(len(df_connections)):
-            stationA = self.stations[df_connections.loc[l, 'station1']]
-            stationB = self.stations[df_connections.loc[l, 'station2']]
-            new_connection = Connection(stationA, stationB, df_connections.loc[l, 'distance'])
-            connections.append(new_connection)
-
-        return connections

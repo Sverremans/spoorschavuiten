@@ -1,22 +1,27 @@
 import random
-from code.classes.classes import Route, Station
-from typing import Any
+from code.classes.classes import Route, Station, Schedule, Connection
 
 
 class Random:
     """
-    Fully random algorithm.
+    Algorithm that adds routes to schedule. Starting a route in random station and then taking random paths of linked connections.
     """
-    def __init__(self, schedule, maxTime: int, maxTrains: int) -> None:
+    def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int) -> None:
         self.schedule = schedule
         self.maxTime = maxTime
         self.maxTrains = maxTrains
-        self.time = 0
+        self.time: int = 0
 
     def choose_station(self) -> Station:
+        """
+        Chooses randomly from list of stations.
+        """
         return random.choice(list(self.schedule.stations.values()))
 
-    def get_connections(self, currentStation) -> list:
+    def get_connections(self, currentStation: Station) -> list[tuple[Connection, str]]:
+        """
+        Returns list of available connections and their directions (forwards or backwards) from current station.
+        """
         connections = []
         for connection in self.schedule.connections:
             if connection.stationA == currentStation:
@@ -25,19 +30,34 @@ class Random:
                 connections.append((connection, "b"))
         return connections
     
-    def choose_connection(self, possibleConnections) -> Any:
+    def choose_connection(self, possibleConnections: list[tuple[Connection, str]]) -> tuple[Connection, str]:
+        """
+        Returns a randomly choosen connection and direction.
+        """
         return random.choice(possibleConnections)
 
-    def add_time(self, extraTime) -> None:
+    def add_time(self, extraTime: int) -> None:
+        """
+        Adds time used to self.time varaiable.
+        """
         self.time += extraTime
 
-    def subtract_time(self, extraTime) -> None:
+    def subtract_time(self, extraTime: int) -> None:
+        """
+        Subtracts time used to self.time varaiable.
+        """
         self.time -= extraTime
 
-    def set_connection_is_used(self, connection) -> None:
+    def set_connection_is_used(self, connection: Connection) -> None:
+        """
+        Calls is_used() method of object of Connection class.
+        """
         connection.is_used()
 
-    def set_new_station(self, station, direction, connection) -> Station:
+    def set_new_station(self, station: Station, direction: str, connection: Connection) -> Station:
+        """
+        Returns the new current station based on given direction the connection is traveled on.
+        """
         if direction == "f":
             station = connection.stationB
         else:
@@ -45,9 +65,15 @@ class Random:
         return station
     
     def generate_output(self) -> None:
+        """
+        Calls generate_output() method of self.schedule object.
+        """
         self.schedule.generate_output()
 
     def run(self) -> None:
+        """
+        Runs the algorithm.
+        """
         for _ in range(self.maxTrains):
             route = Route()
             self.time = 0
@@ -77,9 +103,9 @@ class Random:
 
 
 class FixedRandom(Random):
-    def __init__(self, schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
-        self.schedule = schedule
-        self.maxTime = maxTime
-        self.maxTrains = maxTrains
-        self.time = 0
+    """
+    A variation on the Random algorithm that returns the same output based on a fixedseed.
+    """
+    def __init__(self, schedule: Schedule, maxTime: int, maxTrains: int, fixedSeed: int) -> None:
+        super().__init__(schedule, maxTime, maxTrains)
         random.seed(fixedSeed)

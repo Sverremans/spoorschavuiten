@@ -107,6 +107,7 @@ def make_map_with_names(schedule: Schedule, geojson: str) -> None:
     draw_lines(schedule, xConnection, yConnection)
 
     plt.grid(False)
+    plt.show()
 
 
 def only_lines(schedule: Schedule, geojson: str) -> None:
@@ -279,10 +280,12 @@ def outputGraphHistMultiple(outputs1: list, outputs2: list) -> None:
     plt.hist(y1, bins=20, color= 'blue')
     plt.hist(y2, bins=20, color= 'red')
     plt.legend(['Random', 'Greedy'])
-    plt.title("Verdeling van 1000000 herhalingen van een random en een greedy algoritme: Nederland")
-    plt.xlabel("Score")
-    plt.ylabel("Number of occurrences")
-    plt.savefig('figures/randomScoresVSGreedyScoresNederland.jpg')
+    plt.title("Verdeling van 1000000 herhalingen van een random en een greedy algoritme: Holland", fontsize=15)
+    plt.xlabel("Score", fontsize=16)
+    plt.xticks(fontsize=15)
+    plt.ylabel("Number of occurrences", fontsize=16)
+    plt.yticks(fontsize=15)
+    plt.savefig('figures/randomScoresVSGreedyScoresHolland.jpg')
     plt.show()
 
 
