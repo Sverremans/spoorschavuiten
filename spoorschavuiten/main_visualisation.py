@@ -8,37 +8,30 @@ import pandas as pd # type: ignore
 
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------
-# score_list1 = []
-# df_scores1 = pd.read_csv("data/output/1000000RandomScoresHolland.csv", header = None)
-# for l in range(len(df_scores1)):
-#         score_list1.append(df_scores1.loc[l, 2])
-
-# score_list2 = []
-# df_scores2 = pd.read_csv("data/output/1000000GreedyScoresHolland.csv", header = None)
-# for l in range(len(df_scores2)):
-#         score_list2.append(df_scores2.loc[l, 2])
-
-# # score_list3 = []
-# # df_scores3 = pd.read_csv("data/output/hillclimberHollandScores_3.csv", header = None)
-# # for l in range(len(df_scores3)):
-# #         score_list3.append(df_scores3.loc[l, 2])
-
-# outputGraphHistMultiple(score_list1, score_list2)
-# # outputGraphHist(score_list3)
-
-# -----------------------------------------------------------------------------------------------------------------------------------------------
-# -----------------------------------------------------------------------------------------------------------------------------------------------
 score_list1 = []
-df_scores1 = pd.read_csv("data/output/1000000RandomScoresNederland.csv", header = None)
+df_scores1 = pd.read_csv("data/output/random/1000000RandomScoresHolland.csv", header = None)
 for l in range(len(df_scores1)):
         score_list1.append(df_scores1.loc[l, 2])
 
 score_list2 = []
-df_scores2 = pd.read_csv("data/output/1000000GreedyScoresNederland_3.csv", header = None)
+df_scores2 = pd.read_csv("data/output/greedy/1000000GreedyScoresHolland.csv", header = None)
 for l in range(len(df_scores2)):
         score_list2.append(df_scores2.loc[l, 2])
 
 outputGraphHistMultiple(score_list1, score_list2)
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------------------------------
+# score_list1 = []
+# df_scores1 = pd.read_csv("data/output/random/1000000RandomScoresNederland.csv", header = None)
+# for l in range(len(df_scores1)):
+#         score_list1.append(df_scores1.loc[l, 2])
+
+# score_list2 = []
+# df_scores2 = pd.read_csv("data/output/greedy/1000000GreedyScoresNederland.csv", header = None)
+# for l in range(len(df_scores2)):
+#         score_list2.append(df_scores2.loc[l, 2])
+
+# outputGraphHistMultiple(score_list1, score_list2)
 
 # -----------------------------------------------------------------------------------------------------------------------------------------------
 # colors = ["red", "blue", "pink", "grey", "yellow",
@@ -78,21 +71,20 @@ outputGraphHistMultiple(score_list1, score_list2)
 # draw_finished_map(holland, colors, "data/holland_2.geojson", "figures/hollandIngevuldDoorHillclimberAlgoritme_9202.jpg", new_routes)
 # draw_finished_map(netherlands, colors, "data/netherlands_.geojson", "figures/nederlandIngevuldDoorHillclimberAlgoritme_6289.jpg", new_routes2)
 # -----------------------------------------------------------------------------------------------------------------------------------------------
-
 # # Boxplot maker voor Holland
 
 # score_list1 = []
-# df_scores1 = pd.read_csv("data/output/1000000RandomScoresHolland.csv", header = None)
+# df_scores1 = pd.read_csv("data/output/random/1000000RandomScoresHolland.csv", header = None)
 # for l in range(len(df_scores1)):
 #         score_list1.append(df_scores1.loc[l, 2])
 
 # score_list2 = []
-# df_scores2 = pd.read_csv("data/output/1000000GreedyScoresHolland.csv", header = None)
+# df_scores2 = pd.read_csv("data/output/greedy/1000000GreedyScoresHolland.csv", header = None)
 # for l in range(len(df_scores2)):
 #         score_list2.append(df_scores2.loc[l, 2])
 
 # score_list3 = []
-# df_scores3 = pd.read_csv("data/output/hillclimberHollandScores_3.csv", header = None)
+# df_scores3 = pd.read_csv("data/output/hillclimber/run_3/hillclimberHollandScores_3.csv", header = None)
 # for l in range(len(df_scores3)):
 #         score_list3.append(df_scores3.loc[l, 2])
 
@@ -111,9 +103,10 @@ outputGraphHistMultiple(score_list1, score_list2)
 # fig = plt.figure(figsize =(10, 7))
 # plt.boxplot(data, vert = False, flierprops={'marker': 'o', 'markersize': 5, 'markeredgecolor': 'grey'})
 # plt.scatter(9104, 3, color = 'black', marker = '*')
-# plt.yticks([1, 2, 3, 4], ['Random', 'Greedy', 'Depth-First', 'Hillclimber'])
-# plt.title("Holland")
-# plt.xlabel("Score")
+# plt.yticks([1, 2, 3, 4], ['Random', 'Greedy', 'Depth-First', 'Hillclimber'], fontsize=15)
+# plt.xticks(fontsize=15)
+# plt.title("Holland", fontsize=20)
+# plt.xlabel("Score", fontsize=16)
 # plt.savefig("figures/Boxplot_Holland")
 # plt.show()
 
@@ -121,9 +114,10 @@ outputGraphHistMultiple(score_list1, score_list2)
 # fig = plt.figure(figsize =(10, 7))
 # plt.boxplot(data_extra, vert = False, flierprops={'marker': 'o', 'markersize': 5, 'markeredgecolor': 'grey'})
 # plt.scatter(9104, 1, color = 'black', marker = '*')
-# plt.yticks([1, 2], ['Depth-First', 'Hillclimber'])
-# plt.title("Holland (ingezoemd)")
-# plt.xlabel("Score")
+# plt.yticks([1, 2], ['Depth-First', 'Hillclimber'], fontsize=15)
+# plt.xticks(fontsize=15)
+# plt.title("Holland (ingezoemd)", fontsize=20)
+# plt.xlabel("Score", fontsize=16)
 # plt.savefig("figures/Boxplot_Holland_CloseUp")
 # plt.show()
 # -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -131,17 +125,17 @@ outputGraphHistMultiple(score_list1, score_list2)
 # #Boxplot maker voor Holland
 
 # score_list1 = []
-# df_scores1 = pd.read_csv("data/output/1000000RandomScoresNederland.csv", header = None)
+# df_scores1 = pd.read_csv("data/output/random/1000000RandomScoresNederland.csv", header = None)
 # for l in range(len(df_scores1)):
 #         score_list1.append(df_scores1.loc[l, 2])
 
 # score_list2 = []
-# df_scores2 = pd.read_csv("data/output/1000000GreedyScoresNederland_3.csv", header = None)
+# df_scores2 = pd.read_csv("data/output/greedy/1000000GreedyScoresNederland.csv", header = None)
 # for l in range(len(df_scores2)):
 #         score_list2.append(df_scores2.loc[l, 2])
 
 # score_list3 = []
-# df_scores3 = pd.read_csv("data/output/hillclimberNederlandScores.csv", header = None)
+# df_scores3 = pd.read_csv("data/output/hillclimber/run_1/hillclimberNederlandScores.csv", header = None)
 # for l in range(len(df_scores3)):
 #         score_list3.append(df_scores3.loc[l, 2])
 
@@ -158,24 +152,20 @@ outputGraphHistMultiple(score_list1, score_list2)
 # # Volledige data
 # fig = plt.figure(figsize =(10, 7))
 # plt.boxplot(data, vert = False, flierprops={'marker': 'o', 'markersize': 5, 'markeredgecolor': 'grey'})
-# plt.yticks([1, 2, 3], ['Random', 'Greedy', 'Hillclimber'])
-# plt.title("Nederland")
-# plt.xlabel("Score")
+# plt.yticks([1, 2, 3], ['Random', 'Greedy', 'Hillclimber'], fontsize=15)
+# plt.xticks(fontsize=15)
+# plt.title("Nederland", fontsize=20)
+# plt.xlabel("Score", fontsize=16)
 # plt.savefig("figures/Boxplot_Nederland")
 # plt.show()
 
 # #Ingezoemde data
 # fig = plt.figure(figsize =(10, 7))
 # plt.boxplot(data_3, vert = False, flierprops={'marker': 'o', 'markersize': 5, 'markeredgecolor': 'grey'})
-# plt.yticks([1], ['Hillclimber'])
-# plt.title("Nederland (ingezoemd)")
-# plt.xlabel("Score")
+# plt.yticks([1], ['Hillclimber'], fontsize=15)
+# plt.xticks(fontsize=15)
+# plt.title("Nederland (ingezoemd)", fontsize=20)
+# plt.xlabel("Score", fontsize=16)
 # plt.savefig("figures/Boxplot_Nederland_CloseUp")
 # plt.show()
 # -----------------------------------------------------------------------------------------------------------------------------------------------
-colors = ['red', 'blue']
-routes = []
-
-holland = Region("data/input/StationsHolland.csv", "data/input/ConnectiesHolland.csv")
-new_routes = convert_string_to_used_connections(routes, holland)
-draw_finished_map(holland, colors, "data/holland_2.geojson", "figures/hollandIngevuldDoorHillclimberAlgoritme_9202.jpg", new_routes)
