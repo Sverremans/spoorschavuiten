@@ -269,7 +269,7 @@ def outputGraphHist(outputs: list) -> None:
     plt.show()
 
 
-def outputGraphHistMultiple(outputs1: list, outputs2: list) -> None:
+def outputGraphHistMultiple(outputs1: list, outputs2: list, file_jpg: str, region: str) -> None:
     '''
     Creates a histogram of the inputed data.
     '''
@@ -280,12 +280,12 @@ def outputGraphHistMultiple(outputs1: list, outputs2: list) -> None:
     plt.hist(y1, bins=20, color= 'blue')
     plt.hist(y2, bins=20, color= 'red')
     plt.legend(['Random', 'Greedy'])
-    plt.title("Verdeling van 1000000 herhalingen van een random en een greedy algoritme: Holland", fontsize=15)
+    plt.title(f"Verdeling van 1000000 herhalingen van een random en een greedy algoritme: {region}", fontsize=15)
     plt.xlabel("Score", fontsize=16)
     plt.xticks(fontsize=15)
     plt.ylabel("Number of occurrences", fontsize=16)
     plt.yticks(fontsize=15)
-    plt.savefig('figures/randomScoresVSGreedyScoresHolland.jpg')
+    plt.savefig(file_jpg)
     plt.show()
 
 
