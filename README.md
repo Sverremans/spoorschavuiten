@@ -1,7 +1,7 @@
 # Algoritmen en Heuristieken - RailNL
 ### Door Sipke de Boer, Massimo Carbone en Sverre van der Zalm a.k.a De Spoorschavuiten
 
-### Introductie
+## Introductie
 
 Wij hebben gekozen om voor het vak Algoritmen en Heuristieken, de case RailNL uit te werken.
 
@@ -24,14 +24,23 @@ Het maximaal aantal treinen dat mag gebruikt worden in Holland is 7, voor Nederl
 
 Als laatste wordt voor **'min'** het totale aantal minuten ingevoerd dat alle gebruikte treinen bezig zijn om alle verbindingen in hun traject te berijden.
 
+## Algoritmes
 
-Door gebruik te maken van verschillende algoritmes worden mogelijke dienstregelingen gemaakt en er wordt een score berekend.
+Dienstregelingen worden gegenereerd door verschillende algoritmes.
+We hebben de volgende algoritmes gemaakt:
+1. Random
+2. Greedy
+3. Depth-first
+4. Greedy with lookahead
+5. Hillclimber
 
 ## Aan de slag
 
 ### Vereisten
 
-Deze codebase is volledig geschreven in Python 3.7. In requirements.txt staan alle benodigde packages om de code succesvol te draaien. Deze zijn gemakkelijk te installeren via pip dmv. de volgende instructie:
+Deze codebase is volledig geschreven in Python 3.12. Via de volgende instructies installeer je de packages die nodig zijn voor het runnen van onze code.
+
+Allereerst, run je dit:
 
 ```
 pip install -r requirements.txt
@@ -42,31 +51,20 @@ Of via conda:
 ```
 conda install --file requirements.txt
 ```
+Voor Windows: om via matplotlib grafieken te tekenen run je:
+```
+sudo apt install python3-tk -y
+```
 
 ### Gebruik
 
-Een voorbeeldje kan gerund worden door aanroepen van:
+De algoritmes kunnen gerund worden door het aanroepen van:
 
 ```
 python main.py
 ```
 
-Het bestand geeft een voorbeeld voor gebruik van de verschillende functies.
-
-### Structuur
-
-De hierop volgende lijst beschrijft de belangrijkste mappen en files in het project, en waar je ze kan vinden:
-
-- **/code**: bevat alle code van dit project
-  - **/code/algorithms**: bevat de code voor algoritmes
-  - **/code/classes**: bevat de drie benodigde classes voor deze case
-  - **/code/visualisation**: bevat de bokeh code voor de visualisatie
-- **/data**: bevat de verschillende databestanden die nodig zijn om de graaf te vullen en te visualiseren
-
-
-Wij werken met verschillende scripts om de verschillende algoritmen te laten runnen.
-
-
+## Hieronder oude README tekst
 Met het bestand *distribution.py* worden het Random en Greedy algortime gerunt.
 Het bestand is opgedeeld in verschillende stukjes code die resultaten genereren.
 Met variabele *times* wordt aangegeven hoe vaak het algoritme herhaald moet worden, vervolgens wordt er een lege dienstergeling mee gegeven aan het algoritme.
@@ -76,7 +74,7 @@ Deze scores worden vervolgens gebruikt om een histogram en ee boxplot te kunnen 
 
 Type in de terminal ***"python3 distribution.py"*** om deze code te laten runnen en data te genereren.
 Dit zal resulteren in 4 csv bestanden:
-- 
+
 
 
 
