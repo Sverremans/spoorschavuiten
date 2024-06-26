@@ -1,0 +1,17 @@
+Geinstalleerde onderdelen:
+
+matplotlib, version: 3.9.0
+numpy, version: 1.26.4
+pandas, version 2.2.2
+geopandas, version 0.14.4
+PyQt6, version: 6.7.0
+adjustText, version: 1.1.1
+
+
+Ook gebruikt:
+sudo apt install pyton3-tk -y (deze moets geinstalleerd worden om matplotlib grafieken te kunnen later zien op Windows)
+
+Van onze map spoorschavuiten is een package gemaakt om de navagatie te laten werken in de vershillende scripts.
+Met het setup.py bestand in de map is deze package aangemaakt.
+Onderstaand commando is gebruikt om deze package vervolgens te installeren.
+pip install -e.
